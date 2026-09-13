@@ -7,8 +7,8 @@ without knowing which Qt this binary was linked against -- Qt guarantees binary
 compatibility only within a minor series.  So the exact ``qVersion()`` string is
 shown, not a marketing version and not the version PySide6 was compiled against.
 
-The disclaimer is required by the clean-room record: every user-facing mention of
-comparable software must carry it.
+The disclaimer accompanies every user-facing mention of comparable software, so
+that no one reads a comparison as a claim of affiliation.
 """
 
 from __future__ import annotations

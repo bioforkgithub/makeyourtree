@@ -9,7 +9,7 @@ something end-to-end to run against.
 > directory, from a seeded random number generator and hand-written taxon
 > names. Nothing was downloaded from, copied from, or compared against any
 > other phylogenetics package's bundled examples or demo datasets — see
-> `legal/CLEANROOM.md`. The trees are statistically plausible shapes, not real
+> this project. The trees are statistically plausible shapes, not real
 > phylogenies, and the annotation values are noise. Do not cite them.
 >
 > Independent project; not affiliated with, endorsed by, or derived from any

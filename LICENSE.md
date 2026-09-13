@@ -25,8 +25,7 @@ three. MIT is the shortest licence that lets a laboratory, a course or a commerc
 pipeline take the code without consulting a lawyer first, and it keeps the library
 embeddable inside projects under any other licence.
 
-The application half was originally proprietary. That is no longer the case — there is
-no end-user licence agreement, no commercial edition and nothing withheld. What is in
+There is no end-user licence agreement and nothing withheld. What is in
 this repository is the whole of MakeYourTree.
 
 ## Meeting the LGPL obligations for Qt

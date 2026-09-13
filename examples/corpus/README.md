@@ -8,7 +8,7 @@ Everything here is **generated from a seed**, and every taxon name is
 invented. Nothing is downloaded, because a published phylogeny is
 someone's copyrighted work and a collection of them attracts the EU
 database right on top of that -- see
-[`../../legal/FIXTURES.md`](../../legal/FIXTURES.md). Generating them
+`tools/make_corpus.py` from recorded seeds. Generating them
 also means every one is reproducible exactly, years later, from the
 seed recorded below.
 

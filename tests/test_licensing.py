@@ -5,7 +5,7 @@ These are not style checks. Each one guards a condition that, if breached, eithe
 voids the right to distribute Qt alongside our own code or weakens the clean-room
 record. A reviewer cannot be relied on to catch a stray import; the build can.
 
-See ``LICENSE.md`` and ``legal/CLEANROOM.md`` for why each rule exists.
+See ``LICENSE.md`` for why each rule exists.
 """
 
 from __future__ import annotations
@@ -194,11 +194,18 @@ def test_no_third_party_product_branding_in_source():
         if forbidden.search(text):
             offenders.append(str(p.relative_to(ROOT)))
     assert not offenders, (
-        "third-party branding must not appear in source; prior art belongs in "
-        "README.md and legal/PROVENANCE.md. Offending files: " + ", ".join(offenders)
+        "third-party branding must not appear in source; related work belongs in "
+        "README.md. Offending files: " + ", ".join(offenders)
     )
 
 
-def test_clean_room_record_exists():
-    for name in ("legal/CLEANROOM.md", "legal/PROVENANCE.md", "LICENSE.md"):
-        assert (ROOT / name).exists(), f"{name} is part of the clean-room audit trail"
+def test_the_licence_is_conveyed():
+    """The MIT text and the Qt licences must be in the tree, not just claimed.
+
+    ``LICENSE`` is what a reuser and GitHub's licence detector both read, and
+    ``LICENSE.md`` is what records the LGPL conditions that bind anyone
+    redistributing a compiled bundle. Neither is optional.
+    """
+    for name in ("LICENSE", "LICENSE.md", "THIRD-PARTY-NOTICES.md"):
+        assert (ROOT / name).exists(), f"{name} must be conveyed with the software"
+    assert "MIT License" in read(ROOT / "LICENSE")

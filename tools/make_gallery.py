@@ -16,7 +16,7 @@ imported, exactly as ``smoke_studio.py`` does.
 ``examples/generate.py`` builds from a seeded RNG and invented taxon names, and
 the track values below are likewise generated.  Nothing is copied from, derived
 from, or checked against another phylogenetics package's bundled data; see
-``legal/FIXTURES.md``.
+recorded seeds.
 """
 
 from __future__ import annotations
@@ -482,7 +482,7 @@ def write_index() -> None:
         "",
         "All data is synthetic — seeded random values and invented taxon names.",
         "Nothing is copied from or derived from any other phylogenetics package;",
-        "see [`../../legal/FIXTURES.md`](../../legal/FIXTURES.md).",
+        "they are generated from recorded seeds.",
         "",
     ]
     section = None

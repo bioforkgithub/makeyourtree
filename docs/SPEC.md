@@ -28,9 +28,11 @@ Python 3.12. Runtime dependencies of the core: `numpy` only. The studio adds `Py
 
 ---
 
-## 1. Legal boundary — read this before writing a line
+## 1. What may be implemented, and from what
 
-This is an **independent clean-room implementation**. Functionality, algorithms and
+Every format and algorithm here is written from its published specification or from
+the primary literature, cited in the module that implements it. Functionality,
+algorithms and
 **file formats are not copyrightable** (*SAS Institute v. World Programming*, 64 F.4th 1319
 (Fed. Cir. 2023); CJEU C-406/10; *Google v. Oracle*, 2021; *Lotus v. Borland*). Copying
 expression is a different matter and is forbidden.
@@ -42,7 +44,7 @@ expression is a different matter and is forbidden.
    module docstring (Felsenstein's equal-angle and equal-daylight; Heckbert's nice-number
    labelling; Reingold–Tilford-style tidy layout).
 3. Generate your own test fixtures synthetically, or take them from openly licensed sources
-   with the license recorded in `legal/FIXTURES.md`.
+   with its licence recorded beside it.
 4. Use permissively licensed assets only (Lucide/Tabler/Feather icons — MIT; OFL fonts) and
    record SPDX ids in `THIRD-PARTY-NOTICES.md`.
 5. Design our own visual identity: our own palette, panel arrangement, iconography and

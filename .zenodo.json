@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "MakeYourTree: a standalone desktop studio for visualising and annotating phylogenetic trees",
-  "description": "<p>MakeYourTree reads Newick, NHX, NEXUS and phyloXML, draws rectangular and slanted phylograms and cladograms, circular fans and unrooted layouts, and annotates them with thirteen types of data track. It exports SVG, PDF and PNG at publication sizes.</p><p>It runs entirely on the user's machine. There is no server, no account, no upload and no network access at runtime, so unpublished data never leaves the computer.</p><p>The project is an independent clean-room implementation, released as free software under the MIT licence. It is in two parts: a toolkit-free core library with a command-line interface, and a Qt desktop application built on it.</p>",
+  "description": "<p>MakeYourTree reads Newick, NHX, NEXUS and phyloXML, draws rectangular and slanted phylograms and cladograms, circular fans and unrooted layouts, and annotates them with thirteen types of data track. It exports SVG, PDF and PNG at publication sizes.</p><p>It runs entirely on the user's machine. There is no server, no account, no upload and no network access at runtime, so unpublished data never leaves the computer.</p><p>The project is an independent implementation, written from published format specifications, and released as free software under the MIT licence. It is in two parts: a toolkit-free core library with a command-line interface, and a Qt desktop application built on it.</p>",
   "license": "MIT",
   "access_right": "open",
   "creators": [

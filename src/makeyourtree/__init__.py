@@ -1,8 +1,9 @@
 # SPDX-License-Identifier: MIT
 """MakeYourTree -- phylogenetic tree visualisation and annotation.
 
-An independent, clean-room implementation.  Not affiliated with, endorsed by,
-or derived from any other phylogenetics package.
+An independent implementation, written from published format specifications
+and the primary literature.  Not affiliated with or endorsed by any other
+phylogenetics package.
 """
 
 __version__ = "0.1.0"

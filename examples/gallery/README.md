@@ -7,7 +7,7 @@ open the vector version.
 
 All data is synthetic — seeded random values and invented taxon names.
 Nothing is copied from or derived from any other phylogenetics package;
-see [`../../legal/FIXTURES.md`](../../legal/FIXTURES.md).
+they are generated from recorded seeds.
 
 ## Layouts
 

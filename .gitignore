@@ -12,7 +12,7 @@ dist/
 
 # Research working material. Deliberately excluded from version control:
 # it contains third-party annotation-directive vocabulary gathered while
-# specifying our own format. None of it reached src/ (see legal/PROVENANCE.md),
+# specifying our own format. None of it reached src/,
 # and git history is permanent, so it must never be committed.
 docs/_research/
 
@@ -46,3 +46,8 @@ docs/ERROR-REPORT.md
 
 # Citation metadata returns once the software has a Zenodo DOI.
 CITATION.cff
+
+# Clean-room and authorship working notes. They were written to defend a
+# commercial edition that no longer exists; MIT is the whole of what this
+# project asks of anyone. Kept locally, not published.
+legal/
