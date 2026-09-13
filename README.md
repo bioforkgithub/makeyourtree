@@ -225,14 +225,15 @@ you export, and imposes no attribution requirement on them.
 
 ## AI disclosure
 
-I wrote parts of the source code, the test suite and the documentation with the
-assistance of a large language model (Anthropic Claude), used as a tool under my
-direction. I specified the architecture and the interface contracts, directed the
-implementation, reviewed the code, and I am responsible for the whole of the software.
+A large language model (Anthropic Claude) was used as a tool in building MakeYourTree.
+It wrote parts of the source code, the test suite and the documentation, against an
+architecture and a set of interface contracts that were specified first, and what it
+produced was reviewed before it was kept. Responsibility for the whole of the software
+rests with its author.
 
 Every number quoted in the documentation came from running the program, not from a
-language model. No artificial intelligence system is an author here, and none holds
-copyright in this work.
+language model. No artificial intelligence system is an author of this work, and none
+holds copyright in it.
 
 ---
 
