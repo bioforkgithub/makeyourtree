@@ -83,7 +83,7 @@ Keyboard**. `tests/test_licensing.py` fails the build if any module imports them
 
 ## MakeYourTree core
 
-- **Copyright** © 2026 Manish Prakash Victor (trading as Inventufortuitum).
+- **Copyright** © 2026 Manish Prakash Victor.
 - **Licence:** MIT (`MIT`) — see [`LICENSES/MIT.txt`](LICENSES/MIT.txt).
 
 The whole of MakeYourTree — the `makeyourtree` package (parsers, tree model, layout engine,

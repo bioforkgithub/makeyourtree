@@ -3,6 +3,7 @@
 
 # Licence texts must survive byte for byte. LGPL-3.0 section 4(b) requires the
 # licence to be conveyed verbatim, so these are exempt from EOL normalisation.
+LICENSE -text
 LICENSES/*.txt -text
 THIRD-PARTY-NOTICES.md -text
 

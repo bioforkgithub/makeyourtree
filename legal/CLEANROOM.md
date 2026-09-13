@@ -95,8 +95,8 @@ art is evidence of good faith; it is not an admission of copying.
 
 ## 7. Indian law — the position is, if anything, stronger
 
-Inventufortuitum is established in India, so Indian copyright law governs the clean-room
-posture directly. It supports this implementation on two independent grounds.
+Indian copyright law bears directly on the clean-room posture, and it supports this
+implementation on two independent grounds.
 
 **7.1 Ideas, methods and functionality are not protected.**
 The Copyright Act, 1957 protects a computer programme as a literary work
