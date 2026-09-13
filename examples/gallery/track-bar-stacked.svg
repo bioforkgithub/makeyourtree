@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1289.25pt" height="459.69pt" viewBox="0 0 1289.25 459.69">
+<rect class="makeyourtree-background" x="0" y="0" width="1289.25" height="459.69" fill="#ffffff"/>
+<g class="makeyourtree-branches">
+<g transform="translate(0.6 121.4)">
+<path d="M24 108L24 58M24 58L199.766 58M199.766 58L199.766 40M199.766 40L227.822 40M227.822 40L227.822 32M227.822 32L276.056 32M227.822 40L227.822 48M227.822 48L332.284 48M199.766 58L199.766 76M199.766 76L358.1 76M358.1 76L358.1 64M358.1 64L378.996 64M358.1 76L358.1 88M358.1 88L473.317 88M473.317 88L473.317 80M473.317 80L503.377 80M473.317 88L473.317 96M473.317 96L493.326 96M24 108L24 158M24 158L312.769 158M312.769 158L312.769 120M312.769 120L508.116 120M508.116 120L508.116 112M508.116 112L624.386 112M508.116 120L508.116 128M508.116 128L526.785 128M312.769 158L312.769 196M312.769 196L402.859 196M402.859 196L402.859 158M402.859 158L420.434 158M420.434 158L420.434 144M420.434 144L464.138 144M420.434 158L420.434 172M420.434 172L470.986 172M470.986 172L470.986 160M470.986 160L511.253 160M470.986 172L470.986 184M470.986 184L810.034 184M810.034 184L810.034 176M810.034 176L843.44 176M810.034 184L810.034 192M810.034 192L835.186 192M402.859 196L402.859 234M402.859 234L500.721 234M500.721 234L500.721 216M500.721 216L604.715 216M604.715 216L604.715 208M604.715 208L657.662 208M604.715 216L604.715 224M604.715 224L625.649 224M500.721 234L500.721 252M500.721 252L733.041 252M733.041 252L733.041 240M733.041 240L815.554 240M733.041 252L733.041 264M733.041 264L802.639 264M802.639 264L802.639 256M802.639 256L924 256M802.639 264L802.639 272M802.639 272L837.699 272" fill="none" stroke="#33333a" stroke-width="1.2" stroke-linejoin="round"/>
+</g>
+</g>
+<g class="makeyourtree-tracks">
+<g transform="translate(0.6 121.4)">
+<polyline points="1045.86,24 1045.86,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1045.86" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">0</text>
+<polyline points="1065.932,24 1065.932,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1065.932" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">2</text>
+<polyline points="1086.003,24 1086.003,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1086.003" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">4</text>
+<polyline points="1106.075,24 1106.075,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1106.075" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">6</text>
+<polyline points="1126.147,24 1126.147,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1126.147" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">8</text>
+<g><rect x="1045.86" y="25.6" width="44.073" height="12.8" fill="#e69f00"/><rect x="1089.933" y="25.6" width="19.918" height="12.8" fill="#56b4e9"/><rect x="1109.851" y="25.6" width="16.637" height="12.8" fill="#009e73"/><rect x="1045.86" y="41.6" width="10.183" height="12.8" fill="#e69f00"/><rect x="1056.043" y="41.6" width="32.809" height="12.8" fill="#56b4e9"/><rect x="1088.852" y="41.6" width="8.333" height="12.8" fill="#009e73"/><rect x="1045.86" y="57.6" width="41.462" height="12.8" fill="#e69f00"/><rect x="1087.322" y="57.6" width="22.629" height="12.8" fill="#56b4e9"/><rect x="1109.951" y="57.6" width="12.286" height="12.8" fill="#009e73"/><rect x="1045.86" y="73.6" width="12.12" height="12.8" fill="#e69f00"/><rect x="1057.98" y="73.6" width="13.902" height="12.8" fill="#56b4e9"/><rect x="1071.881" y="73.6" width="8.472" height="12.8" fill="#009e73"/><rect x="1045.86" y="89.6" width="26.865" height="12.8" fill="#e69f00"/><rect x="1072.725" y="89.6" width="15.249" height="12.8" fill="#56b4e9"/><rect x="1087.974" y="89.6" width="5.587" height="12.8" fill="#009e73"/><rect x="1045.86" y="105.6" width="10.989" height="12.8" fill="#e69f00"/><rect x="1056.849" y="105.6" width="34.867" height="12.8" fill="#56b4e9"/><rect x="1091.715" y="105.6" width="20.989" height="12.8" fill="#009e73"/><rect x="1045.86" y="121.6" width="10.793" height="12.8" fill="#e69f00"/><rect x="1056.653" y="121.6" width="15.347" height="12.8" fill="#56b4e9"/><rect x="1072" y="121.6" width="11.675" height="12.8" fill="#009e73"/><rect x="1045.86" y="137.6" width="14.819" height="12.8" fill="#e69f00"/><rect x="1060.679" y="137.6" width="31.505" height="12.8" fill="#56b4e9"/><rect x="1092.184" y="137.6" width="19.238" height="12.8" fill="#009e73"/><rect x="1045.86" y="153.6" width="16.464" height="12.8" fill="#e69f00"/><rect x="1062.324" y="153.6" width="39.237" height="12.8" fill="#56b4e9"/><rect x="1101.561" y="153.6" width="29.281" height="12.8" fill="#009e73"/><rect x="1045.86" y="169.6" width="14.941" height="12.8" fill="#e69f00"/><rect x="1060.801" y="169.6" width="26.875" height="12.8" fill="#56b4e9"/><rect x="1087.675" y="169.6" width="16.511" height="12.8" fill="#009e73"/><rect x="1045.86" y="185.6" width="26.228" height="12.8" fill="#e69f00"/><rect x="1072.088" y="185.6" width="12.083" height="12.8" fill="#56b4e9"/><rect x="1084.171" y="185.6" width="20.141" height="12.8" fill="#009e73"/><rect x="1045.86" y="201.6" width="17.962" height="12.8" fill="#e69f00"/><rect x="1063.822" y="201.6" width="28.695" height="12.8" fill="#56b4e9"/><rect x="1092.516" y="201.6" width="29.741" height="12.8" fill="#009e73"/><rect x="1045.86" y="217.6" width="42.584" height="12.8" fill="#e69f00"/><rect x="1088.444" y="217.6" width="29.377" height="12.8" fill="#56b4e9"/><rect x="1117.821" y="217.6" width="9.6" height="12.8" fill="#009e73"/><rect x="1045.86" y="233.6" width="46.729" height="12.8" fill="#e69f00"/><rect x="1092.589" y="233.6" width="28.83" height="12.8" fill="#56b4e9"/><rect x="1121.419" y="233.6" width="24.441" height="12.8" fill="#009e73"/><rect x="1045.86" y="249.6" width="38.425" height="12.8" fill="#e69f00"/><rect x="1084.285" y="249.6" width="17.661" height="12.8" fill="#56b4e9"/><rect x="1101.946" y="249.6" width="26.888" height="12.8" fill="#009e73"/><rect x="1045.86" y="265.6" width="35.466" height="12.8" fill="#e69f00"/><rect x="1081.326" y="265.6" width="34.505" height="12.8" fill="#56b4e9"/><rect x="1115.831" y="265.6" width="20.93" height="12.8" fill="#009e73"/></g>
+<text x="1095.86" y="-47.5" transform="rotate(-90 1095.86 -47.5)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Genome partition (Mb)</text>
+</g>
+</g>
+<g class="makeyourtree-labels">
+<g transform="translate(0.6 121.4)">
+<text x="282.056" y="32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cercopithecus_mitis</text>
+<text x="338.284" y="48" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Homo_sapiens</text>
+<text x="384.996" y="64" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Ateles_geoffroyi</text>
+<text x="509.377" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Colobus_guereza</text>
+<text x="499.326" y="96" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pongo_abelii</text>
+<text x="630.386" y="112" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Callithrix_jacchus</text>
+<text x="532.785" y="128" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Lemur_catta</text>
+<text x="470.138" y="144" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pan_troglodytes</text>
+<text x="517.253" y="160" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Saimiri_sciureus</text>
+<text x="849.44" y="176" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Alouatta_palliata</text>
+<text x="841.186" y="192" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cebus_capucinus</text>
+<text x="663.662" y="208" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Gorilla_beringei</text>
+<text x="631.649" y="224" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Macaca_mulatta</text>
+<text x="821.554" y="240" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Aotus_trivirgatus</text>
+<text x="930" y="256" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Hylobates_lar</text>
+<text x="843.699" y="272" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Papio_anubis</text>
+</g>
+</g>
+<g class="makeyourtree-decor">
+<g transform="translate(0.6 121.4)">
+<path d="M24 298L154.188 298M24 294.4L24 301.6M154.188 294.4L154.188 301.6" fill="none" stroke="#52525b" stroke-width="1"/>
+<text x="89.094" y="309.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#52525b">1</text>
+</g>
+</g>
+<g class="makeyourtree-legend">
+<g transform="translate(0.6 121.4)">
+<text x="1159.86" y="-90.8" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Genome partition (Mb)</text>
+<rect x="1159.86" y="-83.6" width="12" height="12" rx="1.8" fill="#009e73"/>
+<text x="1177.86" y="-77.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">cloud</text>
+<rect x="1159.86" y="-70.4" width="12" height="12" rx="1.8" fill="#56b4e9"/>
+<text x="1177.86" y="-64.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">shell</text>
+<rect x="1159.86" y="-57.2" width="12" height="12" rx="1.8" fill="#e69f00"/>
+<text x="1177.86" y="-51.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">core</text>
+</g>
+</g>
+</svg>

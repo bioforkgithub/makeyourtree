@@ -1,0 +1,111 @@
+% SPDX-License-Identifier: MIT
+\chapter{Quick start}
+\label{ch:quickstart}
+
+This chapter produces a finished, annotated figure in about five minutes. It uses
+the example data in the repository, so you can follow it exactly before
+substituting your own tree.
+
+\section{Your first figure, from the command line}
+
+The fastest route to a figure needs no interface at all:
+
+\begin{lstlisting}[language=bash]
+makeyourtree render examples/primates.nwk figure.svg
+\end{lstlisting}
+
+That writes a rectangular phylogram as a vector SVG. Add a layout and an
+annotation track:
+
+\begin{lstlisting}[language=bash]
+makeyourtree render examples/primates.nwk figure.svg \
+    --mode circular --align-tips \
+    --track examples/primates_region.mytrack
+\end{lstlisting}
+
+\begin{figure}[htbp]\centering
+  \includegraphics[width=0.72\linewidth]{layout-circular}
+  \caption{A circular fan, the output of the second command above (shown
+  without the track for clarity).}\label{fig:quickstart-circular}
+\end{figure}
+
+\section{The same thing in the application}
+
+\begin{enumerate}
+  \item Start the application:
+    \begin{lstlisting}[language=bash]
+makeyourtree-studio
+    \end{lstlisting}
+  \item \textbf{File \textbf{\textrightarrow} Open} and choose
+        \cmd{examples/primates.nwk}. The tree appears immediately.
+  \item Press \keys{3} to switch to a circular layout, or \keys{1} to go back to
+        rectangular. The layout keys are \keys{1}--\keys{5}
+        (Appendix~\ref{ch:shortcuts}).
+  \item Press \keys{A} to align the tips and draw guide lines.
+  \item \textbf{Annotate \textbf{\textrightarrow} Import Annotations}
+        (\keys{Ctrl+I}) and choose \cmd{examples/primates\_region.mytrack}. A
+        colour strip appears beside the tips, with a legend.
+  \item \textbf{File \textbf{\textrightarrow} Export Figure} (\keys{Ctrl+E}).
+        Choose SVG, PDF or PNG; the dialog predicts the pixel dimensions before
+        you commit.
+\end{enumerate}
+
+Every step is undoable with \keys{Ctrl+Z}.
+
+\section{A publication figure}
+
+The example data includes a 24-tip bacterial tree with two annotation files.
+Loading the tree and both tracks gives Figure~\ref{fig:combined-rectangular}:
+
+\begin{lstlisting}[language=bash]
+makeyourtree render examples/bacteria.nwk figure.svg --align-tips \
+    --track examples/bacteria_resistance.mytrack \
+    --track examples/bacteria_expression.mytrack
+\end{lstlisting}
+
+\galleryfig{combined-rectangular}{Three stacked tracks --- a categorical colour
+strip, a diverging heatmap and a bar chart with a value axis --- beside a
+rectangular phylogram. Tips are aligned and guide lines connect them to their
+labels.}{1.0}
+
+Switching that same figure to a circular layout requires changing one option, and
+no track behaves differently:
+
+\galleryfig{combined-circular}{The identical tracks and data in a circular
+layout. The heatmap has become an annulus and the bars radiate outward; no track
+code differs between this figure and Figure~\ref{fig:combined-rectangular}. This
+is the band-space design of Section~\ref{sec:design} doing its work.}{0.85}
+
+\section{From Python}
+
+The same figure, reproducibly, from a script:
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.io import load_tree
+from makeyourtree.doc import Document
+from makeyourtree.layout import LayoutParams, LayoutMode
+from makeyourtree.scene import compose
+from makeyourtree.render import render_svg
+from makeyourtree.ops import midpoint_root, ladderize
+
+tree = load_tree("examples/primates.nwk")
+midpoint_root(tree).apply(tree)
+ladderize(tree).apply(tree)
+
+doc = Document(tree=tree,
+               params=LayoutParams(mode=LayoutMode.CIRCULAR, arc=340))
+with open("figure.svg", "w", encoding="utf-8") as fh:
+    fh.write(render_svg(compose(doc)))
+\end{lstlisting}
+
+Chapter~\ref{ch:python} covers the API in full.
+
+\section{Where to go next}
+
+\begin{itemize}
+  \item Chapter~\ref{ch:formats} --- what \app{} can read, and what it does with
+        files that break their own specification.
+  \item Chapter~\ref{ch:layouts} --- every layout mode, with figures.
+  \item Chapter~\ref{ch:annotation} --- writing your own annotation files.
+  \item Chapter~\ref{ch:tracks} --- the reference for all thirteen track types.
+\end{itemize}

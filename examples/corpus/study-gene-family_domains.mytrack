@@ -1,0 +1,44 @@
+#makeyourtree-annotation 1
+
+[track]
+type = domain-architecture
+title = Architecture
+
+[options]
+thickness = 230
+length_column = 0
+feature_height = 12
+show_labels = true
+
+[columns]
+names = length, f1, f2, f3
+
+[data]
+T001	480	15|150|rect|#CC6677|Kinase	190|300|ellipse|#332288|SH2	330|460|hexagon|#117733|PDZ
+T023	480	18|153|rect|#CC6677|Kinase	192|302|ellipse|#332288|SH2	334|460|hexagon|#117733|PDZ
+T013	480	21|156|rect|#CC6677|Kinase	194|304|ellipse|#332288|SH2	338|460|hexagon|#117733|PDZ
+T005	480	24|159|rect|#CC6677|Kinase	196|306|ellipse|#332288|SH2	342|460|hexagon|#117733|PDZ
+T019	480	27|162|rect|#CC6677|Kinase	198|308|ellipse|#332288|SH2	346|460|hexagon|#117733|PDZ
+T007	480	30|165|rect|#CC6677|Kinase	200|310|ellipse|#332288|SH2	350|460|hexagon|#117733|PDZ
+T002	480	33|168|rect|#CC6677|Kinase	202|312|ellipse|#332288|SH2	354|460|hexagon|#117733|PDZ
+T003	480	36|171|rect|#CC6677|Kinase	204|314|ellipse|#332288|SH2	358|460|hexagon|#117733|PDZ
+T014	480	39|174|rect|#CC6677|Kinase	206|316|ellipse|#332288|SH2	362|460|hexagon|#117733|PDZ
+T022	480	42|177|rect|#CC6677|Kinase	208|318|ellipse|#332288|SH2	366|460|hexagon|#117733|PDZ
+T018	480	45|180|rect|#CC6677|Kinase	210|320|ellipse|#332288|SH2	370|460|hexagon|#117733|PDZ
+T021	480	48|183|rect|#CC6677|Kinase	212|322|ellipse|#332288|SH2	374|460|hexagon|#117733|PDZ
+T009	480	51|186|rect|#CC6677|Kinase	214|324|ellipse|#332288|SH2	378|460|hexagon|#117733|PDZ
+T004	480	54|189|rect|#CC6677|Kinase	216|326|ellipse|#332288|SH2	382|460|hexagon|#117733|PDZ
+T016	480	57|192|rect|#CC6677|Kinase	218|328|ellipse|#332288|SH2	386|460|hexagon|#117733|PDZ
+T006	480	60|195|rect|#CC6677|Kinase	220|330|ellipse|#332288|SH2	390|460|hexagon|#117733|PDZ
+T008	480	63|198|rect|#CC6677|Kinase	222|332|ellipse|#332288|SH2	394|460|hexagon|#117733|PDZ
+T025	480	66|201|rect|#CC6677|Kinase	224|334|ellipse|#332288|SH2	398|460|hexagon|#117733|PDZ
+T024	480	69|204|rect|#CC6677|Kinase	226|336|ellipse|#332288|SH2	402|460|hexagon|#117733|PDZ
+T010	480	72|207|rect|#CC6677|Kinase	228|338|ellipse|#332288|SH2	406|460|hexagon|#117733|PDZ
+T012	480	75|210|rect|#CC6677|Kinase	230|340|ellipse|#332288|SH2	410|460|hexagon|#117733|PDZ
+T000	480	78|213|rect|#CC6677|Kinase	232|342|ellipse|#332288|SH2	414|460|hexagon|#117733|PDZ
+T026	480	81|216|rect|#CC6677|Kinase	234|344|ellipse|#332288|SH2	418|460|hexagon|#117733|PDZ
+T017	480	84|219|rect|#CC6677|Kinase	236|346|ellipse|#332288|SH2	422|460|hexagon|#117733|PDZ
+T015	480	87|222|rect|#CC6677|Kinase	238|348|ellipse|#332288|SH2	426|460|hexagon|#117733|PDZ
+T011	480	90|225|rect|#CC6677|Kinase	240|350|ellipse|#332288|SH2	430|460|hexagon|#117733|PDZ
+T027	480	93|228|rect|#CC6677|Kinase	242|352|ellipse|#332288|SH2	434|460|hexagon|#117733|PDZ
+T020	480	96|231|rect|#CC6677|Kinase	244|354|ellipse|#332288|SH2	438|460|hexagon|#117733|PDZ

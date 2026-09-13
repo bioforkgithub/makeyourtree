@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1056.46pt" height="301.61pt" viewBox="0 0 1056.46 301.61">
+<rect class="makeyourtree-background" x="0" y="0" width="1056.46" height="301.61" fill="#ffffff"/>
+<g class="makeyourtree-branches">
+<g transform="translate(0.6 0)">
+<path d="M24 108L24 58M24 58L474 58M474 58L474 40M474 40L774 40M774 40L774 32M774 32L924 32M774 40L774 48M774 48L924 48M474 58L474 76M474 76L624 76M624 76L624 64M624 64L924 64M624 76L624 88M624 88L774 88M774 88L774 80M774 80L924 80M774 88L774 96M774 96L924 96M24 108L24 158M24 158L174 158M174 158L174 120M174 120L774 120M774 120L774 112M774 112L924 112M774 120L774 128M774 128L924 128M174 158L174 196M174 196L324 196M324 196L324 158M324 158L474 158M474 158L474 144M474 144L924 144M474 158L474 172M474 172L624 172M624 172L624 160M624 160L924 160M624 172L624 184M624 184L774 184M774 184L774 176M774 176L924 176M774 184L774 192M774 192L924 192M324 196L324 234M324 234L474 234M474 234L474 216M474 216L774 216M774 216L774 208M774 208L924 208M774 216L774 224M774 224L924 224M474 234L474 252M474 252L624 252M624 252L624 240M624 240L924 240M624 252L624 264M624 264L774 264M774 264L774 256M774 256L924 256M774 264L774 272M774 272L924 272" fill="none" stroke="#33333a" stroke-width="1.2" stroke-linejoin="round"/>
+</g>
+</g>
+<g class="makeyourtree-labels">
+<g transform="translate(0.6 0)">
+<text x="930" y="32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cercopithecus_mitis</text>
+<text x="930" y="48" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Homo_sapiens</text>
+<text x="930" y="64" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Ateles_geoffroyi</text>
+<text x="930" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Colobus_guereza</text>
+<text x="930" y="96" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pongo_abelii</text>
+<text x="930" y="112" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Callithrix_jacchus</text>
+<text x="930" y="128" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Lemur_catta</text>
+<text x="930" y="144" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pan_troglodytes</text>
+<text x="930" y="160" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Saimiri_sciureus</text>
+<text x="930" y="176" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Alouatta_palliata</text>
+<text x="930" y="192" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cebus_capucinus</text>
+<text x="930" y="208" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Gorilla_beringei</text>
+<text x="930" y="224" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Macaca_mulatta</text>
+<text x="930" y="240" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Aotus_trivirgatus</text>
+<text x="930" y="256" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Hylobates_lar</text>
+<text x="930" y="272" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Papio_anubis</text>
+</g>
+</g>
+</svg>

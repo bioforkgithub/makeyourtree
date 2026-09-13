@@ -1,0 +1,42 @@
+#makeyourtree-annotation 1
+
+[track]
+type = binary-matrix
+title = Resistance genes
+
+[options]
+thickness = 90
+shape = square
+
+[columns]
+names = ampC, blaZ, mecA, tetK, ermB, vanA
+
+[legend]
+title = Gene present
+show = true
+
+[data]
+strain_01	1	1	0	0	-1	0
+strain_02	1	0	-1	0	0	0
+strain_03	0	1	1	1	1	1
+strain_04	1	1	1	0	-1	1
+strain_05	0	0	1	1	0	-1
+strain_06	0	-1	-1	0	1	-1
+strain_07	-1	1	0	-1	0	0
+strain_08	0	0	1	0	0	1
+strain_09	1	1	1	0	1	1
+strain_10	0	-1	1	1	1	-1
+strain_11	1	-1	1	0	-1	1
+strain_12	1	1	-1	0	1	0
+strain_13	0	-1	0	0	1	1
+strain_14	0	0	0	0	0	1
+strain_15	1	1	0	0	0	1
+strain_16	-1	1	1	-1	0	1
+strain_17	-1	1	-1	0	1	0
+strain_18	-1	0	1	0	1	-1
+strain_19	-1	-1	0	1	-1	1
+strain_20	1	0	1	1	-1	0
+strain_21	0	1	1	0	0	0
+strain_22	1	-1	0	0	0	0
+strain_23	1	1	1	1	0	1
+strain_24	0	1	0	-1	-1	1

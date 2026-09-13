@@ -1,0 +1,44 @@
+# Conda / Mamba environment for MakeYourTree.
+#
+#   conda env create -f environment.yml     (or: mamba env create -f environment.yml)
+#   conda activate makeyourtree
+#   pip install -e . --no-deps
+#
+# The --no-deps on that last step is not optional bookkeeping. Everything MakeYourTree
+# needs at run time is already installed by conda below, and a plain `pip install -e .`
+# would resolve those same requirements again from PyPI -- installing a second copy of
+# Qt inside a environment that already has one. That wastes ~640 MB and, worse, leaves
+# two Qt builds where the one that loads depends on import order. `--no-deps` installs
+# the MakeYourTree package itself and nothing else.
+#
+# See INSTALL.md for the full walkthrough, and for the pip/venv route if you would
+# rather not use conda at all.
+
+name: makeyourtree
+
+channels:
+  - conda-forge
+
+dependencies:
+  # MakeYourTree requires 3.12 or newer; 3.12 is the version it is tested on.
+  - python=3.12
+
+  # The MIT core needs only NumPy. If you want the library and the `makeyourtree`
+  # command-line tool but not the desktop application, delete the pyside6 line
+  # below: nothing under src/makeyourtree/ imports a GUI toolkit, and a test enforces
+  # that. This is the right choice on a server or in a CI job.
+  - numpy>=1.24
+
+  # The desktop application. Qt itself comes with this package.
+  - pyside6>=6.6
+
+  # Needed for the `pip install -e . --no-deps` step above.
+  - pip
+
+  # ---------------------------------------------------------------------------
+  # Development extras. Uncomment to run the test suite or build a bundle.
+  # ---------------------------------------------------------------------------
+  # - pytest>=8
+  # - pytest-timeout
+  # - hypothesis
+  # - pyinstaller

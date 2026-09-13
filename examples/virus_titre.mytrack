@@ -1,0 +1,29 @@
+#makeyourtree-annotation 1
+
+[track]
+type = gradient
+title = Titre (log10)
+
+[options]
+thickness = 20
+
+[columns]
+names = titre
+
+[legend]
+title = Titre
+show = true
+
+[data]
+isolate_A1	7.14
+isolate_A2	5.29
+isolate_A3	1.24
+isolate_A4	1.15
+isolate_A5	4.08
+isolate_A6	6.33
+isolate_B1	1.53
+isolate_B2	3.77
+isolate_B3	1.56
+isolate_B4	3.01
+isolate_B5	1.04
+isolate_B6	3.14

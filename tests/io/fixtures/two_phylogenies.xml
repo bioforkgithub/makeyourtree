@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<phyloxml>
+  <phylogeny rooted="false">
+    <name>one</name>
+    <clade><clade><name>Alpha</name></clade><clade><name>Beta</name></clade></clade>
+  </phylogeny>
+  <phylogeny>
+    <name>two</name>
+    <clade><clade><name>Gamma</name></clade><clade><name>Delta</name></clade></clade>
+  </phylogeny>
+</phyloxml>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns="http://www.phyloxml.org">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <branch_length>0.7629</branch_length>
+        <confidence type="bootstrap">69</confidence>
+        <clade>
+          <name>T001</name>
+          <branch_length>0.0769</branch_length>
+        </clade>
+        <clade>
+          <branch_length>0.185</branch_length>
+          <confidence type="bootstrap">62</confidence>
+          <clade>
+            <branch_length>1.3406</branch_length>
+            <confidence type="bootstrap">58</confidence>
+            <clade>
+              <name>T010</name>
+              <branch_length>0.1015</branch_length>
+            </clade>
+            <clade>
+              <name>T003</name>
+              <branch_length>0.0585</branch_length>
+            </clade>
+          </clade>
+          <clade>
+            <name>T009</name>
+            <branch_length>0.0241</branch_length>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <branch_length>0.434</branch_length>
+        <confidence type="bootstrap">50</confidence>
+        <clade>
+          <branch_length>0.4332</branch_length>
+          <confidence type="bootstrap">82</confidence>
+          <clade>
+            <branch_length>0.0785</branch_length>
+            <confidence type="bootstrap">66</confidence>
+            <clade>
+              <branch_length>3.7877</branch_length>
+              <confidence type="bootstrap">72</confidence>
+              <clade>
+                <name>T000</name>
+                <branch_length>0.0317</branch_length>
+              </clade>
+              <clade>
+                <branch_length>0.2811</branch_length>
+                <confidence type="bootstrap">97</confidence>
+                <clade>
+                  <branch_length>1.1673</branch_length>
+                  <confidence type="bootstrap">81</confidence>
+                  <clade>
+                    <name>T013</name>
+                    <branch_length>0.499</branch_length>
+                  </clade>
+                  <clade>
+                    <name>T007</name>
+                    <branch_length>0.1649</branch_length>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>1.5882</branch_length>
+                  <confidence type="bootstrap">59</confidence>
+                  <clade>
+                    <branch_length>0.8022</branch_length>
+                    <confidence type="bootstrap">91</confidence>
+                    <clade>
+                      <name>T016</name>
+                      <branch_length>0.1281</branch_length>
+                    </clade>
+                    <clade>
+                      <name>T004</name>
+                      <branch_length>0.5115</branch_length>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>T011</name>
+                    <branch_length>0.174</branch_length>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>T006</name>
+              <branch_length>0.0229</branch_length>
+            </clade>
+          </clade>
+          <clade>
+            <branch_length>0.3914</branch_length>
+            <confidence type="bootstrap">66</confidence>
+            <clade>
+              <name>T014</name>
+              <branch_length>0.1092</branch_length>
+            </clade>
+            <clade>
+              <branch_length>0.6378</branch_length>
+              <confidence type="bootstrap">93</confidence>
+              <clade>
+                <name>T005</name>
+                <branch_length>0.0976</branch_length>
+              </clade>
+              <clade>
+                <branch_length>1.7264</branch_length>
+                <confidence type="bootstrap">57</confidence>
+                <clade>
+                  <name>T008</name>
+                  <branch_length>0.0657</branch_length>
+                </clade>
+                <clade>
+                  <name>T012</name>
+                  <branch_length>0.0736</branch_length>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <branch_length>3.2556</branch_length>
+          <confidence type="bootstrap">70</confidence>
+          <clade>
+            <name>T002</name>
+            <branch_length>0.3287</branch_length>
+          </clade>
+          <clade>
+            <branch_length>2.1426</branch_length>
+            <confidence type="bootstrap">56</confidence>
+            <clade>
+              <name>T015</name>
+              <branch_length>0.3217</branch_length>
+            </clade>
+            <clade>
+              <name>T017</name>
+              <branch_length>0.0466</branch_length>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>

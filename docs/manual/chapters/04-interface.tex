@@ -1,0 +1,93 @@
+% SPDX-License-Identifier: MIT
+\chapter{The interface}
+\label{ch:interface}
+
+\section{Layout of the window}
+
+The window is a canvas surrounded by dockable panels. Every panel can be shown or
+hidden from the \textbf{View} menu, and each has a shortcut
+(Appendix~\ref{ch:shortcuts}).
+
+\begin{center}
+\begin{tabular}{@{}llp{0.52\linewidth}@{}}
+\toprule
+\textbf{Panel} & \textbf{Key} & \textbf{Purpose} \\
+\midrule
+Tree      & \keys{Alt+1} & The tree as a collapsible outline. Selecting a node here selects it on the canvas, and the reverse. \\
+Style     & \keys{Alt+2} & Layout mode, branch mode, spacing, labels, theme. Most controls act immediately. \\
+Tracks    & \keys{Alt+3} & The annotation stack. Reorder, hide, edit or remove tracks. \\
+Search    & \keys{Ctrl+F} & Find taxa by name, with regular-expression support; matches are highlighted and selectable in bulk. \\
+Inspector & \keys{Alt+4} & Everything known about the current selection: name, branch length, support, depth and any parsed annotations. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The canvas}
+
+\subsection{Navigating}
+
+\begin{itemize}
+  \item \textbf{Zoom} with the mouse wheel. Zoom is anchored at the pointer, and
+        it never re-runs the layout --- so zooming is instant regardless of tree
+        size, and nothing shifts under the cursor.
+  \item \textbf{Pan} by dragging with the middle button, or by dragging on empty
+        canvas.
+  \item \keys{Ctrl+0} fits the whole figure to the window;
+        \keys{Ctrl+Shift+0} returns to actual size.
+\end{itemize}
+
+\subsection{Selecting}
+
+Click a node to select it. Drag on empty canvas to rubber-band select a region.
+\keys{Ctrl+Shift+A} extends the selection to the whole clade below the current
+node, \keys{Ctrl+A} selects everything, and \keys{Esc} clears the selection.
+
+Selection drives the tree operations in Chapter~\ref{ch:editing}: rerooting,
+collapsing and pruning all act on what is selected.
+
+\subsection{Context menu}
+
+Right-clicking a node offers the operations that apply to it --- reroot here,
+collapse, extract subtree, remove --- without going to the menu bar.
+
+\section{The command palette}
+
+\keys{Ctrl+P} opens a searchable list of every command in the application. It is
+usually the fastest way to reach something whose menu location you cannot
+remember, and it shows each command's keyboard shortcut alongside it, so it
+doubles as a way to learn them.
+
+The palette, the menus and the toolbar are all views of one registry of actions.
+An action therefore cannot appear in one and be missing from another, and a
+shortcut you rebind changes everywhere at once.
+
+\section{Undo}
+
+Every edit goes through a single command pipeline, so everything is undoable with
+\keys{Ctrl+Z} and redoable with \keys{Ctrl+Shift+Z}. This includes operations
+performed from the panels, not only those from the canvas.
+
+Dragging a slider coalesces into a single history entry rather than one per pixel
+of movement, so undo steps back over the whole drag.
+
+\section{Themes}
+
+\keys{Ctrl+T} switches between the light and dark themes. The theme belongs to
+the figure, not merely to the screen: the composed scene carries its own
+background colour, so an export made under the dark theme is dark in the file
+too.
+
+\galleryfig{feature-dark-theme}{The dark theme. Exports match the screen because
+the background is part of the scene rather than a property of the window.}{0.9}
+
+\section{Diagnostics}
+
+When a file is loaded, anything \app{} had to interpret is recorded as a
+diagnostic rather than discarded --- a duplicate tip name, a negative branch
+length, an internal label that could be read either as a name or as a support
+value. The status bar reports how many there were, and \keys{Ctrl+D} opens the
+full list.
+
+These are informational far more often than they are errors. A clean file
+frequently produces one or two, and Chapter~\ref{ch:formats} explains the common
+ones.

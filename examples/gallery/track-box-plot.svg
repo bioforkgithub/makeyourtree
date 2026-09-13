@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1383.46pt" height="370.09pt" viewBox="0 0 1383.46 370.09">
+<rect class="makeyourtree-background" x="0" y="0" width="1383.46" height="370.09" fill="#ffffff"/>
+<g class="makeyourtree-branches">
+<g transform="translate(0.6 31.8)">
+<path d="M24 108L24 58M24 58L199.766 58M199.766 58L199.766 40M199.766 40L227.822 40M227.822 40L227.822 32M227.822 32L276.056 32M227.822 40L227.822 48M227.822 48L332.284 48M199.766 58L199.766 76M199.766 76L358.1 76M358.1 76L358.1 64M358.1 64L378.996 64M358.1 76L358.1 88M358.1 88L473.317 88M473.317 88L473.317 80M473.317 80L503.377 80M473.317 88L473.317 96M473.317 96L493.326 96M24 108L24 158M24 158L312.769 158M312.769 158L312.769 120M312.769 120L508.116 120M508.116 120L508.116 112M508.116 112L624.386 112M508.116 120L508.116 128M508.116 128L526.785 128M312.769 158L312.769 196M312.769 196L402.859 196M402.859 196L402.859 158M402.859 158L420.434 158M420.434 158L420.434 144M420.434 144L464.138 144M420.434 158L420.434 172M420.434 172L470.986 172M470.986 172L470.986 160M470.986 160L511.253 160M470.986 172L470.986 184M470.986 184L810.034 184M810.034 184L810.034 176M810.034 176L843.44 176M810.034 184L810.034 192M810.034 192L835.186 192M402.859 196L402.859 234M402.859 234L500.721 234M500.721 234L500.721 216M500.721 216L604.715 216M604.715 216L604.715 208M604.715 208L657.662 208M604.715 216L604.715 224M604.715 224L625.649 224M500.721 234L500.721 252M500.721 252L733.041 252M733.041 252L733.041 240M733.041 240L815.554 240M733.041 252L733.041 264M733.041 264L802.639 264M802.639 264L802.639 256M802.639 256L924 256M802.639 264L802.639 272M802.639 272L837.699 272" fill="none" stroke="#33333a" stroke-width="1.2" stroke-linejoin="round"/>
+</g>
+</g>
+<g class="makeyourtree-tracks">
+<g transform="translate(0.6 31.8)">
+<polyline points="1046.144,24 1046.144,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1046.144" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">0</text>
+<polyline points="1093.448,24 1093.448,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1093.448" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">5</text>
+<polyline points="1140.751,24 1140.751,280" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1140.751" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">10</text>
+<polyline points="1086.636,32 1112.18,32" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1086.636,29.52 1086.636,34.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1112.18,29.52 1112.18,34.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1095.245,27.04 1095.245,36.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1076.513,48 1122.397,48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1076.513,45.52 1076.513,50.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1122.397,45.52 1122.397,50.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1092.596,43.04 1092.596,52.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1058.821,64 1106.693,64" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1058.821,61.52 1058.821,66.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1106.693,61.52 1106.693,66.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1098.272,59.04 1098.272,68.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1063.362,80 1100.638,80" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1063.362,77.52 1063.362,82.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1100.638,77.52 1100.638,82.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1086.73,75.04 1086.73,84.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1049.455,96 1120.127,96" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1049.455,93.52 1049.455,98.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1120.127,93.52 1120.127,98.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1095.813,91.04 1095.813,100.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1085.69,112 1096.097,112" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1085.69,109.52 1085.69,114.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1096.097,109.52 1096.097,114.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1090.988,107.04 1090.988,116.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1053.429,128 1103.76,128" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1053.429,125.52 1053.429,130.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1103.76,125.52 1103.76,130.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1093.069,123.04 1093.069,132.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1090.325,144 1117.951,144" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1090.325,141.52 1090.325,146.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1117.951,141.52 1117.951,146.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1095.434,139.04 1095.434,148.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1057.497,160 1120.694,160" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1057.497,157.52 1057.497,162.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1120.694,157.52 1120.694,162.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1081.811,155.04 1081.811,164.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1082.284,176 1106.03,176" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1082.284,173.52 1082.284,178.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1106.03,173.52 1106.03,178.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1098.462,171.04 1098.462,180.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1063.362,192 1094.583,192" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1063.362,189.52 1063.362,194.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1094.583,189.52 1094.583,194.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1078.594,187.04 1078.594,196.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1084.365,208 1099.502,208" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1084.365,205.52 1084.365,210.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1099.502,205.52 1099.502,210.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1093.258,203.04 1093.258,212.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1078.689,224 1110.004,224" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1078.689,221.52 1078.689,226.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1110.004,221.52 1110.004,226.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1090.325,219.04 1090.325,228.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1051.442,240 1103.192,240" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1051.442,237.52 1051.442,242.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1103.192,237.52 1103.192,242.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1096.002,235.04 1096.002,244.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1089.663,256 1101.584,256" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1089.663,253.52 1089.663,258.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1101.584,253.52 1101.584,258.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1093.921,251.04 1093.921,260.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<polyline points="1070.079,272 1128.263,272" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1070.079,269.52 1070.079,274.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1128.263,269.52 1128.263,274.48" fill="none" stroke="#18181b" stroke-width="0.8"/>
+<polyline points="1103.097,267.04 1103.097,276.96" fill="none" stroke="#18181b" stroke-width="1.488"/>
+<g><rect x="1091.366" y="27.04" width="13.245" height="9.92" fill="#87a9f4"/><rect x="1085.169" y="43.04" width="17.313" height="9.92" fill="#87a9f4"/><rect x="1084.649" y="59.04" width="17.928" height="9.92" fill="#87a9f4"/><rect x="1077.979" y="75.04" width="15.847" height="9.92" fill="#87a9f4"/><rect x="1077.412" y="91.04" width="19.631" height="9.92" fill="#87a9f4"/><rect x="1087.393" y="107.04" width="7.048" height="9.92" fill="#87a9f4"/><rect x="1079.966" y="123.04" width="18.827" height="9.92" fill="#87a9f4"/><rect x="1092.028" y="139.04" width="13.86" height="9.92" fill="#87a9f4"/><rect x="1075.519" y="155.04" width="19.016" height="9.92" fill="#87a9f4"/><rect x="1092.833" y="171.04" width="9.697" height="9.92" fill="#87a9f4"/><rect x="1072.019" y="187.04" width="19.773" height="9.92" fill="#87a9f4"/><rect x="1087.44" y="203.04" width="12.015" height="9.92" fill="#87a9f4"/><rect x="1085.406" y="219.04" width="14.664" height="9.92" fill="#87a9f4"/><rect x="1077.885" y="235.04" width="19.158" height="9.92" fill="#87a9f4"/><rect x="1090.94" y="251.04" width="8.467" height="9.92" fill="#87a9f4"/><rect x="1089.427" y="267.04" width="23.983" height="9.92" fill="#87a9f4"/></g>
+<circle cx="1145.86" cy="32" r="2.4" fill="#18181b"/>
+<circle cx="1138.008" cy="64" r="2.4" fill="#18181b"/>
+<circle cx="1045.86" cy="112" r="2.4" fill="#18181b"/>
+<circle cx="1138.386" cy="112" r="2.4" fill="#18181b"/>
+<circle cx="1061.754" cy="208" r="2.4" fill="#18181b"/>
+<circle cx="1122.87" cy="208" r="2.4" fill="#18181b"/>
+<circle cx="1060.808" cy="256" r="2.4" fill="#18181b"/>
+<circle cx="1114.734" cy="256" r="2.4" fill="#18181b"/>
+<text x="1095.86" y="-2.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Replicate spread</text>
+</g>
+</g>
+<g class="makeyourtree-labels">
+<g transform="translate(0.6 31.8)">
+<text x="282.056" y="32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cercopithecus_mitis</text>
+<text x="338.284" y="48" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Homo_sapiens</text>
+<text x="384.996" y="64" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Ateles_geoffroyi</text>
+<text x="509.377" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Colobus_guereza</text>
+<text x="499.326" y="96" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pongo_abelii</text>
+<text x="630.386" y="112" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Callithrix_jacchus</text>
+<text x="532.785" y="128" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Lemur_catta</text>
+<text x="470.138" y="144" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pan_troglodytes</text>
+<text x="517.253" y="160" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Saimiri_sciureus</text>
+<text x="849.44" y="176" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Alouatta_palliata</text>
+<text x="841.186" y="192" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cebus_capucinus</text>
+<text x="663.662" y="208" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Gorilla_beringei</text>
+<text x="631.649" y="224" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Macaca_mulatta</text>
+<text x="821.554" y="240" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Aotus_trivirgatus</text>
+<text x="930" y="256" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Hylobates_lar</text>
+<text x="843.699" y="272" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Papio_anubis</text>
+</g>
+</g>
+<g class="makeyourtree-decor">
+<g transform="translate(0.6 31.8)">
+<path d="M24 298L154.188 298M24 294.4L24 301.6M154.188 294.4L154.188 301.6" fill="none" stroke="#52525b" stroke-width="1"/>
+<text x="89.094" y="309.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#52525b">1</text>
+</g>
+</g>
+<g class="makeyourtree-legend">
+<g transform="translate(0.6 31.8)">
+<text x="1162.26" y="-1.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Replicate spread</text>
+<rect x="1162.26" y="6" width="12" height="12" rx="1.8" fill="#93b2e7"/>
+<text x="1180.26" y="12" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">interquartile range (Q1 to Q3)</text>
+<path d="M1162.26 25.2L1174.26 25.2" fill="none" stroke="#18181b" stroke-width="2.4"/>
+<text x="1180.26" y="25.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">median</text>
+<path d="M1162.26 38.4L1174.26 38.4" fill="none" stroke="#18181b" stroke-width="2.4"/>
+<text x="1180.26" y="38.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">whisker: furthest point within 1.5 x IQR</text>
+<circle cx="1168.26" cy="51.6" r="6" fill="#18181b"/>
+<text x="1180.26" y="51.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">outlier</text>
+</g>
+</g>
+</svg>

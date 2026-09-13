@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1161.68pt" height="400.29pt" viewBox="0 0 1161.68 400.29">
+<rect class="makeyourtree-background" x="0" y="0" width="1161.68" height="400.29" fill="#ffffff"/>
+<g class="makeyourtree-branches">
+<g transform="translate(0.6 62)">
+<path d="M24 108L24 58M24 58L199.766 58M199.766 58L199.766 40M199.766 40L227.822 40M227.822 40L227.822 32M227.822 32L276.056 32M227.822 40L227.822 48M227.822 48L332.284 48M199.766 58L199.766 76M199.766 76L358.1 76M358.1 76L358.1 64M358.1 64L378.996 64M358.1 76L358.1 88M358.1 88L473.317 88M473.317 88L473.317 80M473.317 80L503.377 80M473.317 88L473.317 96M473.317 96L493.326 96M24 108L24 158M24 158L312.769 158M312.769 158L312.769 120M312.769 120L508.116 120M508.116 120L508.116 112M508.116 112L624.386 112M508.116 120L508.116 128M508.116 128L526.785 128M312.769 158L312.769 196M312.769 196L402.859 196M402.859 196L402.859 158M402.859 158L420.434 158M420.434 158L420.434 144M420.434 144L464.138 144M420.434 158L420.434 172M420.434 172L470.986 172M470.986 172L470.986 160M470.986 160L511.253 160M470.986 172L470.986 184M470.986 184L810.034 184M810.034 184L810.034 176M810.034 176L843.44 176M810.034 184L810.034 192M810.034 192L835.186 192M402.859 196L402.859 234M402.859 234L500.721 234M500.721 234L500.721 216M500.721 216L604.715 216M604.715 216L604.715 208M604.715 208L657.662 208M604.715 216L604.715 224M604.715 224L625.649 224M500.721 234L500.721 252M500.721 252L733.041 252M733.041 252L733.041 240M733.041 240L815.554 240M733.041 252L733.041 264M733.041 264L802.639 264M802.639 264L802.639 256M802.639 256L924 256M802.639 264L802.639 272M802.639 272L837.699 272" fill="none" stroke="#33333a" stroke-width="1.2" stroke-linejoin="round"/>
+</g>
+</g>
+<g class="makeyourtree-tracks">
+<g transform="translate(0.6 62)">
+<path d="M1054.86 27.95L1054.86 23A9 9 0 0 1 1062.824 27.809L1058.444 30.114A4.05 4.05 0 0 0 1054.86 27.95Z" fill="#e69f00"/>
+<path d="M1058.444 30.114L1062.824 27.809A9 9 0 0 1 1054.53 40.994L1054.712 36.047A4.05 4.05 0 0 0 1058.444 30.114Z" fill="#56b4e9"/>
+<path d="M1054.712 36.047L1054.53 40.994A9 9 0 0 1 1054.86 23L1054.86 27.95A4.05 4.05 0 0 0 1054.712 36.047Z" fill="#009e73"/>
+<path d="M1054.86 43.95L1054.86 39A9 9 0 0 1 1062.401 52.913L1058.253 50.211A4.05 4.05 0 0 0 1054.86 43.95Z" fill="#e69f00"/>
+<path d="M1058.253 50.211L1062.401 52.913A9 9 0 0 1 1046.022 46.299L1050.883 47.235A4.05 4.05 0 0 0 1058.253 50.211Z" fill="#56b4e9"/>
+<path d="M1050.883 47.235L1046.022 46.299A9 9 0 0 1 1054.86 39L1054.86 43.95A4.05 4.05 0 0 0 1050.883 47.235Z" fill="#009e73"/>
+<path d="M1054.86 59.95L1054.86 55A9 9 0 0 1 1063.811 64.935A9 9 0 0 1 1052.999 72.806L1054.023 67.962A4.05 4.05 0 0 0 1058.888 64.421A4.05 4.05 0 0 0 1054.86 59.95Z" fill="#e69f00"/>
+<path d="M1054.023 67.962L1052.999 72.806A9 9 0 0 1 1045.918 65.022L1050.836 64.46A4.05 4.05 0 0 0 1054.023 67.962Z" fill="#56b4e9"/>
+<path d="M1050.836 64.46L1045.918 65.022A9 9 0 0 1 1054.86 55L1054.86 59.95A4.05 4.05 0 0 0 1050.836 64.46Z" fill="#009e73"/>
+<path d="M1054.86 75.95L1054.86 71A9 9 0 0 1 1062.517 75.271L1058.306 77.872A4.05 4.05 0 0 0 1054.86 75.95Z" fill="#e69f00"/>
+<path d="M1058.306 77.872L1062.517 75.271A9 9 0 0 1 1049.867 87.488L1052.613 83.37A4.05 4.05 0 0 0 1058.306 77.872Z" fill="#56b4e9"/>
+<path d="M1052.613 83.37L1049.867 87.488A9 9 0 0 1 1054.86 71L1054.86 75.95A4.05 4.05 0 0 0 1052.613 83.37Z" fill="#009e73"/>
+<path d="M1054.86 91.95L1054.86 87A9 9 0 0 1 1055.303 104.989L1055.059 100.045A4.05 4.05 0 0 0 1054.86 91.95Z" fill="#e69f00"/>
+<path d="M1055.059 100.045L1055.303 104.989A9 9 0 0 1 1049.638 88.67L1052.51 92.701A4.05 4.05 0 0 0 1055.059 100.045Z" fill="#56b4e9"/>
+<path d="M1052.51 92.701L1049.638 88.67A9 9 0 0 1 1054.86 87L1054.86 91.95A4.05 4.05 0 0 0 1052.51 92.701Z" fill="#009e73"/>
+<path d="M1054.86 107.95L1054.86 103A9 9 0 0 1 1063.329 115.046A9 9 0 0 1 1049.127 118.938L1052.28 115.122A4.05 4.05 0 0 0 1058.671 113.371A4.05 4.05 0 0 0 1054.86 107.95Z" fill="#e69f00"/>
+<path d="M1052.28 115.122L1049.127 118.938A9 9 0 0 1 1045.922 113.054L1050.838 112.474A4.05 4.05 0 0 0 1052.28 115.122Z" fill="#56b4e9"/>
+<path d="M1050.838 112.474L1045.922 113.054A9 9 0 0 1 1054.86 103L1054.86 107.95A4.05 4.05 0 0 0 1050.838 112.474Z" fill="#009e73"/>
+<path d="M1054.86 123.95L1054.86 119A9 9 0 0 1 1055.783 136.953L1055.275 132.029A4.05 4.05 0 0 0 1054.86 123.95Z" fill="#e69f00"/>
+<path d="M1055.275 132.029L1055.783 136.953A9 9 0 0 1 1045.886 128.678L1050.822 128.305A4.05 4.05 0 0 0 1055.275 132.029Z" fill="#56b4e9"/>
+<path d="M1050.822 128.305L1045.886 128.678A9 9 0 0 1 1054.86 119L1054.86 123.95A4.05 4.05 0 0 0 1050.822 128.305Z" fill="#009e73"/>
+<path d="M1054.86 139.95L1054.86 135A9 9 0 0 1 1058.879 152.053L1056.669 147.624A4.05 4.05 0 0 0 1054.86 139.95Z" fill="#e69f00"/>
+<path d="M1056.669 147.624L1058.879 152.053A9 9 0 0 1 1048.664 150.527L1052.072 146.937A4.05 4.05 0 0 0 1056.669 147.624Z" fill="#56b4e9"/>
+<path d="M1052.072 146.937L1048.664 150.527A9 9 0 0 1 1054.86 135L1054.86 139.95A4.05 4.05 0 0 0 1052.072 146.937Z" fill="#009e73"/>
+<path d="M1054.86 155.95L1054.86 151A9 9 0 0 1 1063.693 158.274L1058.835 159.223A4.05 4.05 0 0 0 1054.86 155.95Z" fill="#e69f00"/>
+<path d="M1058.835 159.223L1063.693 158.274A9 9 0 0 1 1046.463 163.24L1051.082 161.458A4.05 4.05 0 0 0 1058.835 159.223Z" fill="#56b4e9"/>
+<path d="M1051.082 161.458L1046.463 163.24A9 9 0 0 1 1054.86 151L1054.86 155.95A4.05 4.05 0 0 0 1051.082 161.458Z" fill="#009e73"/>
+<path d="M1054.86 171.95L1054.86 167A9 9 0 0 1 1063.768 174.716L1058.869 175.422A4.05 4.05 0 0 0 1054.86 171.95Z" fill="#e69f00"/>
+<path d="M1058.869 175.422L1063.768 174.716A9 9 0 0 1 1052.665 184.728L1053.872 179.928A4.05 4.05 0 0 0 1058.869 175.422Z" fill="#56b4e9"/>
+<path d="M1053.872 179.928L1052.665 184.728A9 9 0 0 1 1054.86 167L1054.86 171.95A4.05 4.05 0 0 0 1053.872 179.928Z" fill="#009e73"/>
+<path d="M1054.86 187.95L1054.86 183A9 9 0 0 1 1063.769 190.727L1058.869 191.427A4.05 4.05 0 0 0 1054.86 187.95Z" fill="#e69f00"/>
+<path d="M1058.869 191.427L1063.769 190.727A9 9 0 0 1 1052.413 200.661A9 9 0 0 1 1047.934 186.253L1051.743 189.414A4.05 4.05 0 0 0 1053.759 195.897A4.05 4.05 0 0 0 1058.869 191.427Z" fill="#56b4e9"/>
+<path d="M1051.743 189.414L1047.934 186.253A9 9 0 0 1 1054.86 183L1054.86 187.95A4.05 4.05 0 0 0 1051.743 189.414Z" fill="#009e73"/>
+<path d="M1054.86 203.95L1054.86 199A9 9 0 0 1 1063.722 209.57L1058.848 208.707A4.05 4.05 0 0 0 1054.86 203.95Z" fill="#e69f00"/>
+<path d="M1058.848 208.707L1063.722 209.57A9 9 0 0 1 1048.199 214.053L1051.863 210.724A4.05 4.05 0 0 0 1058.848 208.707Z" fill="#56b4e9"/>
+<path d="M1051.863 210.724L1048.199 214.053A9 9 0 0 1 1054.86 199L1054.86 203.95A4.05 4.05 0 0 0 1051.863 210.724Z" fill="#009e73"/>
+<path d="M1054.86 219.95L1054.86 215A9 9 0 0 1 1062.273 218.897L1058.196 221.704A4.05 4.05 0 0 0 1054.86 219.95Z" fill="#e69f00"/>
+<path d="M1058.196 221.704L1062.273 218.897A9 9 0 0 1 1058.412 232.269A9 9 0 0 1 1046.055 225.863L1050.898 224.838A4.05 4.05 0 0 0 1056.458 227.721A4.05 4.05 0 0 0 1058.196 221.704Z" fill="#56b4e9"/>
+<path d="M1050.898 224.838L1046.055 225.863A9 9 0 0 1 1054.86 215L1054.86 219.95A4.05 4.05 0 0 0 1050.898 224.838Z" fill="#009e73"/>
+<path d="M1054.86 235.95L1054.86 231A9 9 0 0 1 1063.857 240.23A9 9 0 0 1 1054.401 248.988L1054.653 244.045A4.05 4.05 0 0 0 1058.909 240.103A4.05 4.05 0 0 0 1054.86 235.95Z" fill="#e69f00"/>
+<path d="M1054.653 244.045L1054.401 248.988A9 9 0 0 1 1045.986 238.498L1050.867 239.324A4.05 4.05 0 0 0 1054.653 244.045Z" fill="#56b4e9"/>
+<path d="M1050.867 239.324L1045.986 238.498A9 9 0 0 1 1054.86 231L1054.86 235.95A4.05 4.05 0 0 0 1050.867 239.324Z" fill="#009e73"/>
+<path d="M1054.86 251.95L1054.86 247A9 9 0 0 1 1063.094 252.366L1058.565 254.365A4.05 4.05 0 0 0 1054.86 251.95Z" fill="#e69f00"/>
+<path d="M1058.565 254.365L1063.094 252.366A9 9 0 0 1 1048.848 262.697L1052.154 259.014A4.05 4.05 0 0 0 1058.565 254.365Z" fill="#56b4e9"/>
+<path d="M1052.154 259.014L1048.848 262.697A9 9 0 0 1 1054.86 247L1054.86 251.95A4.05 4.05 0 0 0 1052.154 259.014Z" fill="#009e73"/>
+<path d="M1054.86 267.95L1054.86 263A9 9 0 0 1 1062.472 267.199L1058.286 269.839A4.05 4.05 0 0 0 1054.86 267.95Z" fill="#e69f00"/>
+<path d="M1058.286 269.839L1062.472 267.199A9 9 0 0 1 1058.773 280.105A9 9 0 0 1 1046.366 274.975L1051.038 273.339A4.05 4.05 0 0 0 1056.621 275.647A4.05 4.05 0 0 0 1058.286 269.839Z" fill="#56b4e9"/>
+<path d="M1051.038 273.339L1046.366 274.975A9 9 0 0 1 1054.86 263L1054.86 267.95A4.05 4.05 0 0 0 1051.038 273.339Z" fill="#009e73"/>
+<text x="1056.86" y="-9.8" transform="rotate(-90 1056.86 -9.8)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Read shares</text>
+</g>
+</g>
+<g class="makeyourtree-labels">
+<g transform="translate(0.6 62)">
+<text x="282.056" y="32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cercopithecus_mitis</text>
+<text x="338.284" y="48" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Homo_sapiens</text>
+<text x="384.996" y="64" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Ateles_geoffroyi</text>
+<text x="509.377" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Colobus_guereza</text>
+<text x="499.326" y="96" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pongo_abelii</text>
+<text x="630.386" y="112" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Callithrix_jacchus</text>
+<text x="532.785" y="128" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Lemur_catta</text>
+<text x="470.138" y="144" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Pan_troglodytes</text>
+<text x="517.253" y="160" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Saimiri_sciureus</text>
+<text x="849.44" y="176" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Alouatta_palliata</text>
+<text x="841.186" y="192" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Cebus_capucinus</text>
+<text x="663.662" y="208" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Gorilla_beringei</text>
+<text x="631.649" y="224" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Macaca_mulatta</text>
+<text x="821.554" y="240" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Aotus_trivirgatus</text>
+<text x="930" y="256" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Hylobates_lar</text>
+<text x="843.699" y="272" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">Papio_anubis</text>
+</g>
+</g>
+<g class="makeyourtree-decor">
+<g transform="translate(0.6 62)">
+<path d="M24 298L154.188 298M24 294.4L24 301.6M154.188 294.4L154.188 301.6" fill="none" stroke="#52525b" stroke-width="1"/>
+<text x="89.094" y="309.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#52525b">1</text>
+</g>
+</g>
+<g class="makeyourtree-legend">
+<g transform="translate(0.6 62)">
+<text x="1077.86" y="-31.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Read shares</text>
+<rect x="1077.86" y="-24.2" width="12" height="12" rx="1.8" fill="#e69f00"/>
+<text x="1095.86" y="-18.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">type I</text>
+<rect x="1077.86" y="-11" width="12" height="12" rx="1.8" fill="#56b4e9"/>
+<text x="1095.86" y="-5" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">type II</text>
+<rect x="1077.86" y="2.2" width="12" height="12" rx="1.8" fill="#009e73"/>
+<text x="1095.86" y="8.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">type III</text>
+</g>
+</g>
+</svg>

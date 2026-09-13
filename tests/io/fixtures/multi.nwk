@@ -1,0 +1,4 @@
+(Alpha,Beta);
+(Alpha,(Beta,Gamma));  (Alpha,Gamma);
+[a comment between trees]
+((Alpha,Beta),(Gamma,Delta))

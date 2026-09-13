@@ -1,0 +1,208 @@
+[
+  {
+    "stem": "shape-balanced",
+    "shape": "balanced",
+    "tips": 32,
+    "seed": 1,
+    "format": "newick",
+    "study": "Shape reference",
+    "note": "Perfectly bifurcating. The baseline for layout geometry.",
+    "tracks": []
+  },
+  {
+    "stem": "shape-ladder",
+    "shape": "ladder",
+    "tips": 40,
+    "seed": 2,
+    "format": "newick",
+    "study": "Shape reference",
+    "note": "A caterpillar. Root-to-tip depth equals the tip count, which is what breaks a recursive traversal.",
+    "tracks": []
+  },
+  {
+    "stem": "shape-star",
+    "shape": "star",
+    "tips": 24,
+    "seed": 3,
+    "format": "newick",
+    "study": "Shape reference",
+    "note": "One polytomy of degree 24: no internal resolution at all.",
+    "tracks": []
+  },
+  {
+    "stem": "shape-unbalanced",
+    "shape": "unbalanced",
+    "tips": 40,
+    "seed": 4,
+    "format": "newick",
+    "study": "Shape reference",
+    "note": "Random joining with support values, the shape most analyses produce.",
+    "tracks": []
+  },
+  {
+    "stem": "shape-ultrametric",
+    "shape": "ultrametric",
+    "tips": 30,
+    "seed": 5,
+    "format": "newick",
+    "study": "Shape reference",
+    "note": "Every tip equidistant from the root, as a dated analysis gives.",
+    "tracks": []
+  },
+  {
+    "stem": "shape-polytomous",
+    "shape": "polytomous",
+    "tips": 36,
+    "seed": 6,
+    "format": "newick",
+    "study": "Shape reference",
+    "note": "Mostly resolved with genuine polytomies, as a consensus tree is.",
+    "tracks": []
+  },
+  {
+    "stem": "scale-0008",
+    "shape": "unbalanced",
+    "tips": 8,
+    "seed": 10,
+    "format": "newick",
+    "study": "Scale reference",
+    "note": "8 tips. Almost every rendering decision changes with size; this is the series for checking that.",
+    "tracks": []
+  },
+  {
+    "stem": "scale-0060",
+    "shape": "unbalanced",
+    "tips": 60,
+    "seed": 11,
+    "format": "newick",
+    "study": "Scale reference",
+    "note": "60 tips. Almost every rendering decision changes with size; this is the series for checking that.",
+    "tracks": []
+  },
+  {
+    "stem": "scale-0250",
+    "shape": "unbalanced",
+    "tips": 250,
+    "seed": 12,
+    "format": "newick",
+    "study": "Scale reference",
+    "note": "250 tips. Almost every rendering decision changes with size; this is the series for checking that.",
+    "tracks": []
+  },
+  {
+    "stem": "scale-1000",
+    "shape": "unbalanced",
+    "tips": 1000,
+    "seed": 13,
+    "format": "newick",
+    "study": "Scale reference",
+    "note": "1000 tips. Label rendering has to be turned off around here, and a circular layout starts to pay off.",
+    "tracks": []
+  },
+  {
+    "stem": "scale-5000",
+    "shape": "unbalanced",
+    "tips": 5000,
+    "seed": 14,
+    "format": "newick",
+    "study": "Scale reference",
+    "note": "5000 tips. Label rendering has to be turned off around here, and a circular layout starts to pay off.",
+    "tracks": []
+  },
+  {
+    "stem": "study-outbreak",
+    "shape": "ultrametric",
+    "tips": 48,
+    "seed": 100,
+    "format": "newick",
+    "study": "Outbreak / dated phylogeny",
+    "note": "A time-scaled tree with lineage assignments and sampling dates: the commonest epidemiological figure.",
+    "tracks": [
+      "study-outbreak_lineage.mytrack",
+      "study-outbreak_date.mytrack"
+    ]
+  },
+  {
+    "stem": "study-pangenome",
+    "shape": "unbalanced",
+    "tips": 36,
+    "seed": 101,
+    "format": "newick",
+    "study": "Bacterial pangenome",
+    "note": "Gene presence and absence across strains, with a genome-size bar. Unknown is a third state and is drawn as a gap.",
+    "tracks": [
+      "study-pangenome_genes.mytrack",
+      "study-pangenome_size.mytrack"
+    ]
+  },
+  {
+    "stem": "study-microbiome",
+    "shape": "unbalanced",
+    "tips": 45,
+    "seed": 102,
+    "format": "newick",
+    "study": "Microbiome survey",
+    "note": "Relative abundance across body sites, as a heatmap, with the composition of each taxon beside it.",
+    "tracks": [
+      "study-microbiome_abundance.mytrack",
+      "study-microbiome_composition.mytrack"
+    ]
+  },
+  {
+    "stem": "study-gene-family",
+    "shape": "unbalanced",
+    "tips": 28,
+    "seed": 103,
+    "format": "newick",
+    "study": "Gene family",
+    "note": "A protein family with its domain architecture drawn to scale along each sequence.",
+    "tracks": [
+      "study-gene-family_domains.mytrack"
+    ]
+  },
+  {
+    "stem": "study-morphology",
+    "shape": "polytomous",
+    "tips": 22,
+    "seed": 104,
+    "format": "newick",
+    "study": "Morphological cladogram",
+    "note": "No branch lengths at all, and real polytomies. Must be drawn as a cladogram; a phylogram would imply distances that do not exist.",
+    "tracks": [
+      "study-morphology_traits.mytrack"
+    ]
+  },
+  {
+    "stem": "study-biogeography",
+    "shape": "unbalanced",
+    "tips": 34,
+    "seed": 105,
+    "format": "newick",
+    "study": "Biogeography",
+    "note": "Regions per tip plus dispersal events drawn as curved links between arbitrary taxa.",
+    "tracks": [
+      "study-biogeography_region.mytrack",
+      "study-biogeography_dispersal.mytrack"
+    ]
+  },
+  {
+    "stem": "format-nexus",
+    "shape": "unbalanced",
+    "tips": 18,
+    "seed": 200,
+    "format": "nexus",
+    "study": "Format reference",
+    "note": "The same tree written as nexus, so every reader has something to open.",
+    "tracks": []
+  },
+  {
+    "stem": "format-phyloxml",
+    "shape": "unbalanced",
+    "tips": 18,
+    "seed": 200,
+    "format": "phyloxml",
+    "study": "Format reference",
+    "note": "The same tree written as phyloxml, so every reader has something to open.",
+    "tracks": []
+  }
+]

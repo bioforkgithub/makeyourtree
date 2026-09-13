@@ -1,0 +1,41 @@
+#makeyourtree-annotation 1
+
+[track]
+type = color-strip
+title = Biogeographic region
+
+[options]
+thickness = 18
+border_width = 0.5
+
+[columns]
+names = region
+
+[colors]
+Neotropic = #117733
+Afrotropic = #DDCC77
+Indomalayan = #CC6677
+Palearctic = #332288
+Madagascar = #AA4499
+
+[legend]
+title = Region
+show = true
+
+[data]
+Aotus_trivirgatus	Neotropic
+Cebus_capucinus	Neotropic
+Saimiri_sciureus	Neotropic
+Callithrix_jacchus	Neotropic
+Ateles_geoffroyi	Neotropic
+Alouatta_palliata	Neotropic
+Macaca_mulatta	Palearctic
+Papio_anubis	Afrotropic
+Cercopithecus_mitis	Afrotropic
+Colobus_guereza	Afrotropic
+Hylobates_lar	Indomalayan
+Pongo_abelii	Indomalayan
+Gorilla_beringei	Afrotropic
+Pan_troglodytes	Afrotropic
+Homo_sapiens	Palearctic
+Lemur_catta	Madagascar

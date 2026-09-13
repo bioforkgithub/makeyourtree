@@ -1,0 +1,205 @@
+% SPDX-License-Identifier: MIT
+\chapter{The command line}
+\label{ch:cli}
+
+The \cmd{makeyourtree} command needs no GUI toolkit, so it works on a headless
+server, in a container and in continuous integration. It has four subcommands.
+
+\begin{lstlisting}[language=bash]
+makeyourtree --help
+makeyourtree <command> --help
+\end{lstlisting}
+
+\section{\cmd{info} --- summarise a tree}
+
+\begin{lstlisting}[language=bash]
+makeyourtree info examples/primates.nwk
+\end{lstlisting}
+
+Reports the detected format, tip and node counts, whether the tree is rooted and
+binary, its height, the longest root-to-tip distance, whether branch lengths and
+support values are present, and whether it is ultrametric. Any diagnostics from
+parsing are printed first.
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Option} & \textbf{Effect} \\
+\midrule
+\opt{-{}-format} & Override format detection. \\
+\opt{-{}-json}   & Emit a JSON object instead of the text summary. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\opt{--json} is the one to use from a script; the text layout is for humans and
+may change.
+
+\section{\cmd{convert} --- change format}
+
+\begin{lstlisting}[language=bash]
+makeyourtree convert tree.nex tree.xml
+makeyourtree convert tree.nwk out.nex --format nexus
+\end{lstlisting}
+
+The output format is inferred from the extension unless \opt{--format} says
+otherwise. \opt{--input-format} overrides detection on the input. Newick, NEXUS
+and phyloXML can be written; all four formats can be read.
+
+\section{\cmd{render} --- write a figure}
+
+The subcommand that does the most work. It writes SVG, PDF or PNG.
+
+\begin{lstlisting}[language=bash]
+makeyourtree render examples/primates.nwk figure.svg \
+    --mode circular --branch-mode phylogram \
+    --ladderize asc --align-tips \
+    --track examples/primates_region.mytrack \
+    --theme light --width 1200
+\end{lstlisting}
+
+\begin{center}
+\begin{tabular}{@{}lp{0.56\linewidth}@{}}
+\toprule
+\textbf{Option} & \textbf{Effect} \\
+\midrule
+\opt{-{}-mode}        & \cmd{rectangular}, \cmd{slanted}, \cmd{circular}, \cmd{radial}, \cmd{unrooted}. \\
+\opt{-{}-branch-mode} & \cmd{phylogram}, \cmd{cladogram-aligned}, \cmd{cladogram-level}. \\
+\opt{-{}-width}, \opt{-{}-height} & Page size, with an optional unit: \cmd{180mm}, \cmd{7in}, \cmd{900pt}, \cmd{1200px}. A bare number is points. \\
+\opt{-{}-output-format} & \cmd{svg}, \cmd{pdf} or \cmd{png}. Defaults to whatever the output extension says. \\
+\opt{-{}-dpi}         & Resolution for raster output, default 300. Ignored by the vector formats. \\
+\opt{-{}-page}        & A named page size instead of \opt{-{}-width}/\opt{-{}-height}. \\
+\opt{-{}-landscape}   & Swap the axes of \opt{-{}-page}. \\
+\opt{-{}-row-spacing} & Distance between adjacent tip rows. \\
+\opt{-{}-ladderize}   & \cmd{asc} or \cmd{desc}, applied before layout. \\
+\opt{-{}-align-tips}  & Flush tip labels and draw guide lines. \\
+\opt{-{}-no-tip-labels} & Omit tip labels entirely. \\
+\opt{-{}-track FILE}  & Attach an annotation file. Repeatable; tracks stack in the order given. \\
+\opt{-{}-theme}       & \cmd{light} or \cmd{dark}. \\
+\opt{-{}-format}      & Override format detection on the input. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Choosing the format}
+
+The output extension picks the format, so the common case needs no flag:
+
+\begin{lstlisting}[language=bash]
+makeyourtree render tree.nwk figure.svg     # vector
+makeyourtree render tree.nwk figure.pdf     # vector
+makeyourtree render tree.nwk figure.png     # raster, 300 dpi
+\end{lstlisting}
+
+\opt{--output-format} overrides it when the extension is missing or misleading.
+
+\begin{quote}
+\textbf{PNG and PDF need the desktop extra.} Rasterising requires Qt, and the
+\cmd{makeyourtree} library deliberately does not depend on it. With the library
+alone SVG works, and asking for a PNG tells you to run
+\cmd{pip install 'makeyourtree[studio]'} rather than failing with a traceback.
+SVG needs nothing beyond the library and is a fine choice for a headless
+pipeline.
+\end{quote}
+
+\subsection{Resolution}
+
+\opt{--dpi} sets pixels per inch for raster output. The default of 300 is the
+usual journal minimum; 600 is asked for by some, and 150 is plenty for a slide.
+
+\begin{lstlisting}[language=bash]
+makeyourtree render tree.nwk figure.png --dpi 600
+\end{lstlisting}
+
+It does nothing to SVG or PDF, which have no pixels. A vector figure is sharp at
+any size, which is why it is the better choice wherever the destination takes
+one.
+
+\subsection{Physical size}
+
+\opt{--width} and \opt{--height} take a unit --- \cmd{mm}, \cmd{cm}, \cmd{in},
+\cmd{pt} or \cmd{px}. A bare number is points, so an existing
+\cmd{--width 900} keeps its old meaning.
+
+\begin{lstlisting}[language=bash]
+makeyourtree render tree.nwk figure.pdf --width 180mm
+makeyourtree render tree.nwk figure.png --width 7in --dpi 600
+makeyourtree render tree.nwk figure.pdf --page a4 --landscape
+\end{lstlisting}
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Preset} & \textbf{Size} \\
+\midrule
+\cmd{a5}, \cmd{a4}, \cmd{a3} & ISO paper, portrait \\
+\cmd{letter}, \cmd{legal}, \cmd{tabloid} & US paper, portrait \\
+\cmd{column} & A single journal column; height left to the figure \\
+\cmd{wide-column} & A double column; height left to the figure \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+An explicit \opt{--width} or \opt{--height} overrides the preset on that axis,
+so a preset can serve as a starting point.
+
+\begin{quote}
+\textbf{A requested size is a floor, never a crop.} If the figure needs more room
+than you asked for --- long tip labels are the usual reason --- it is drawn at
+its natural size and nothing is cut off. The command says so on standard error
+rather than leaving you to discover it later. To make a figure genuinely fit,
+shorten or drop the tip labels, reduce \opt{--row-spacing}, or scale it down
+when you place it.
+\end{quote}
+
+Every run reports what it produced, so the size is discoverable without opening
+the file:
+
+\begin{lstlisting}[language=bash]
+$ makeyourtree render examples/primates.nwk figure.png --dpi 300
+figure.png  4264 x 1410 px at 300 dpi (361.0mm x 119.3mm)
+\end{lstlisting}
+
+\cmd{-q} before the subcommand silences it.
+
+\opt{--track} may be given more than once, which is how you build a multi-track
+figure non-interactively:
+
+\begin{lstlisting}[language=bash]
+makeyourtree render examples/bacteria.nwk figure.svg --align-tips \
+    --track examples/bacteria_resistance.mytrack \
+    --track examples/bacteria_expression.mytrack
+\end{lstlisting}
+
+\section{\cmd{reroot} --- place a new root}
+
+\begin{lstlisting}[language=bash]
+makeyourtree reroot tree.nwk rooted.nwk --midpoint
+makeyourtree reroot tree.nwk rooted.nwk --outgroup Homo_sapiens,Pan_troglodytes
+\end{lstlisting}
+
+Exactly one of \opt{--midpoint} or \opt{--outgroup} is required.
+\opt{--outgroup} takes a comma-separated list of taxon names. The output format
+follows the extension unless \opt{--output-format} says otherwise.
+
+Pairwise tip-to-tip distances are unchanged by rerooting.
+
+\section{Scripting}
+
+The commands compose in a pipeline. To convert, reroot and render a directory of
+trees:
+
+\begin{lstlisting}[language=bash]
+for f in trees/*.nwk; do
+  base=$(basename "$f" .nwk)
+  makeyourtree reroot "$f" "rooted/$base.nwk" --midpoint
+  makeyourtree render "rooted/$base.nwk" "figures/$base.svg" \
+      --mode circular --ladderize asc --align-tips
+done
+\end{lstlisting}
+
+Every subcommand exits non-zero on failure, so \cmd{set -e} behaves as expected.
+
+For anything more elaborate --- conditional styling, computed annotations,
+tracks built from data you already have in memory --- use the Python API in
+Chapter~\ref{ch:python} rather than shelling out repeatedly.

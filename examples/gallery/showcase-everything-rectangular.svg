@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1498.945pt" height="534.69pt" viewBox="0 0 1498.945 534.69">
+<rect class="makeyourtree-background" x="0" y="0" width="1498.945" height="534.69" fill="#ffffff"/>
+<g class="makeyourtree-underlay">
+<g transform="translate(0.6 68.4)">
+<g><rect x="154.982" y="24" width="836.318" height="112" fill="#117733" fill-opacity="0.28"/><rect x="273.328" y="24" width="717.972" height="96" fill="#ddcc77" fill-opacity="0.28"/><rect x="808.779" y="40" width="182.521" height="80" fill="#cc6677" fill-opacity="0.28"/></g>
+<text x="991.3" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="end" dominant-baseline="central" fill="#09411c">Clade A</text>
+<text x="991.3" y="72" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="end" dominant-baseline="central" fill="#7a7041">Clade B</text>
+<text x="991.3" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="end" dominant-baseline="central" fill="#703841">Clade C</text>
+</g>
+</g>
+<g class="makeyourtree-grid">
+<g transform="translate(0.6 68.4)">
+<path d="M290.307 32L924 32M844.264 48L924 48M852.824 64L924 64M898.178 80L924 80M169.651 128L924 128M321.748 144L924 144M687.683 160L924 160M596.403 176L924 176M626.975 192L924 192M579.011 208L924 208M339.004 224L924 224M408.517 240L924 240M312.753 256L924 256M625.344 272L924 272M768.881 288L924 288M833.992 304L924 304M534.798 320L924 320M342.319 336L924 336M342.401 352L924 352M271.149 368L924 368M281.339 384L924 384M146.444 400L924 400" fill="none" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="1,3"/>
+</g>
+</g>
+<g class="makeyourtree-branches">
+<g transform="translate(0.6 68.4)">
+<path d="M24 177.062L24 87.75M24 87.75L154.982 87.75M154.982 87.75L154.982 47.5M154.982 47.5L273.328 47.5M273.328 47.5L273.328 32M273.328 32L284.307 32M273.328 47.5L273.328 63M273.328 63L808.779 63M808.779 63L808.779 48M808.779 48L838.264 48M808.779 63L808.779 78M808.779 78L839.758 78M839.758 78L839.758 64M839.758 64L846.824 64M839.758 78L839.758 92M839.758 92L869.569 92M869.569 92L869.569 80M869.569 80L892.178 80M869.569 92L869.569 104M869.569 104L889.325 104M889.325 104L889.325 96M889.325 96L920.848 96M889.325 104L889.325 112M889.325 112L924 112M154.982 87.75L154.982 128M154.982 128L163.651 128M24 177.062L24 266.375M24 266.375L95.66 266.375M95.66 266.375L95.66 174M95.66 174L297.025 174M297.025 174L297.025 144M297.025 144L315.748 144M297.025 174L297.025 204M297.025 204L308.248 204M308.248 204L308.248 184M308.248 184L433.578 184M433.578 184L433.578 168M433.578 168L549.206 168M549.206 168L549.206 160M549.206 160L681.683 160M549.206 168L549.206 176M549.206 176L590.403 176M433.578 184L433.578 200M433.578 200L555.973 200M555.973 200L555.973 192M555.973 192L620.975 192M555.973 200L555.973 208M555.973 208L573.011 208M308.248 204L308.248 224M308.248 224L333.004 224M95.66 266.375L95.66 358.75M95.66 358.75L101.475 358.75M101.475 358.75L101.475 317.5M101.475 317.5L149.71 317.5M149.71 317.5L149.71 275M149.71 275L269.632 275M269.632 275L269.632 248M269.632 248L296.834 248M296.834 248L296.834 240M296.834 240L402.517 240M296.834 248L296.834 256M296.834 256L306.753 256M269.632 275L269.632 302M269.632 302L521.325 302M521.325 302L521.325 284M521.325 284L598.447 284M598.447 284L598.447 272M598.447 272L619.344 272M598.447 284L598.447 296M598.447 296L756.142 296M756.142 296L756.142 288M756.142 288L762.881 288M756.142 296L756.142 304M756.142 304L827.992 304M521.325 302L521.325 320M521.325 320L528.798 320M149.71 317.5L149.71 360M149.71 360L209.603 360M209.603 360L209.603 344M209.603 344L328.411 344M328.411 344L328.411 336M328.411 336L336.319 336M328.411 344L328.411 352M328.411 352L336.401 352M209.603 360L209.603 376M209.603 376L251.126 376M251.126 376L251.126 368M251.126 368L265.149 368M251.126 376L251.126 384M251.126 384L275.339 384M101.475 358.75L101.475 400M101.475 400L140.444 400" fill="none" stroke="#33333a" stroke-width="1.2" stroke-linejoin="round"/>
+</g>
+</g>
+<g class="makeyourtree-tracks">
+<g transform="translate(0.6 68.4)">
+<g><rect x="999.3" y="24" width="18" height="16" fill="#117733"/><rect x="999.3" y="40" width="18" height="16" fill="#ddcc77"/><rect x="999.3" y="56" width="18" height="16" fill="#cc6677"/><rect x="999.3" y="72" width="18" height="16" fill="#332288"/><rect x="999.3" y="88" width="18" height="16" fill="#117733"/><rect x="999.3" y="104" width="18" height="16" fill="#ddcc77"/><rect x="999.3" y="120" width="18" height="16" fill="#cc6677"/><rect x="999.3" y="136" width="18" height="16" fill="#332288"/><rect x="999.3" y="152" width="18" height="16" fill="#117733"/><rect x="999.3" y="168" width="18" height="16" fill="#ddcc77"/><rect x="999.3" y="184" width="18" height="16" fill="#cc6677"/><rect x="999.3" y="200" width="18" height="16" fill="#332288"/><rect x="999.3" y="216" width="18" height="16" fill="#117733"/><rect x="999.3" y="232" width="18" height="16" fill="#ddcc77"/><rect x="999.3" y="248" width="18" height="16" fill="#cc6677"/><rect x="999.3" y="264" width="18" height="16" fill="#332288"/><rect x="999.3" y="280" width="18" height="16" fill="#117733"/><rect x="999.3" y="296" width="18" height="16" fill="#ddcc77"/><rect x="999.3" y="312" width="18" height="16" fill="#cc6677"/><rect x="999.3" y="328" width="18" height="16" fill="#332288"/><rect x="999.3" y="344" width="18" height="16" fill="#117733"/><rect x="999.3" y="360" width="18" height="16" fill="#ddcc77"/><rect x="999.3" y="376" width="18" height="16" fill="#cc6677"/><rect x="999.3" y="392" width="18" height="16" fill="#332288"/></g>
+<path d="M1049.54 26.24L1061.06 26.24L1061.06 37.76L1049.54 37.76Z" fill="#e69f00"/>
+<path d="M1069.54 26.24L1081.06 26.24L1081.06 37.76L1069.54 37.76Z" fill="#009e73"/>
+<path d="M1049.54 42.24L1061.06 42.24L1061.06 53.76L1049.54 53.76Z" fill="none" stroke="#e69f00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1069.54 42.24L1081.06 42.24L1081.06 53.76L1069.54 53.76Z" fill="none" stroke="#009e73" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1089.54 42.24L1101.06 42.24L1101.06 53.76L1089.54 53.76Z" fill="#d55e00"/>
+<path d="M1049.54 58.24L1061.06 58.24L1061.06 69.76L1049.54 69.76Z" fill="#e69f00"/>
+<path d="M1089.54 58.24L1101.06 58.24L1101.06 69.76L1089.54 69.76Z" fill="#d55e00"/>
+<path d="M1029.54 74.24L1041.06 74.24L1041.06 85.76L1029.54 85.76Z" fill="#0072b2"/>
+<path d="M1069.54 74.24L1081.06 74.24L1081.06 85.76L1069.54 85.76Z" fill="#009e73"/>
+<path d="M1089.54 74.24L1101.06 74.24L1101.06 85.76L1089.54 85.76Z" fill="#d55e00"/>
+<path d="M1029.54 90.24L1041.06 90.24L1041.06 101.76L1029.54 101.76Z" fill="#0072b2"/>
+<path d="M1049.54 90.24L1061.06 90.24L1061.06 101.76L1049.54 101.76Z" fill="#e69f00"/>
+<path d="M1069.54 90.24L1081.06 90.24L1081.06 101.76L1069.54 101.76Z" fill="#009e73"/>
+<path d="M1089.54 90.24L1101.06 90.24L1101.06 101.76L1089.54 101.76Z" fill="none" stroke="#d55e00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1029.54 106.24L1041.06 106.24L1041.06 117.76L1029.54 117.76Z" fill="#0072b2"/>
+<path d="M1049.54 106.24L1061.06 106.24L1061.06 117.76L1049.54 117.76Z" fill="#e69f00"/>
+<path d="M1069.54 106.24L1081.06 106.24L1081.06 117.76L1069.54 117.76Z" fill="#009e73"/>
+<path d="M1089.54 106.24L1101.06 106.24L1101.06 117.76L1089.54 117.76Z" fill="#d55e00"/>
+<path d="M1049.54 122.24L1061.06 122.24L1061.06 133.76L1049.54 133.76Z" fill="#e69f00"/>
+<path d="M1069.54 122.24L1081.06 122.24L1081.06 133.76L1069.54 133.76Z" fill="none" stroke="#009e73" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1089.54 122.24L1101.06 122.24L1101.06 133.76L1089.54 133.76Z" fill="none" stroke="#d55e00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1029.54 138.24L1041.06 138.24L1041.06 149.76L1029.54 149.76Z" fill="#0072b2"/>
+<path d="M1049.54 138.24L1061.06 138.24L1061.06 149.76L1049.54 149.76Z" fill="none" stroke="#e69f00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1069.54 138.24L1081.06 138.24L1081.06 149.76L1069.54 149.76Z" fill="#009e73"/>
+<path d="M1089.54 138.24L1101.06 138.24L1101.06 149.76L1089.54 149.76Z" fill="none" stroke="#d55e00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1029.54 154.24L1041.06 154.24L1041.06 165.76L1029.54 165.76Z" fill="none" stroke="#0072b2" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1089.54 154.24L1101.06 154.24L1101.06 165.76L1089.54 165.76Z" fill="none" stroke="#d55e00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1029.54 170.24L1041.06 170.24L1041.06 181.76L1029.54 181.76Z" fill="none" stroke="#0072b2" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1049.54 170.24L1061.06 170.24L1061.06 181.76L1049.54 181.76Z" fill="#e69f00"/>
+<path d="M1069.54 170.24L1081.06 170.24L1081.06 181.76L1069.54 181.76Z" fill="none" stroke="#009e73" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1029.54 186.24L1041.06 186.24L1041.06 197.76L1029.54 197.76Z" fill="none" stroke="#0072b2" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1069.54 186.24L1081.06 186.24L1081.06 197.76L1069.54 197.76Z" fill="#009e73"/>
+<path d="M1029.54 202.24L1041.06 202.24L1041.06 213.76L1029.54 213.76Z" fill="none" stroke="#0072b2" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1049.54 202.24L1061.06 202.24L1061.06 213.76L1049.54 213.76Z" fill="#e69f00"/>
+<path d="M1069.54 202.24L1081.06 202.24L1081.06 213.76L1069.54 213.76Z" fill="#009e73"/>
+<path d="M1089.54 202.24L1101.06 202.24L1101.06 213.76L1089.54 213.76Z" fill="none" stroke="#d55e00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1049.54 218.24L1061.06 218.24L1061.06 229.76L1049.54 229.76Z" fill="none" stroke="#e69f00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1069.54 218.24L1081.06 218.24L1081.06 229.76L1069.54 229.76Z" fill="#009e73"/>
+<path d="M1089.54 218.24L1101.06 218.24L1101.06 229.76L1089.54 229.76Z" fill="#d55e00"/>
+<path d="M1029.54 250.24L1041.06 250.24L1041.06 261.76L1029.54 261.76Z" fill="#0072b2"/>
+<path d="M1069.54 250.24L1081.06 250.24L1081.06 261.76L1069.54 261.76Z" fill="#009e73"/>
+<path d="M1089.54 250.24L1101.06 250.24L1101.06 261.76L1089.54 261.76Z" fill="#d55e00"/>
+<path d="M1089.54 266.24L1101.06 266.24L1101.06 277.76L1089.54 277.76Z" fill="#d55e00"/>
+<path d="M1029.54 282.24L1041.06 282.24L1041.06 293.76L1029.54 293.76Z" fill="#0072b2"/>
+<path d="M1049.54 282.24L1061.06 282.24L1061.06 293.76L1049.54 293.76Z" fill="none" stroke="#e69f00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1069.54 282.24L1081.06 282.24L1081.06 293.76L1069.54 293.76Z" fill="#009e73"/>
+<path d="M1029.54 298.24L1041.06 298.24L1041.06 309.76L1029.54 309.76Z" fill="#0072b2"/>
+<path d="M1049.54 298.24L1061.06 298.24L1061.06 309.76L1049.54 309.76Z" fill="none" stroke="#e69f00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1069.54 298.24L1081.06 298.24L1081.06 309.76L1069.54 309.76Z" fill="#009e73"/>
+<path d="M1089.54 298.24L1101.06 298.24L1101.06 309.76L1089.54 309.76Z" fill="#d55e00"/>
+<path d="M1029.54 314.24L1041.06 314.24L1041.06 325.76L1029.54 325.76Z" fill="#0072b2"/>
+<path d="M1069.54 314.24L1081.06 314.24L1081.06 325.76L1069.54 325.76Z" fill="#009e73"/>
+<path d="M1089.54 314.24L1101.06 314.24L1101.06 325.76L1089.54 325.76Z" fill="#d55e00"/>
+<path d="M1049.54 330.24L1061.06 330.24L1061.06 341.76L1049.54 341.76Z" fill="#e69f00"/>
+<path d="M1069.54 330.24L1081.06 330.24L1081.06 341.76L1069.54 341.76Z" fill="none" stroke="#009e73" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1049.54 346.24L1061.06 346.24L1061.06 357.76L1049.54 357.76Z" fill="#e69f00"/>
+<path d="M1089.54 346.24L1101.06 346.24L1101.06 357.76L1089.54 357.76Z" fill="none" stroke="#d55e00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1029.54 362.24L1041.06 362.24L1041.06 373.76L1029.54 373.76Z" fill="#0072b2"/>
+<path d="M1049.54 362.24L1061.06 362.24L1061.06 373.76L1049.54 373.76Z" fill="#e69f00"/>
+<path d="M1089.54 362.24L1101.06 362.24L1101.06 373.76L1089.54 373.76Z" fill="#d55e00"/>
+<path d="M1049.54 378.24L1061.06 378.24L1061.06 389.76L1049.54 389.76Z" fill="#e69f00"/>
+<path d="M1089.54 378.24L1101.06 378.24L1101.06 389.76L1089.54 389.76Z" fill="#d55e00"/>
+<path d="M1049.54 394.24L1061.06 394.24L1061.06 405.76L1049.54 405.76Z" fill="none" stroke="#e69f00" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1069.54 394.24L1081.06 394.24L1081.06 405.76L1069.54 405.76Z" fill="none" stroke="#009e73" stroke-width="1.382" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1089.54 394.24L1101.06 394.24L1101.06 405.76L1089.54 405.76Z" fill="#d55e00"/>
+<text x="1035.3" y="19.2" transform="rotate(-90 1035.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">ampC</text>
+<text x="1055.3" y="19.2" transform="rotate(-90 1055.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">blaZ</text>
+<text x="1075.3" y="19.2" transform="rotate(-90 1075.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">mecA</text>
+<text x="1095.3" y="19.2" transform="rotate(-90 1095.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">tetK</text>
+<g><rect x="1113.3" y="24" width="22" height="16" fill="#84a8d0"/><rect x="1135.3" y="24" width="22" height="16" fill="#e0e7f0"/><rect x="1157.3" y="24" width="22" height="16" fill="#f5e9e9"/><rect x="1179.3" y="24" width="22" height="16" fill="#eceff4"/><rect x="1201.3" y="24" width="22" height="16" fill="#d47875"/><rect x="1113.3" y="40" width="22" height="16" fill="#a8c1dd"/><rect x="1135.3" y="40" width="22" height="16" fill="#e4a5a2"/><rect x="1157.3" y="40" width="22" height="16" fill="#f2dbd9"/><rect x="1179.3" y="40" width="22" height="16" fill="#f3e3e2"/><rect x="1201.3" y="40" width="22" height="16" fill="#e8b5b2"/><rect x="1113.3" y="56" width="22" height="16" fill="#f2dddb"/><rect x="1135.3" y="56" width="22" height="16" fill="#bacde3"/><rect x="1157.3" y="56" width="22" height="16" fill="#f2dddb"/><rect x="1179.3" y="56" width="22" height="16" fill="#e4a7a3"/><rect x="1201.3" y="56" width="22" height="16" fill="#e4a5a2"/><rect x="1113.3" y="72" width="22" height="16" fill="#b5cae2"/><rect x="1135.3" y="72" width="22" height="16" fill="#b93139"/><rect x="1157.3" y="72" width="22" height="16" fill="#739bca"/><rect x="1179.3" y="72" width="22" height="16" fill="#f6f0ef"/><rect x="1201.3" y="72" width="22" height="16" fill="#b42230"/><rect x="1113.3" y="88" width="22" height="16" fill="#e09a96"/><rect x="1135.3" y="88" width="22" height="16" fill="#e9b7b3"/><rect x="1157.3" y="88" width="22" height="16" fill="#cbd8e9"/><rect x="1179.3" y="88" width="22" height="16" fill="#9ebada"/><rect x="1201.3" y="88" width="22" height="16" fill="#f3e1e0"/><rect x="1113.3" y="104" width="22" height="16" fill="#f2dedd"/><rect x="1135.3" y="104" width="22" height="16" fill="#e8b5b2"/><rect x="1157.3" y="104" width="22" height="16" fill="#f0d3d1"/><rect x="1179.3" y="104" width="22" height="16" fill="#dd928f"/><rect x="1201.3" y="104" width="22" height="16" fill="#e6aba8"/><rect x="1113.3" y="120" width="22" height="16" fill="#efcecc"/><rect x="1135.3" y="120" width="22" height="16" fill="#c9d7e8"/><rect x="1157.3" y="120" width="22" height="16" fill="#f1d8d6"/><rect x="1179.3" y="120" width="22" height="16" fill="#e19c98"/><rect x="1201.3" y="120" width="22" height="16" fill="#e7b2af"/><rect x="1113.3" y="136" width="22" height="16" fill="#d47875"/><rect x="1135.3" y="136" width="22" height="16" fill="#2166ac"/><rect x="1157.3" y="136" width="22" height="16" fill="#c4d4e7"/><rect x="1179.3" y="136" width="22" height="16" fill="#7ca2cd"/><rect x="1201.3" y="136" width="22" height="16" fill="#e3a29e"/><rect x="1113.3" y="152" width="22" height="16" fill="#f1d8d6"/><rect x="1135.3" y="152" width="22" height="16" fill="#f3e0de"/><rect x="1157.3" y="152" width="22" height="16" fill="#f5ebea"/><rect x="1179.3" y="152" width="22" height="16" fill="#c85a5a"/><rect x="1201.3" y="152" width="22" height="16" fill="#81a5cf"/><rect x="1113.3" y="168" width="22" height="16" fill="#f7f5f4"/><rect x="1135.3" y="168" width="22" height="16" fill="#eabab7"/><rect x="1157.3" y="168" width="22" height="16" fill="#f2dddb"/><rect x="1179.3" y="168" width="22" height="16" fill="#6c97c7"/><rect x="1201.3" y="168" width="22" height="16" fill="#d88480"/><rect x="1113.3" y="184" width="22" height="16" fill="#6f99c8"/><rect x="1135.3" y="184" width="22" height="16" fill="#e7b2af"/><rect x="1157.3" y="184" width="22" height="16" fill="#f6f1f1"/><rect x="1179.3" y="184" width="22" height="16" fill="#bdcfe4"/><rect x="1201.3" y="184" width="22" height="16" fill="#e19c98"/><rect x="1113.3" y="200" width="22" height="16" fill="#df9592"/><rect x="1135.3" y="200" width="22" height="16" fill="#eceff4"/><rect x="1157.3" y="200" width="22" height="16" fill="#e7ecf2"/><rect x="1179.3" y="200" width="22" height="16" fill="#e29f9b"/><rect x="1201.3" y="200" width="22" height="16" fill="#d0dcea"/><rect x="1113.3" y="216" width="22" height="16" fill="#f3e0de"/><rect x="1135.3" y="216" width="22" height="16" fill="#f0d3d1"/><rect x="1157.3" y="216" width="22" height="16" fill="#dc8f8b"/><rect x="1179.3" y="216" width="22" height="16" fill="#d37572"/><rect x="1201.3" y="216" width="22" height="16" fill="#ebc0bd"/><rect x="1113.3" y="232" width="22" height="16" fill="#f4f5f6"/><rect x="1135.3" y="232" width="22" height="16" fill="#f4e5e4"/><rect x="1157.3" y="232" width="22" height="16" fill="#e29f9b"/><rect x="1179.3" y="232" width="22" height="16" fill="#c6d5e7"/><rect x="1201.3" y="232" width="22" height="16" fill="#b2182b"/><rect x="1113.3" y="248" width="22" height="16" fill="#b7cbe2"/><rect x="1135.3" y="248" width="22" height="16" fill="#769dcb"/><rect x="1157.3" y="248" width="22" height="16" fill="#f5e9e9"/><rect x="1179.3" y="248" width="22" height="16" fill="#c75757"/><rect x="1201.3" y="248" width="22" height="16" fill="#eff2f5"/><rect x="1113.3" y="264" width="22" height="16" fill="#84a8d0"/><rect x="1135.3" y="264" width="22" height="16" fill="#eecac7"/><rect x="1157.3" y="264" width="22" height="16" fill="#f4e5e4"/><rect x="1179.3" y="264" width="22" height="16" fill="#efcdca"/><rect x="1201.3" y="264" width="22" height="16" fill="#afc5df"/><rect x="1113.3" y="280" width="22" height="16" fill="#e0e7f0"/><rect x="1135.3" y="280" width="22" height="16" fill="#81a5cf"/><rect x="1157.3" y="280" width="22" height="16" fill="#f1d8d6"/><rect x="1179.3" y="280" width="22" height="16" fill="#f4e6e5"/><rect x="1201.3" y="280" width="22" height="16" fill="#f2dbd9"/><rect x="1113.3" y="296" width="22" height="16" fill="#f2dbd9"/><rect x="1135.3" y="296" width="22" height="16" fill="#f4e5e4"/><rect x="1157.3" y="296" width="22" height="16" fill="#dc8f8b"/><rect x="1179.3" y="296" width="22" height="16" fill="#ba343b"/><rect x="1201.3" y="296" width="22" height="16" fill="#f6eeee"/><rect x="1113.3" y="312" width="22" height="16" fill="#f6f1f1"/><rect x="1135.3" y="312" width="22" height="16" fill="#9ebada"/><rect x="1157.3" y="312" width="22" height="16" fill="#d5dfec"/><rect x="1179.3" y="312" width="22" height="16" fill="#f2dedd"/><rect x="1201.3" y="312" width="22" height="16" fill="#edc6c4"/><rect x="1113.3" y="328" width="22" height="16" fill="#96b4d7"/><rect x="1135.3" y="328" width="22" height="16" fill="#edc8c5"/><rect x="1157.3" y="328" width="22" height="16" fill="#d1ddeb"/><rect x="1179.3" y="328" width="22" height="16" fill="#e5aaa6"/><rect x="1201.3" y="328" width="22" height="16" fill="#f1d8d6"/><rect x="1113.3" y="344" width="22" height="16" fill="#5a8ac0"/><rect x="1135.3" y="344" width="22" height="16" fill="#eff2f5"/><rect x="1157.3" y="344" width="22" height="16" fill="#eecbc9"/><rect x="1179.3" y="344" width="22" height="16" fill="#f5e9e9"/><rect x="1201.3" y="344" width="22" height="16" fill="#eabbb8"/><rect x="1113.3" y="360" width="22" height="16" fill="#bd3c41"/><rect x="1135.3" y="360" width="22" height="16" fill="#eceff4"/><rect x="1157.3" y="360" width="22" height="16" fill="#d98582"/><rect x="1179.3" y="360" width="22" height="16" fill="#a5bedc"/><rect x="1201.3" y="360" width="22" height="16" fill="#f0d1cf"/><rect x="1113.3" y="376" width="22" height="16" fill="#f6f0ef"/><rect x="1135.3" y="376" width="22" height="16" fill="#e4a5a2"/><rect x="1157.3" y="376" width="22" height="16" fill="#e9b8b5"/><rect x="1179.3" y="376" width="22" height="16" fill="#eabbb8"/><rect x="1201.3" y="376" width="22" height="16" fill="#f7f5f4"/><rect x="1113.3" y="392" width="22" height="16" fill="#a5bedc"/><rect x="1135.3" y="392" width="22" height="16" fill="#bccee4"/><rect x="1157.3" y="392" width="22" height="16" fill="#e09895"/><rect x="1179.3" y="392" width="22" height="16" fill="#eff2f5"/><rect x="1201.3" y="392" width="22" height="16" fill="#e7afab"/></g>
+<text x="1124.3" y="19.2" transform="rotate(-90 1124.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">0 h</text>
+<text x="1146.3" y="19.2" transform="rotate(-90 1146.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">2 h</text>
+<text x="1168.3" y="19.2" transform="rotate(-90 1168.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">6 h</text>
+<text x="1190.3" y="19.2" transform="rotate(-90 1190.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">12 h</text>
+<text x="1212.3" y="19.2" transform="rotate(-90 1212.3 19.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">24 h</text>
+<polyline points="1231.3,24 1231.3,408" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1231.3" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">0</text>
+<polyline points="1261.632,24 1261.632,408" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1261.632" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">50</text>
+<polyline points="1291.964,24 1291.964,408" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1291.964" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">100</text>
+<polyline points="1322.296,24 1322.296,408" fill="none" stroke="#71717a" stroke-width="0.6" stroke-dasharray="1.5,3"/>
+<text x="1322.296" y="14.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" fill="#71717a">150</text>
+<g><rect x="1231.3" y="25.6" width="43.557" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="41.6" width="30.757" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="57.6" width="36.338" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="73.6" width="33.244" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="89.6" width="13.589" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="105.6" width="86.628" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="121.6" width="8.796" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="137.6" width="61.513" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="153.6" width="26.146" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="169.6" width="79.834" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="185.6" width="43.739" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="201.6" width="82.261" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="217.6" width="2.427" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="233.6" width="57.328" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="249.6" width="79.045" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="265.6" width="95" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="281.6" width="11.648" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="297.6" width="26.51" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="313.6" width="50.958" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="329.6" width="55.326" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="345.6" width="15.773" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="361.6" width="84.02" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="377.6" width="17.168" height="12.8" fill="#4c7a9c"/><rect x="1231.3" y="393.6" width="51.504" height="12.8" fill="#4c7a9c"/></g>
+<path d="M1351.157 32A5.857 5.857 0 0 1 1339.443 32A5.857 5.857 0 0 1 1351.157 32Z" fill="#e69f00"/>
+<path d="M1346.578 48A1.278 1.278 0 0 1 1344.022 48A1.278 1.278 0 0 1 1346.578 48Z" fill="#56b4e9"/>
+<path d="M1351.429 64A6.129 6.129 0 0 1 1339.171 64A6.129 6.129 0 0 1 1351.429 64Z" fill="#009e73"/>
+<path d="M1351.941 80A6.641 6.641 0 0 1 1338.659 80A6.641 6.641 0 0 1 1351.941 80Z" fill="#e69f00"/>
+<path d="M1347.514 96A2.214 2.214 0 0 1 1343.086 96A2.214 2.214 0 0 1 1347.514 96Z" fill="#56b4e9"/>
+<path d="M1350.569 112A5.269 5.269 0 0 1 1340.031 112A5.269 5.269 0 0 1 1350.569 112Z" fill="#009e73"/>
+<path d="M1352.182 128A6.882 6.882 0 0 1 1338.418 128A6.882 6.882 0 0 1 1352.182 128Z" fill="#e69f00"/>
+<path d="M1350.412 144A5.112 5.112 0 0 1 1340.188 144A5.112 5.112 0 0 1 1350.412 144Z" fill="#56b4e9"/>
+<path d="M1350.412 160A5.112 5.112 0 0 1 1340.188 160A5.112 5.112 0 0 1 1350.412 160Z" fill="#009e73"/>
+<path d="M1347.856 176A2.556 2.556 0 0 1 1342.744 176A2.556 2.556 0 0 1 1347.856 176Z" fill="#e69f00"/>
+<path d="M1351.941 192A6.641 6.641 0 0 1 1338.659 192A6.641 6.641 0 0 1 1351.941 192Z" fill="#56b4e9"/>
+<path d="M1352.182 208A6.882 6.882 0 0 1 1338.418 208A6.882 6.882 0 0 1 1352.182 208Z" fill="#009e73"/>
+<path d="M1351.429 224A6.129 6.129 0 0 1 1339.171 224A6.129 6.129 0 0 1 1351.429 224Z" fill="#e69f00"/>
+<path d="M1350.722 240A5.422 5.422 0 0 1 1339.878 240A5.422 5.422 0 0 1 1350.722 240Z" fill="#56b4e9"/>
+<path d="M1347.107 256A1.807 1.807 0 0 1 1343.493 256A1.807 1.807 0 0 1 1347.107 256Z" fill="#009e73"/>
+<path d="M1348.915 272A3.615 3.615 0 0 1 1341.685 272A3.615 3.615 0 0 1 1348.915 272Z" fill="#e69f00"/>
+<path d="M1348.915 288A3.615 3.615 0 0 1 1341.685 288A3.615 3.615 0 0 1 1348.915 288Z" fill="#56b4e9"/>
+<path d="M1350.25 304A4.95 4.95 0 0 1 1340.35 304A4.95 4.95 0 0 1 1350.25 304Z" fill="#009e73"/>
+<path d="M1348.915 320A3.615 3.615 0 0 1 1341.685 320A3.615 3.615 0 0 1 1348.915 320Z" fill="#e69f00"/>
+<path d="M1352.063 336A6.763 6.763 0 0 1 1338.537 336A6.763 6.763 0 0 1 1352.063 336Z" fill="#56b4e9"/>
+<path d="M1350.722 352A5.422 5.422 0 0 1 1339.878 352A5.422 5.422 0 0 1 1350.722 352Z" fill="#009e73"/>
+<path d="M1350.25 368A4.95 4.95 0 0 1 1340.35 368A4.95 4.95 0 0 1 1350.25 368Z" fill="#e69f00"/>
+<path d="M1352.3 384A7 7 0 0 1 1338.3 384A7 7 0 0 1 1352.3 384Z" fill="#56b4e9"/>
+<path d="M1351.941 400A6.641 6.641 0 0 1 1338.659 400A6.641 6.641 0 0 1 1351.941 400Z" fill="#009e73"/>
+<text x="991.3" y="-13" transform="rotate(-90 991.3 -13)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Named clades</text>
+<text x="1008.3" y="-6.1" transform="rotate(-90 1008.3 -6.1)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Host group</text>
+<text x="1065.3" y="-15.5" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Genes</text>
+<text x="1168.3" y="-9.1" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Expression (log2)</text>
+<text x="1278.8" y="-2.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Body mass (kg)</text>
+<text x="1343.3" y="2.8" transform="rotate(-90 1343.3 2.8)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Habitat</text>
+</g>
+</g>
+<g class="makeyourtree-labels">
+<g transform="translate(0.6 68.4)">
+<text x="930" y="32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_02</text>
+<text x="930" y="48" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_08</text>
+<text x="930" y="64" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_22</text>
+<text x="930" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_20</text>
+<text x="930" y="96" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_05</text>
+<text x="930" y="112" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_19</text>
+<text x="930" y="128" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_12</text>
+<text x="930" y="144" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_01</text>
+<text x="930" y="160" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_21</text>
+<text x="930" y="176" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_03</text>
+<text x="930" y="192" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_14</text>
+<text x="930" y="208" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_24</text>
+<text x="930" y="224" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_10</text>
+<text x="930" y="240" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_18</text>
+<text x="930" y="256" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_15</text>
+<text x="930" y="272" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_06</text>
+<text x="930" y="288" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_09</text>
+<text x="930" y="304" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_23</text>
+<text x="930" y="320" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_07</text>
+<text x="930" y="336" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_11</text>
+<text x="930" y="352" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_04</text>
+<text x="930" y="368" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_16</text>
+<text x="930" y="384" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_13</text>
+<text x="930" y="400" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">strain_17</text>
+</g>
+</g>
+<g class="makeyourtree-decor">
+<g transform="translate(0.6 68.4)">
+<path d="M24 426L159.874 426M24 422.4L24 429.6M159.874 422.4L159.874 429.6" fill="none" stroke="#52525b" stroke-width="1"/>
+<text x="91.937" y="437.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#52525b">0.5</text>
+</g>
+</g>
+<g class="makeyourtree-legend">
+<g transform="translate(0.6 68.4)">
+<text x="1366.3" y="-37.8" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Named clades</text>
+<rect x="1366.3" y="-30.6" width="12" height="12" rx="1.8" fill="#117733"/>
+<text x="1384.3" y="-24.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Clade A</text>
+<rect x="1366.3" y="-17.4" width="12" height="12" rx="1.8" fill="#ddcc77"/>
+<text x="1384.3" y="-11.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Clade B</text>
+<rect x="1366.3" y="-4.2" width="12" height="12" rx="1.8" fill="#cc6677"/>
+<text x="1384.3" y="1.8" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Clade C</text>
+<text x="1366.3" y="27" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Host group</text>
+<rect x="1366.3" y="34.2" width="12" height="12" rx="1.8" fill="#117733"/>
+<text x="1384.3" y="40.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Group A</text>
+<rect x="1366.3" y="47.4" width="12" height="12" rx="1.8" fill="#ddcc77"/>
+<text x="1384.3" y="53.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Group B</text>
+<rect x="1366.3" y="60.6" width="12" height="12" rx="1.8" fill="#cc6677"/>
+<text x="1384.3" y="66.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Group C</text>
+<rect x="1366.3" y="73.8" width="12" height="12" rx="1.8" fill="#332288"/>
+<text x="1384.3" y="79.8" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Group D</text>
+<text x="1366.3" y="105" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Genes</text>
+<rect x="1366.3" y="112.2" width="12" height="12" rx="1.8" fill="#0072b2"/>
+<text x="1384.3" y="118.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">ampC</text>
+<rect x="1366.3" y="125.4" width="12" height="12" rx="1.8" fill="#e69f00"/>
+<text x="1384.3" y="131.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">blaZ</text>
+<rect x="1366.3" y="138.6" width="12" height="12" rx="1.8" fill="#009e73"/>
+<text x="1384.3" y="144.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">mecA</text>
+<rect x="1366.3" y="151.8" width="12" height="12" rx="1.8" fill="#d55e00"/>
+<text x="1384.3" y="157.8" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">tetK</text>
+<text x="1366.3" y="183" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Expression (log2)</text>
+<g><rect x="1366.3" y="189.6" width="2.295" height="12" fill="#2669ae"/><rect x="1368.55" y="189.6" width="2.295" height="12" fill="#316fb1"/><rect x="1370.8" y="189.6" width="2.295" height="12" fill="#3b75b4"/><rect x="1373.05" y="189.6" width="2.295" height="12" fill="#447bb8"/><rect x="1375.3" y="189.6" width="2.295" height="12" fill="#4d81bb"/><rect x="1377.55" y="189.6" width="2.295" height="12" fill="#5587be"/><rect x="1379.8" y="189.6" width="2.295" height="12" fill="#5e8cc2"/><rect x="1382.05" y="189.6" width="2.295" height="12" fill="#6793c5"/><rect x="1384.3" y="189.6" width="2.295" height="12" fill="#6f99c8"/><rect x="1386.55" y="189.6" width="2.295" height="12" fill="#789fcb"/><rect x="1388.8" y="189.6" width="2.295" height="12" fill="#81a4ce"/><rect x="1391.05" y="189.6" width="2.295" height="12" fill="#8aabd2"/><rect x="1393.3" y="189.6" width="2.295" height="12" fill="#93b2d5"/><rect x="1395.55" y="189.6" width="2.295" height="12" fill="#9bb8d8"/><rect x="1397.8" y="189.6" width="2.295" height="12" fill="#a4bddc"/><rect x="1400.05" y="189.6" width="2.295" height="12" fill="#adc4df"/><rect x="1402.3" y="189.6" width="2.295" height="12" fill="#b5cae1"/><rect x="1404.55" y="189.6" width="2.295" height="12" fill="#bed0e4"/><rect x="1406.8" y="189.6" width="2.295" height="12" fill="#c7d5e7"/><rect x="1409.05" y="189.6" width="2.295" height="12" fill="#cfdbea"/><rect x="1411.3" y="189.6" width="2.295" height="12" fill="#d8e2ed"/><rect x="1413.55" y="189.6" width="2.295" height="12" fill="#e1e8f0"/><rect x="1415.8" y="189.6" width="2.295" height="12" fill="#eaeef3"/><rect x="1418.05" y="189.6" width="2.295" height="12" fill="#f0f0f2"/><rect x="1420.3" y="189.6" width="2.295" height="12" fill="#f4eff0"/><rect x="1422.55" y="189.6" width="2.295" height="12" fill="#f5eaea"/><rect x="1424.8" y="189.6" width="2.295" height="12" fill="#f3e2e1"/><rect x="1427.05" y="189.6" width="2.295" height="12" fill="#f1dad8"/><rect x="1429.3" y="189.6" width="2.295" height="12" fill="#efd1cf"/><rect x="1431.55" y="189.6" width="2.295" height="12" fill="#edc9c7"/><rect x="1433.8" y="189.6" width="2.295" height="12" fill="#ecc1be"/><rect x="1436.05" y="189.6" width="2.295" height="12" fill="#eab8b5"/><rect x="1438.3" y="189.6" width="2.295" height="12" fill="#e7b0ad"/><rect x="1440.55" y="189.6" width="2.295" height="12" fill="#e5a7a4"/><rect x="1442.8" y="189.6" width="2.295" height="12" fill="#e29f9b"/><rect x="1445.05" y="189.6" width="2.295" height="12" fill="#df9793"/><rect x="1447.3" y="189.6" width="2.295" height="12" fill="#dc8e8a"/><rect x="1449.55" y="189.6" width="2.295" height="12" fill="#d88581"/><rect x="1451.8" y="189.6" width="2.295" height="12" fill="#d57c78"/><rect x="1454.05" y="189.6" width="2.295" height="12" fill="#d27370"/><rect x="1456.3" y="189.6" width="2.295" height="12" fill="#cf6a68"/><rect x="1458.55" y="189.6" width="2.295" height="12" fill="#cc6160"/><rect x="1460.8" y="189.6" width="2.295" height="12" fill="#c85858"/><rect x="1463.05" y="189.6" width="2.295" height="12" fill="#c44f50"/><rect x="1465.3" y="189.6" width="2.295" height="12" fill="#c04548"/><rect x="1467.55" y="189.6" width="2.295" height="12" fill="#bd3a3f"/><rect x="1469.8" y="189.6" width="2.295" height="12" fill="#b82e37"/><rect x="1472.05" y="189.6" width="2.295" height="12" fill="#b41f2f"/></g>
+<text x="1366.3" y="209.52" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#71717a">-3.85</text>
+<text x="1420.3" y="209.52" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">-0.04</text>
+<text x="1474.3" y="209.52" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="end" dominant-baseline="central" fill="#71717a">3.77</text>
+<rect x="1366.3" y="216.72" width="12" height="12" rx="1.8" fill="#6e6e76"/>
+<text x="1384.3" y="222.72" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">no value</text>
+<text x="1366.3" y="247.92" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Body mass (kg)</text>
+<rect x="1366.3" y="255.12" width="12" height="12" rx="1.8" fill="#4c7a9c"/>
+<text x="1384.3" y="261.12" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">mass</text>
+<text x="1366.3" y="286.32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Habitat</text>
+<circle cx="1372.3" cy="299.52" r="6" fill="#0072b2"/>
+<text x="1384.3" y="299.52" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">marine</text>
+<circle cx="1372.3" cy="312.72" r="6" fill="#e69f00"/>
+<text x="1384.3" y="312.72" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">soil</text>
+<circle cx="1372.3" cy="325.92" r="6" fill="#009e73"/>
+<text x="1384.3" y="325.92" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">host</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,45 @@
+#makeyourtree-annotation 1
+
+[track]
+type = heatmap
+title = Expression (log2)
+
+[options]
+cell_size = 22
+normalize = global
+color_min = #2166AC
+color_mid = #F7F7F7
+color_max = #B2182B
+
+[columns]
+names = 0h, 2h, 6h, 12h, 24h
+
+[legend]
+title = log2 fold change
+show = true
+
+[data]
+strain_01	-2.02	0.26	0.18	-0.56	-1.64
+strain_02	-2.6	0.47	-2.28	-0.87	0.12
+strain_03	0.31	-1.22	1.17	-3.55	-1.13
+strain_04	0.86	2.12	-0.74	0.35	0.64
+strain_05	1.77	2.47	0.27	-0.74	1.81
+strain_06	-3.48	-0.72	-1.09	-0.71	-0.22
+strain_07	3.71	0.33	-1.01	-1.38	1.37
+strain_08	-0.6	1.81	-1.89	0.26	1.03
+strain_09	-0.28	1.0	-0.93	-0.56	-0.65
+strain_10	0.36	1.1	-0.7	-1.79	0.48
+strain_11	1.21	-0.83	1.44	-0.82	-1.67
+strain_12	-0.34	1.5	0.18	0.05	0.11
+strain_13	0.26	-0.82	-2.22	0.37	-1.17
+strain_14	-0.43	-1.77	-0.21	0.14	-0.65
+strain_15	-0.98	-0.39	-0.41	2.37	-1.8
+strain_16	-0.09	0.19	-3.08	-1.81	0.67
+strain_17	-1.68	-0.06	-0.54	-1.44	-1.56
+strain_18	-0.33	2.03	-0.78	2.39	-2.34
+strain_19	-0.11	1.79	2.51	-0.94	0.46
+strain_20	0.54	-0.51	0.19	0.03	0.54
+strain_21	-1.19	-2.14	0.65	-0.49	-0.43
+strain_22	-2.01	1.81	2.27	0.97	-0.2
+strain_23	1.35	-0.41	-4.23	0.34	0.41
+strain_24	-0.72	-1.53	0.7	-0.49	0.78

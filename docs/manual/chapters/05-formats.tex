@@ -1,0 +1,91 @@
+% SPDX-License-Identifier: MIT
+\chapter{Tree file formats}
+\label{ch:formats}
+
+\section{What \app{} reads}
+
+\begin{center}
+\begin{tabular}{@{}llp{0.48\linewidth}@{}}
+\toprule
+\textbf{Format} & \textbf{Extensions} & \textbf{Notes} \\
+\midrule
+Newick   & \cmd{.nwk}, \cmd{.tree}, \cmd{.tre}, \cmd{.newick} &
+  Full grammar: single-quoted labels with doubled-quote escapes, nested comments,
+  branch lengths, support values. \\
+NHX      & \cmd{.nhx} &
+  New Hampshire eXtended. \cmd{[\&\&NHX:key=value]} annotations become typed node
+  attributes. \\
+NEXUS    & \cmd{.nex}, \cmd{.nexus} &
+  Including \cmd{TRANSLATE} blocks and \cmd{[\&R]}/\cmd{[\&U]} rooting hints. \\
+phyloXML & \cmd{.xml}, \cmd{.phyloxml} &
+  Parsed with XML entity expansion disabled. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Format is detected from the content, not only the extension, so a Newick tree
+saved as \cmd{.txt} still loads. Pass \opt{--format} to the CLI to override
+detection.
+
+BEAST and FigTree \cmd{[\&key=value]} metacomments are also parsed, so trees from
+those pipelines keep their posterior probabilities and rate annotations.
+
+\section{Writing}
+
+\app{} writes Newick, NEXUS and phyloXML. NHX is read but not written as a
+separate format; NHX attributes are preserved on the nodes and can be written
+back into Newick comments.
+
+\section{Lenient parsing}
+
+Real-world tree files violate their specifications routinely: unbalanced quotes,
+duplicate tip labels, negative branch lengths, support values sitting where an
+internal label should be. A parser that refuses such files is a parser you cannot
+use on the files you actually have.
+
+\app{} therefore records each recoverable problem as a \emph{diagnostic} and
+carries on. Exceptions are reserved for input that cannot be interpreted at all.
+Diagnostics are shown to you (\keys{Ctrl+D}) rather than hidden, so leniency does
+not become silence.
+
+\subsection{Diagnostics you are likely to see}
+
+\begin{description}[style=nextline,leftmargin=0pt,labelindent=0pt,labelwidth=0pt]
+  \item[\cmd{newick.internal-label-ambiguous}]
+    Internal labels that parse as numbers. These are almost always bootstrap or
+    posterior support values, so they are read as support. If yours are genuinely
+    names, pass \cmd{internal\_labels='name'} through the API. This is the single
+    most common diagnostic and it is informational.
+  \item[\cmd{newick.duplicate-name}]
+    Two tips share a name. Both are kept; annotation matching by name will attach
+    to both, which is usually not what you want.
+  \item[\cmd{newick.negative-length}]
+    A negative branch length. By default these are treated as zero for layout
+    purposes, which is controlled by \cmd{ignore\_negative\_lengths}.
+  \item[\cmd{compose.approximate-band-space}]
+    Raised when annotation tracks are drawn in an unrooted layout. See the
+    warning in Section~\ref{sec:unrooted-tracks}.
+\end{description}
+
+\section{Security}
+
+phyloXML is XML, and XML parsers are a classic vector for two attacks. \app{}
+disables entity expansion entirely, which refuses both external-entity injection
+(reading files off your disk) and entity-expansion denial of service (the
+``billion laughs'' attack). A phyloXML file from an untrusted source cannot use
+either against you.
+
+\section{Large files}
+
+Parsing is linear in tree size. A 100{,}000-tip Newick file parses in about
+2.2~seconds and lays out in about 0.8~seconds on a normal workstation.
+
+All traversals are iterative rather than recursive, which matters more than it
+sounds: a deeply unbalanced tree --- the shape serially sampled sequence data
+produces --- would exceed Python's recursion limit at a few thousand nodes under
+a recursive implementation. \app{} handles a 50{,}000-node caterpillar tree
+without difficulty.
+
+The application remains responsive for trees of a few thousand tips. Beyond that,
+switching layout mode takes several seconds during which the window does not
+repaint; the work is not currently cancellable.

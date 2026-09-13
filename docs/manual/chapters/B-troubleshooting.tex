@@ -1,0 +1,102 @@
+% SPDX-License-Identifier: MIT
+\chapter{Troubleshooting}
+\label{ch:troubleshooting}
+
+\section{Installation}
+
+\begin{description}[style=nextline,leftmargin=0pt,labelindent=0pt,labelwidth=0pt]
+  \item[\cmd{Could not load the Qt platform plugin "xcb"} (Linux)]
+    Missing Qt system libraries. Install them
+    (Section~\ref{sec:linux-libs}), or use the conda environment, which supplies
+    them as packages. To see exactly which library is missing, run
+    \cmd{QT\_DEBUG\_PLUGINS=1 makeyourtree-studio}.
+  \item[\cmd{OSError: [WinError 206] The filename or extension is too long}]
+    The clone is too deep for Windows' \cmd{MAX\_PATH} limit. Delete
+    \cmd{.venv}, re-clone somewhere short such as
+    \cmd{C:\textbackslash dev\textbackslash makeyourtree}, and install again.
+  \item[\cmd{ModuleNotFoundError: No module named 'makeyourtree'}, but \cmd{pytest} passes]
+    The same \cmd{MAX\_PATH} failure, which rolls back partially. \cmd{pytest}
+    still passes because its configuration adds \cmd{src/} to the path, masking
+    the missing install.
+  \item[\cmd{cannot be loaded because running scripts is disabled} (Windows)]
+    PowerShell execution policy. Run
+    \cmd{Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass}, then
+    activate again.
+  \item[\cmd{ensurepip is not available} (Linux)]
+    Install \cmd{python3.12-venv} on Debian and Ubuntu.
+  \item[The environment will not solve; \cmd{pyside6} not found]
+    You are on the \cmd{defaults} channel. Prefer conda-forge
+    (Chapter~\ref{ch:installation}).
+  \item[Qt appears twice, or the environment is enormous]
+    A \cmd{pip install -e .} without \opt{--no-deps} inside a conda environment.
+    Remove the environment and redo the install step.
+\end{description}
+
+\section{Files and parsing}
+
+\begin{description}[style=nextline,leftmargin=0pt,labelindent=0pt,labelwidth=0pt]
+  \item[``My file has problems'' but it looks fine]
+    Most diagnostics are informational. The commonest,
+    \cmd{newick.internal-label-ambiguous}, simply records that numeric internal
+    labels were read as support values --- which is nearly always right. Open
+    \keys{Ctrl+D} and read them; a clean file often produces one or two.
+  \item[Support values appear as node names, or vice versa]
+    The same ambiguity, resolved the other way. Numeric internal labels are read
+    as support by default; pass \cmd{internal\_labels='name'} through the API if
+    yours are genuinely names.
+  \item[Annotation rows do not match any tip]
+    Names must match the tree exactly. The import wizard shows a match report
+    before committing --- read it. Common causes are underscores against spaces,
+    trailing whitespace, and accession prefixes present in one file but not the
+    other.
+  \item[A tip shows a zero where it should show nothing]
+    Check the source data: an empty field or \cmd{-} means \emph{no value} and
+    draws a gap. If you see a bar of zero height instead, the file really does
+    contain a zero.
+\end{description}
+
+\section{Figures}
+
+\begin{description}[style=nextline,leftmargin=0pt,labelindent=0pt,labelwidth=0pt]
+  \item[All the text is empty boxes]
+    Qt found no fonts. This happens under the \cmd{offscreen} platform, which
+    reports zero font families. Clear \cmd{QT\_QPA\_PLATFORM}, or use
+    \cmd{xvfb-run} on a headless machine. Vector SVG from the core is unaffected
+    because it stores text as text.
+  \item[There is a gap between the tips and the annotation ring]
+    In a circular \emph{phylogram} this is correct: tips genuinely sit at
+    different radii. Turn on \textbf{Align tips} (\keys{A}) to close it.
+  \item[Tracks in an unrooted layout look wrong]
+    They are. An unrooted layout has no tip ordering for band space to use, so
+    tracks are drawn as an unaligned column. Use a rooted layout
+    (Section~\ref{sec:unrooted-tracks}).
+  \item[The heatmap ignores my \opt{palette} setting]
+    The heatmap has no \opt{palette} option; its ramp is set by
+    \opt{color\_min}, \opt{color\_mid} and \opt{color\_max}. Unknown options are
+    recorded as diagnostics rather than applied.
+  \item[Labels are clipped at the edge of the figure]
+    Increase \opt{width}, or limit label length with \opt{max\_label\_width}.
+  \item[The figure is unreadably tall]
+    Reduce \opt{row\_spacing}, turn off tip labels, or collapse clades
+    (\keys{C}).
+\end{description}
+
+\section{Performance}
+
+\begin{description}[style=nextline,leftmargin=0pt,labelindent=0pt,labelwidth=0pt]
+  \item[The window freezes when I change layout on a big tree]
+    Known limitation. Above a few thousand tips, switching layout takes several
+    seconds during which the window does not repaint. It is working, not hung,
+    and the operation is not currently cancellable.
+  \item[Rendering a very large tree produces an enormous SVG]
+    Expected: a 100{,}000-tip tree is about 28\,MB of SVG. Export PNG at a
+    chosen scale instead if the file size matters more than resolution
+    independence.
+\end{description}
+
+\section{Reporting a problem}
+
+Please open an issue with your platform, your Python version, the full error
+output, and --- if you can share it --- a small tree that reproduces the problem.
+A synthetic tree that shows the same failure is ideal, since it avoids sharing
+unpublished data.

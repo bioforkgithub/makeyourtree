@@ -1,0 +1,210 @@
+% SPDX-License-Identifier: MIT
+\chapter{The Python API}
+\label{ch:python}
+
+The \cmd{makeyourtree} package imports no GUI toolkit, so everything in this
+chapter runs in a script, a notebook, a container or a CI job.
+
+\section{Loading and inspecting}
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.io import load_tree, save_tree
+
+tree = load_tree("examples/primates.nwk")
+
+print(len(tree.nodes))
+print([n.name for n in tree.nodes if not n.children])
+print(tree.rooted)
+\end{lstlisting}
+
+\cmd{load\_tree} detects the format from the content. Pass \cmd{format=} to
+override it. \cmd{load\_trees} reads a multi-tree file.
+
+\subsection{Diagnostics}
+
+Parsing problems are collected rather than raised. To see them, pass a sink:
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.core.diagnostics import DiagnosticSink
+
+sink = DiagnosticSink()
+tree = load_tree("messy.nwk", sink=sink)
+for d in sink:
+    print(d.code, d.message)
+\end{lstlisting}
+
+\section{Traversal}
+
+\begin{quote}
+\textbf{Never recurse over a tree.} A deeply unbalanced tree of 100{,}000 tips
+has a path length of 100{,}000, and Python's recursion limit is 1{,}000. Use the
+iterative traversals in \cmd{makeyourtree.core.traversal}; every traversal inside
+\app{} is iterative for exactly this reason.
+\end{quote}
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.core import traversal
+
+for node in traversal.preorder(tree.root):
+    ...
+for node in traversal.postorder(tree.root):
+    ...
+\end{lstlisting}
+
+\section{Operations}
+
+Operations return a \emph{command} rather than mutating immediately, which is
+what makes them undoable in the application. From a script, apply it at once:
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.ops import (midpoint_root, outgroup_root, ladderize,
+                              rotate, collapse, prune, extract_subtree, unroot)
+
+midpoint_root(tree).apply(tree)
+ladderize(tree, ascending=True).apply(tree)
+\end{lstlisting}
+
+To keep an undo history, use a \cmd{CommandStack}:
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.ops import CommandStack
+
+stack = CommandStack()
+stack.do(midpoint_root(tree), tree)
+stack.do(ladderize(tree), tree)
+stack.undo(tree)          # back to midpoint-rooted only
+\end{lstlisting}
+
+\begin{quote}
+\textbf{A branch length belongs to an edge, not to a node.} It is stored on the
+child because that is where a parent-pointer tree can hold it in constant time,
+but it describes the edge \emph{parent \textrightarrow{} child}. Any operation
+that reverses an edge --- rerooting, unrooting, grafting --- must carry the
+length and support across the reversal. \app{} does; if you write your own tree
+surgery, this is the invariant to test, and testing that pairwise patristic
+distances survive a reroot is the way to catch a breach.
+\end{quote}
+
+\section{Composing a figure}
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.doc import Document
+from makeyourtree.layout import LayoutParams, LayoutMode, BranchMode
+from makeyourtree.scene import compose
+from makeyourtree.render import render_svg
+from makeyourtree.style import LIGHT, DARK
+
+doc = Document(
+    tree=tree,
+    params=LayoutParams(mode=LayoutMode.CIRCULAR, arc=340.0,
+                        align_tips=True, row_spacing=16.0),
+    theme=LIGHT,
+)
+
+scene = compose(doc)
+with open("figure.svg", "w", encoding="utf-8") as fh:
+    fh.write(render_svg(scene))
+\end{lstlisting}
+
+\cmd{compose} returns a \cmd{Scene}: plain data describing layered shapes and
+text, with no reference to any rendering technology. \cmd{scene.count()} gives
+the number of marks, and \cmd{scene.iter\_marks()} walks them in painting order.
+
+\section{Attaching tracks}
+
+From a file:
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.annot import load_annotation
+
+track = load_annotation("examples/primates_region.mytrack", tree)
+doc.tracks.append(track)
+\end{lstlisting}
+
+Or built directly, which is the point of the API --- annotation computed from
+data you already have, without writing a file:
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.tracks.strip import ColorStripTrack
+
+track = ColorStripTrack(
+    title="Region",
+    options={"thickness": 18,
+             "colors": {"Africa": "#117733", "Asia": "#332288"}},
+)
+track.bind(tree, {"Homo_sapiens": ["Africa"],
+                  "Macaca_mulatta": ["Asia"]}, columns=["region"])
+doc.tracks.append(track)
+\end{lstlisting}
+
+\cmd{bind} takes a mapping of node name to a list of values, one per column, and
+resolves the names against the tree. Chapter~\ref{ch:tracks} lists the class and
+options for each track type.
+
+\section{Raster and PDF output}
+
+The core writes SVG. PNG and PDF come from the studio package, which requires Qt
+and a \cmd{QApplication}:
+
+\begin{lstlisting}[language=Python]
+from PySide6.QtWidgets import QApplication
+from makeyourtree_studio.export.raster import export_png, export_pdf
+
+app = QApplication.instance() or QApplication([])
+export_pdf(scene, "figure.pdf")
+export_png(scene, "figure.png", scale=3.0)
+\end{lstlisting}
+
+\begin{quote}
+\textbf{Fonts and the offscreen platform.} Qt's \cmd{offscreen} platform reports
+zero font families, so text rasterises as empty boxes. If you are rendering PNGs
+in a headless job and the text is missing, that is the cause. Clear
+\cmd{QT\_QPA\_PLATFORM} before importing Qt, or use a virtual framebuffer such as
+\cmd{xvfb-run}. SVG output from the core is unaffected, because it embeds text as
+text.
+\end{quote}
+
+\section{Saving projects}
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.doc.io import save_document, load_document
+
+save_document(doc, "figure.mytree")
+doc2 = load_document("figure.mytree")
+\end{lstlisting}
+
+\begin{quote}
+\textbf{Do not put live objects in \cmd{document.metadata}.} It is serialised on
+save, and an unserialisable value there will fail the write. Runtime-only keys
+are stripped on save; anything else you add must be JSON-representable.
+\end{quote}
+
+\section{A complete example}
+
+\begin{lstlisting}[language=Python]
+from makeyourtree.io import load_tree
+from makeyourtree.doc import Document
+from makeyourtree.layout import LayoutParams, LayoutMode
+from makeyourtree.ops import midpoint_root, ladderize
+from makeyourtree.scene import compose
+from makeyourtree.render import render_svg
+from makeyourtree.annot import load_annotation
+
+tree = load_tree("examples/bacteria.nwk")
+midpoint_root(tree).apply(tree)
+ladderize(tree).apply(tree)
+
+doc = Document(tree=tree,
+               params=LayoutParams(mode=LayoutMode.CIRCULAR,
+                                   arc=340.0, align_tips=True))
+for path in ("examples/bacteria_resistance.mytrack",
+             "examples/bacteria_expression.mytrack"):
+    doc.tracks.append(load_annotation(path, tree))
+
+with open("figure.svg", "w", encoding="utf-8") as fh:
+    fh.write(render_svg(compose(doc)))
+\end{lstlisting}
+
+\cmd{tools/make\_gallery.py} in the repository is a longer worked example: it
+builds every figure in this manual, exercising all thirteen track types and every
+layout mode.

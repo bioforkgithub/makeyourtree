@@ -1,0 +1,1 @@
+((Alpha[&height=0.0,rate=1.2]:0.10,Beta[&height=0.0]:0.20)[&posterior=0.98,height_95%_HPD={0.1,0.4}]:0.3,Gamma[&height=0.0]:0.4)[&posterior=1.0];

@@ -1,0 +1,9 @@
+#NEXUS
+begin taxa;
+  dimensions ntax=3;
+  taxlabels Alpha Beta Gamma;
+end;
+begin trees;
+  utree u1 = (1,2,3);
+  tree t2 = ((Alpha:0.1,Beta:0.1)0.99:0.2,Gamma:0.3);
+end;

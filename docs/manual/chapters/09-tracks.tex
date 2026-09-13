@@ -1,0 +1,254 @@
+% SPDX-License-Identifier: MIT
+\chapter{Track reference}
+\label{ch:tracks}
+
+Thirteen track types are available. Each is described below with its data shape,
+its most useful options and a figure produced by \app{}.
+
+Every track works in every rooted layout mode without configuration, because
+tracks are written in band space (Section~\ref{sec:design}). The one exception is
+unrooted layouts, where alignment is not meaningful --- see
+Section~\ref{sec:unrooted-tracks}.
+
+\section{Options common to all tracks}
+
+\begin{center}
+\begin{tabular}{@{}llp{0.52\linewidth}@{}}
+\toprule
+\textbf{Option} & \textbf{Default} & \textbf{Effect} \\
+\midrule
+\opt{thickness}    & varies & How much room the track takes, outward from the tree. \\
+\opt{gap\_before}  & --- & Space between this track and the previous one. \\
+\opt{opacity}      & 1.0 & Whole-track transparency. \\
+\opt{border\_color}, \opt{border\_width} & --- & Outline around drawn elements. \\
+\opt{show\_title}  & true & Draw the track title beside the stack. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Tracks are drawn in the order they appear in the Tracks panel, stacking outward.
+Drag to reorder.
+
+% =====================================================================
+\section{Categorical tracks}
+
+\subsection{Colour strip}
+
+One categorical value per tip, drawn as a band of colour. The most common
+annotation of all: host, region, lineage, clinical outcome.
+
+\textbf{Data:} one column of category labels.\\
+\textbf{Key options:} \opt{colors} (explicit category colours), \opt{palette},
+\opt{thickness}, \opt{merge\_runs}, \opt{color\_branches}, \opt{color\_labels},
+\opt{margin}.
+
+\opt{color\_branches} and \opt{color\_labels} propagate the category colour onto
+the tree itself, which is often more readable than a separate band.
+\opt{merge\_runs} joins adjacent tips of the same category into one block.
+
+\galleryfig{track-color-strip}{Colour strip with an explicit colour-vision-safe
+palette and a legend.}{0.95}
+
+\subsection{Binary matrix}
+
+Presence and absence across several features --- gene content, resistance
+profiles, trait matrices.
+
+\textbf{Data:} one column per feature; values \cmd{1} (present), \cmd{0} (absent)
+and \cmd{-1} or empty (unknown).\\
+\textbf{Key options:} \opt{shape} (\cmd{square}, \cmd{circle}, and others),
+\opt{cell\_size}, \opt{column\_colors}, \opt{column\_shapes},
+\opt{show\_absent}, \opt{label\_rotation}.
+
+Present, absent and unknown are three distinct states, and the track draws them
+differently. Do not encode unknown as absent.
+
+\galleryfig{track-binary-matrix}{Binary matrix over six genes for 24 strains.}{0.95}
+
+\subsection{Symbols}
+
+A shape per node, its size and colour driven by data.
+
+\textbf{Data:} typically one column for colour and one for size.\\
+\textbf{Key options:} \opt{color\_column}, \opt{size\_column},
+\opt{shape}, \opt{shape\_column}, \opt{size\_mode}, \opt{min\_size},
+\opt{max\_size}, \opt{at\_nodes}.
+
+\begin{quote}
+\opt{size\_mode} defaults to \cmd{sqrt}, so the drawn \emph{area} is proportional
+to the value. This is the correct choice: readers judge a symbol by its area, and
+a radius-linear encoding exaggerates large values by roughly the square.
+\cmd{linear} is available for compatibility with tables authored against a
+radius-linear tool, but it is a decision you should make knowingly.
+\end{quote}
+
+\galleryfig{track-symbols}{Symbols coloured by habitat and sized by count.}{0.95}
+
+% =====================================================================
+\section{Continuous tracks}
+
+\subsection{Gradient}
+
+A single continuous value per tip as one colour ramp. Compact --- useful when you
+have many tracks and little room.
+
+\textbf{Data:} one numeric column.\\
+\textbf{Key options:} \opt{color\_min}, \opt{color\_mid}, \opt{color\_max},
+\opt{use\_mid}, \opt{min\_value}, \opt{max\_value}, \opt{stops},
+\opt{missing\_color}.
+
+\galleryfig{track-gradient}{Gradient track.}{0.95}
+
+\subsection{Heatmap}
+
+A matrix of continuous values: expression across conditions, abundance across
+samples, distance to a reference.
+
+\textbf{Data:} one column per condition.\\
+\textbf{Key options:} \opt{cell\_size}, \opt{cell\_gap}, \opt{normalize}
+(\cmd{global}, \cmd{row}, \cmd{column}), \opt{color\_min}, \opt{color\_mid},
+\opt{color\_max}, \opt{use\_mid}, \opt{cluster\_columns}, \opt{cluster\_rows},
+\opt{show\_values}, \opt{column\_labels}.
+
+\begin{quote}
+\textbf{There is no \opt{palette} option here} --- the ramp is set by
+\opt{color\_min}, \opt{color\_mid} and \opt{color\_max}. For data with a
+meaningful zero, such as log fold change, use a \emph{diverging} ramp centred on
+white and set \opt{use\_mid}; a sequential ramp will hide the sign.
+\opt{normalize} controls whether the scale is computed over the whole matrix, per
+row, or per column --- and choosing wrongly is an easy way to mislead, so say
+which you used.
+\end{quote}
+
+\galleryfig{track-heatmap}{Heatmap with a diverging blue--white--red ramp,
+normalised globally.}{0.95}
+
+% =====================================================================
+\section{Chart tracks}
+
+\subsection{Bar chart}
+
+\textbf{Data:} one numeric column, or several for a stacked or grouped chart.\\
+\textbf{Key options:} \opt{stack}, \opt{color}, \opt{colors}, \opt{axis},
+\opt{axis\_ticks}, \opt{value\_min}, \opt{value\_max}, \opt{zero\_based},
+\opt{bar\_gap}, \opt{series\_gap}.
+
+Leave \opt{zero\_based} on unless you have a specific reason: a truncated bar axis
+misrepresents ratios, which is the most common way a bar chart lies.
+
+\galleryfig{track-bar-chart}{Bar chart with a value axis.}{0.95}
+
+\galleryfig{track-bar-stacked}{Stacked bar chart showing composition per tip.}{0.95}
+
+\subsection{Box plot}
+
+Distribution per tip, rather than a single value.
+
+\textbf{Data:} either raw replicate values (\opt{source} = \cmd{raw}) or
+pre-computed five-number summaries.\\
+\textbf{Key options:} \opt{source}, \opt{whisker\_factor}, \opt{show\_outliers},
+\opt{box\_height}, \opt{box\_color}, \opt{median\_color}, \opt{axis}.
+
+\galleryfig{track-box-plot}{Box plots computed from seven raw replicates per
+tip.}{0.95}
+
+\subsection{Pie chart}
+
+Part-to-whole composition at each node.
+
+\textbf{Data:} one column per slice; values need not sum to 1.\\
+\textbf{Key options:} \opt{radius}, \opt{donut}, \opt{colors},
+\opt{size\_column}, \opt{at\_nodes}, \opt{start\_angle}.
+
+\opt{donut} converts the pie to a ring, and \opt{size\_column} scales each pie by
+a further variable --- useful for showing both composition and total.
+
+\galleryfig{track-pie-chart}{Donut charts at each tip.}{0.95}
+
+\subsection{Line chart}
+
+A small time series or profile per tip.
+
+\textbf{Data:} one column per time point.\\
+\textbf{Key options:} \opt{zero\_line}, \opt{area}, \opt{area\_opacity},
+\opt{show\_dots}, \opt{dot\_radius}, \opt{line\_width}, \opt{y\_range},
+\opt{value\_min}, \opt{value\_max}.
+
+Set \opt{y\_range} explicitly when comparing tips: with a per-row range, two
+rows of very different magnitude look identical.
+
+\galleryfig{track-line-chart}{Line charts with a zero line and shaded area.}{0.95}
+
+% =====================================================================
+\section{Structural tracks}
+
+\subsection{Clade range}
+
+A shaded, labelled band behind an entire clade. The way to name and highlight
+groups.
+
+\textbf{Data:} keyed by \emph{internal} node, with a colour and a label. Requires
+\cmd{match = all}.\\
+\textbf{Key options:} \opt{show\_labels}, \opt{label\_position},
+\opt{label\_rotation}, \opt{cover}, \opt{extend}, \opt{row\_shrink},
+\opt{inner\_offset}.
+
+Drawn beneath the branches so the topology stays legible through the wash.
+
+\galleryfig{track-clade-range}{Clade ranges naming three groups.}{0.95}
+
+\subsection{Domain architecture}
+
+Protein features drawn to scale along a backbone --- domains, motifs,
+transmembrane segments.
+
+\textbf{Data:} a length column, then one column per feature, each formatted
+\cmd{start|end|shape|colour|label}.\\
+\textbf{Key options:} \opt{length\_column}, \opt{feature\_height},
+\opt{backbone\_height}, \opt{show\_labels}, \opt{min\_feature\_width}.
+
+Features are positioned in sequence coordinates, so proteins of different lengths
+are drawn on a common scale and are directly comparable.
+
+\galleryfig{track-domain-architecture}{Domain architecture. Features are drawn at
+their true sequence positions along each backbone.}{0.95}
+
+\subsection{Text labels}
+
+Arbitrary text beside each tip, independent of the tip name.
+
+\textbf{Data:} one column of strings.\\
+\textbf{Key options:} \opt{size}, \opt{color}, \opt{color\_column}, \opt{align},
+\opt{bold}, \opt{italic}, \opt{max\_width}, \opt{ellipsize},
+\opt{rotate\_with\_layout}.
+
+\galleryfig{track-text-labels}{Text labels carrying notes independent of the tip
+names.}{0.9}
+
+\subsection{Connections}
+
+Curved links between arbitrary node pairs: gene transfer, recombination, host
+jumps, co-occurrence.
+
+\textbf{Data:} each row gives two node names, and optionally a weight, a colour
+and a label.\\
+\textbf{Key options:} \opt{bow}, \opt{width\_scale}, \opt{min\_width},
+\opt{max\_width}, \opt{show\_labels}, \opt{color}, \opt{anchor}.
+
+This track is unusual in two ways: it annotates a \emph{relation} rather than a
+node, and it consumes no thickness at all. Links are drawn over the tree body,
+beneath the branches, so a dense bundle never obscures the topology it is drawn
+against.
+
+\galleryfig{track-connections}{Connections between four pairs of tips, with width
+scaled by weight.}{0.95}
+
+% =====================================================================
+\section{Stacking tracks}
+
+Tracks stack outward in panel order, and any combination may be used together.
+Figure~\ref{fig:feature-large-tree} shows a categorical strip and a heatmap
+around a 24-tip tree.
+
+\galleryfig{feature-large-tree}{A colour strip and a heatmap wrapped around a
+circular layout with aligned tips.}{0.8}

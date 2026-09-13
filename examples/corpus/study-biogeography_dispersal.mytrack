@@ -1,0 +1,19 @@
+#makeyourtree-annotation 1
+
+[track]
+type = connections
+title = Dispersal events
+
+[options]
+bow = 0.5
+show_labels = true
+
+[columns]
+names = from, to, weight, color, style, label
+
+[data]
+0	T028	T026	2.78	#117733	-	event 1
+1	T011	T008	2.52	#DDCC77	-	event 2
+2	T008	T010	0.66	#CC6677	-	event 3
+3	T005	T014	2.15	#332288	-	event 4
+4	T024	T001	1.04	#AA4499	-	event 5

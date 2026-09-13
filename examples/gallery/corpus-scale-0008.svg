@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="980.01pt" height="210.29pt" viewBox="0 0 980.01 210.29">
+<rect class="makeyourtree-background" x="0" y="0" width="980.01" height="210.29" fill="#ffffff"/>
+<g class="makeyourtree-branches">
+<g transform="translate(0.6 0)">
+<path d="M24 65.5L24 32M24 32L294.431 32M24 65.5L24 99M24 99L58.019 99M58.019 99L58.019 66M58.019 66L182.284 66M182.284 66L182.284 48M182.284 48L357.548 48M182.284 66L182.284 84M182.284 84L484.089 84M484.089 84L484.089 72M484.089 72L538.901 72M538.901 72L538.901 64M538.901 64L578.087 64M538.901 72L538.901 80M538.901 80L683.897 80M484.089 84L484.089 96M484.089 96L763.193 96M58.019 99L58.019 132M58.019 132L439.735 132M439.735 132L439.735 120M439.735 120L781.403 120M781.403 120L781.403 112M781.403 112L829.202 112M781.403 120L781.403 128M781.403 128L924 128M439.735 132L439.735 144M439.735 144L538.163 144" fill="none" stroke="#33333a" stroke-width="1.2" stroke-linejoin="round"/>
+</g>
+</g>
+<g class="makeyourtree-labels">
+<g transform="translate(0.6 0)">
+<text x="300.431" y="32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T004</text>
+<text x="363.548" y="48" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T006</text>
+<text x="584.087" y="64" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T007</text>
+<text x="689.897" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T002</text>
+<text x="769.193" y="96" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T005</text>
+<text x="835.202" y="112" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T003</text>
+<text x="930" y="128" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T000</text>
+<text x="544.163" y="144" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T001</text>
+</g>
+</g>
+<g class="makeyourtree-decor">
+<g transform="translate(0.6 0)">
+<path d="M24 170L147.035 170M24 166.4L24 173.6M147.035 166.4L147.035 173.6" fill="none" stroke="#52525b" stroke-width="1"/>
+<text x="85.517" y="181.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#52525b">0.2</text>
+</g>
+</g>
+</svg>

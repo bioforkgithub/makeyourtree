@@ -1,0 +1,114 @@
+% SPDX-License-Identifier: MIT
+\chapter{Editing the tree}
+\label{ch:editing}
+
+Every operation in this chapter is undoable (\keys{Ctrl+Z}) and every one is also
+available from the Python API (Chapter~\ref{ch:python}).
+
+\section{Rooting}
+
+Where the root sits changes what the figure claims. It does not change the tree's
+topology in the unrooted sense, but it entirely changes which groups look
+monophyletic, so it is worth being deliberate about.
+
+\begin{center}
+\begin{tabular}{@{}llp{0.48\linewidth}@{}}
+\toprule
+\textbf{Operation} & \textbf{Key} & \textbf{Description} \\
+\midrule
+Reroot here      & \keys{R} & Place the root on the branch above the selected node. \\
+Midpoint root    & \keys{M} & Root at the midpoint of the longest tip-to-tip path. \\
+Root on outgroup & \keys{Ctrl+Shift+R} & Root against a named taxon or set of taxa. \\
+Unroot           & --- & Remove the root, collapsing it into a trifurcation. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Midpoint rooting} assumes a roughly constant rate of evolution across the
+tree. It is a reasonable default when you have no outgroup, and a poor one when
+rates vary substantially between lineages.
+
+\textbf{Outgroup rooting} is preferable whenever you have a defensible outgroup,
+because it encodes an actual biological hypothesis rather than an assumption
+about rates.
+
+\galleryfig{feature-midpoint-rooted}{The example tree after midpoint rooting.}{1.0}
+
+\begin{quote}
+\textbf{Branch lengths survive rerooting.} A branch length belongs to the
+\emph{edge} between a node and its parent, and rerooting reverses the direction
+of some edges. \app{} carries the lengths across those reversals, and the test
+suite asserts that all pairwise tip-to-tip distances are unchanged by a reroot.
+Rerooting is a change of viewpoint, not of data.
+\end{quote}
+
+\section{Ordering}
+
+Reordering changes only the cross coordinate, so it can never alter a distance in
+the figure.
+
+\begin{center}
+\begin{tabular}{@{}llp{0.48\linewidth}@{}}
+\toprule
+\textbf{Operation} & \textbf{Key} & \textbf{Description} \\
+\midrule
+Ladderize ascending  & \keys{L}       & Smaller subtrees first, giving the characteristic staircase. \\
+Ladderize descending & \keys{Shift+L} & Larger subtrees first. \\
+Rotate children      & \keys{Ctrl+R}  & Swap the order of the selected node's children. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Ladderizing is almost always worth doing before exporting: it makes the branching
+order far easier to follow, and costs nothing in accuracy.
+
+\section{Collapsing}
+
+Collapsing hides a clade's internal structure while keeping its position and
+extent, which is the standard way to show a large tree without printing every
+tip.
+
+\keys{C} collapses or expands the selected node; \keys{Shift+C} expands
+everything. A collapsed clade is drawn as a triangle whose depth reflects the
+subtree it stands for.
+
+\galleryfig{feature-collapsed-clade}{A collapsed clade. The triangle's size is
+derived from the hidden subtree rather than being fixed, so the figure still
+conveys how much was folded away.}{1.0}
+
+The number of rows a collapsed clade occupies is configurable:
+\opt{collapse\_rows\_mode} may be a square-root function of the subtree size (the
+default, which keeps large clades from dominating), a fixed number of rows, or
+proportional. \opt{collapse\_shape} selects the glyph.
+
+\section{Pruning and extracting}
+
+\begin{center}
+\begin{tabular}{@{}llp{0.48\linewidth}@{}}
+\toprule
+\textbf{Operation} & \textbf{Key} & \textbf{Description} \\
+\midrule
+Remove selected taxa & \keys{Del}          & Delete tips and tidy away the internal nodes left dangling. \\
+Extract subtree      & \keys{Ctrl+Shift+X} & Replace the document with the selected clade alone. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+When pruning removes a tip, the internal node above it may be left with a single
+child. Such nodes are collapsed away, and the branch lengths on either side are
+\emph{summed} rather than discarded, so the distances between the remaining tips
+are preserved.
+
+\section{Selecting}
+
+Editing acts on the selection, so the selection tools matter.
+
+\begin{itemize}
+  \item Click a node, or drag a rubber band across several.
+  \item \keys{Ctrl+Shift+A} extends the selection to the entire clade below the
+        current node.
+  \item The Search panel (\keys{Ctrl+F}) finds taxa by name or regular
+        expression and can select every match at once --- the practical way to
+        select a scattered group.
+  \item \keys{Esc} clears the selection.
+\end{itemize}

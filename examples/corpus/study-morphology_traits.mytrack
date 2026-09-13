@@ -1,0 +1,36 @@
+#makeyourtree-annotation 1
+
+[track]
+type = binary-matrix
+title = Character states
+
+[options]
+thickness = 70
+shape = circle
+
+[columns]
+names = wings, scales, jaws, limbs
+
+[data]
+T014	1	0	1	1
+T019	0	0	1	1
+T020	1	1	1	0
+T000	1	1	1	1
+T003	0	1	1	0
+T018	0	1	1	1
+T005	1	1	1	1
+T021	1	1	1	0
+T009	1	1	0	1
+T006	0	1	1	0
+T013	1	0	1	1
+T002	1	0	1	0
+T016	1	0	0	0
+T015	1	1	0	1
+T017	1	0	1	1
+T007	0	0	1	0
+T012	0	0	1	1
+T001	1	1	0	1
+T004	0	1	0	1
+T010	1	0	0	1
+T011	1	0	1	0
+T008	1	1	0	1

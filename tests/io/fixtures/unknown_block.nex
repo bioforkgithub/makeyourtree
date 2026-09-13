@@ -1,0 +1,8 @@
+#NEXUS
+BEGIN PRIVATE;
+    setting value;   [ this comment contains END; and must not fool us ]
+    label 'END;';
+END;
+BEGIN TREES;
+    TREE only = ((Alpha,Beta),Gamma);
+ENDBLOCK;

@@ -1,0 +1,30 @@
+#makeyourtree-annotation 1
+
+[track]
+type = color-strip
+title = Lineage
+
+[columns]
+names = lineage
+
+[colors]
+A = #E69F00
+B = #0072B2
+
+[legend]
+title = Lineage
+show = true
+
+[data]
+isolate_A1	A
+isolate_A2	A
+isolate_A3	A
+isolate_A4	A
+isolate_A5	A
+isolate_A6	A
+isolate_B1	B
+isolate_B2	B
+isolate_B3	B
+isolate_B4	B
+isolate_B5	B
+isolate_B6	B

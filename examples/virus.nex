@@ -1,0 +1,23 @@
+#NEXUS
+
+BEGIN TAXA;
+    DIMENSIONS NTAX=12;
+    TAXLABELS
+        'isolate_A5'
+        'isolate_A1'
+        'isolate_B2'
+        'isolate_A6'
+        'isolate_B4'
+        'isolate_B5'
+        'isolate_A3'
+        'isolate_B3'
+        'isolate_A2'
+        'isolate_B1'
+        'isolate_A4'
+        'isolate_B6'
+        ;
+END;
+
+BEGIN TREES;
+    TREE 'tree_1' = [&R] ((('isolate_A5':0.1389,('isolate_A1':0.0631,'isolate_B2':0.1161)82:0.2821)67:0.2537,('isolate_A6':0.0441,('isolate_B4':0.2522,'isolate_B5':0.076)78:0.0914)89:1.531)77:1.2633,((('isolate_A3':0.0364,'isolate_B3':0.0845)100:0.0389,'isolate_A2':0.0386)80:0.221,(('isolate_B1':0.0602,'isolate_A4':0.0438)97:0.0651,'isolate_B6':0.0656)100:1.0252)66:0.3116);
+END;

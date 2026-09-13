@@ -1,0 +1,226 @@
+% SPDX-License-Identifier: MIT
+% The MakeYourTree user manual.
+% Build with:  python docs/manual/build.py
+%
+% Figures are the vector PDFs in examples/gallery/, written by
+% tools/make_gallery.py. Run that first if the build reports them missing.
+
+\documentclass[11pt,a4paper,openany]{book}
+
+% ---------------------------------------------------------------- page setup
+\usepackage[a4paper,top=27mm,bottom=27mm,inner=28mm,outer=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{tikz}
+
+\graphicspath{{../../examples/gallery/}}
+
+% ------------------------------------------------------------------- colours
+\definecolor{mytBlue}{HTML}{2166AC}
+\definecolor{mytInk}{HTML}{1A1A22}
+\definecolor{mytGrey}{HTML}{5A5A66}
+\definecolor{mytRule}{HTML}{C8C8D0}
+\definecolor{mytWash}{HTML}{F2F4F7}
+\definecolor{mytGreen}{HTML}{117733}
+\definecolor{mytRed}{HTML}{B2182B}
+
+% ------------------------------------------------------------------ hyperref
+% Loaded late, as it patches a great deal. bookmark then fixes the nesting of
+% the PDF outline, which is what makes the sidebar navigation behave.
+\usepackage[
+  colorlinks=true,
+  linkcolor=mytBlue,
+  urlcolor=mytBlue,
+  citecolor=mytBlue,
+  bookmarksnumbered=true,
+  bookmarksopen=true,
+  bookmarksopenlevel=1,
+  pdftitle={MakeYourTree User Manual},
+  pdfauthor={Manish Prakash Victor},
+  pdfsubject={Phylogenetic tree visualisation and annotation},
+  pdfkeywords={phylogenetics, tree visualisation, Newick, NEXUS, phyloXML},
+  pdfdisplaydoctitle=true
+]{hyperref}
+\usepackage{bookmark}
+
+% --------------------------------------------------------------- heading style
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\huge\bfseries\color{mytInk}}
+  {\normalsize\sffamily\bfseries\color{mytBlue}\MakeUppercase{\chaptertitlename}\ \thechapter}
+  {12pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\sffamily\Large\bfseries\color{mytInk}}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\sffamily\large\bfseries\color{mytInk}}{\thesubsection}{1em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small\sffamily\color{mytGrey}\nouppercase{\leftmark}}
+\fancyhead[R]{\small\sffamily\color{mytGrey}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}%
+  \fancyfoot[C]{\small\sffamily\color{mytGrey}\thepage}}
+
+\captionsetup{font=small,labelfont={sf,bf},textfont=sf,labelsep=period}
+
+% ------------------------------------------------------------------- listings
+\lstdefinestyle{myt}{
+  basicstyle=\ttfamily\small\color{mytInk},
+  backgroundcolor=\color{mytWash},
+  frame=single,
+  rulecolor=\color{mytRule},
+  framesep=6pt,
+  xleftmargin=10pt,
+  xrightmargin=4pt,
+  breaklines=true,
+  breakatwhitespace=true,
+  showstringspaces=false,
+  keywordstyle=\color{mytBlue}\bfseries,
+  commentstyle=\color{mytGreen}\itshape,
+  stringstyle=\color{mytRed},
+  columns=fullflexible,
+}
+\lstset{style=myt}
+\lstdefinelanguage{mytrack}{
+  morekeywords={type,title,match,thickness,colors,legend,names,show},
+  morecomment=[l]{\#},
+  sensitive=false,
+}
+
+% ------------------------------------------------------------------- macros
+\newcommand{\app}{MakeYourTree}
+\newcommand{\studio}{\app{} Studio}
+\newcommand{\cmd}[1]{\texttt{#1}}
+\newcommand{\opt}[1]{\texttt{#1}}
+
+% A keycap. Boxed rather than merely monospaced, so a shortcut is never mistaken
+% for a filename in running text.
+\newcommand{\keys}[1]{%
+  \tikz[baseline=(K.base)]\node[inner xsep=3.5pt,inner ysep=1.6pt,
+    rounded corners=2pt,draw=mytRule,fill=mytWash,line width=0.5pt](K)
+    {\footnotesize\sffamily\color{mytInk}#1};}
+
+% A gallery figure with a caption. #1 file stem, #2 caption, #3 width fraction.
+\newcommand{\galleryfig}[3]{%
+  \begin{figure}[htbp]\centering
+    \includegraphics[width=#3\linewidth]{#1}
+    \caption{#2}\label{fig:#1}
+  \end{figure}}
+
+\setlist{itemsep=2pt,parsep=0pt,topsep=4pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{document}
+
+% ---------------------------------------------------------------- title page
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+\vspace*{2.2cm}
+
+{\sffamily\bfseries\fontsize{44}{50}\selectfont\color{mytInk} MakeYourTree}
+
+\vspace{6mm}
+{\sffamily\Large\color{mytGrey} Phylogenetic tree visualisation and annotation}
+
+\vspace{4mm}
+{\color{mytBlue}\rule{0.55\linewidth}{1.2pt}}
+
+\vspace{10mm}
+{\sffamily\LARGE\color{mytInk} User Manual}
+
+\vspace{3mm}
+{\sffamily\large\color{mytGrey} Version 0.1.0}
+
+\vspace{12mm}
+\includegraphics[width=0.86\linewidth]{combined-circular}
+
+\vfill
+{\sffamily\color{mytGrey}
+Manish Prakash Victor\\[2mm]
+Free and open-source software under the MIT licence\\
+No server. No account. No network access at runtime.}
+
+\vspace{8mm}
+\end{titlepage}
+
+% ------------------------------------------------------------ colophon page
+\thispagestyle{empty}
+\noindent\textbf{\sffamily \app{} User Manual}\\
+Version 0.1.0, for \app{} 0.1.0.
+
+\vspace{4mm}
+\noindent Copyright \copyright{} 2026 Manish Prakash Victor.
+
+\vspace{2mm}
+\noindent \app{} is free and open-source software, released under the MIT licence.
+You may use, copy, modify and redistribute it, including commercially. The
+software is provided without warranty of any kind. The full text is in
+\cmd{LICENSES/MIT.txt} in the source repository.
+
+\vspace{2mm}
+\noindent This manual is released under the same terms. Every figure in it was
+produced by \app{} itself, from the synthetic datasets in \cmd{examples/}, by
+running \cmd{python tools/make\_gallery.py}.
+
+\vspace{4mm}
+\noindent \app{} is an independent implementation. It is not affiliated with,
+endorsed by, or derived from any other phylogenetics package.
+
+\vspace{4mm}
+\noindent The desktop application links PySide6/Qt~6, which is distributed under
+the LGPL-3.0. If you redistribute a compiled bundle, that licence places
+conditions on you; see \cmd{LICENSE.md} in the repository.
+
+\vfill
+\noindent{\small\sffamily\color{mytGrey}Typeset with \LaTeX.}
+
+\cleardoublepage
+
+% ---------------------------------------------------------------------- TOC
+\pagenumbering{roman}
+\setcounter{tocdepth}{1}
+\pdfbookmark[0]{Contents}{toc}
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic}
+
+% ------------------------------------------------------------------- content
+\part{Getting started}
+\input{chapters/01-introduction}
+\input{chapters/02-installation}
+\input{chapters/03-quickstart}
+
+\part{Working with trees}
+\input{chapters/04-interface}
+\input{chapters/05-formats}
+\input{chapters/06-layouts}
+\input{chapters/07-editing}
+
+\part{Annotation}
+\input{chapters/08-annotation}
+\input{chapters/09-tracks}
+
+\part{Output and automation}
+\input{chapters/10-export}
+\input{chapters/11-cli}
+\input{chapters/12-python}
+
+\appendix
+\part{Appendices}
+\input{chapters/A-shortcuts}
+\input{chapters/B-troubleshooting}
+
+\end{document}

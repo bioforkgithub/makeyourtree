@@ -1,0 +1,116 @@
+% SPDX-License-Identifier: MIT
+\chapter{Introduction}
+\label{ch:introduction}
+
+\app{} is a desktop application and Python library for visualising and annotating
+phylogenetic trees. It runs entirely on your own machine: there is no server, no
+account, no upload and no network access at any point while it runs.
+
+\section{What it does}
+
+\begin{description}[style=nextline,leftmargin=0pt,labelindent=0pt,labelwidth=0pt]
+  \item[Reads what you already have.]
+    Newick, New Hampshire eXtended (NHX), NEXUS and phyloXML. Parsing is
+    deliberately forgiving --- real files break their specifications constantly,
+    so \app{} loads them anyway and tells you what it had to interpret.
+  \item[Draws it many ways.]
+    Rectangular and slanted phylograms and cladograms, circular fans with a
+    configurable arc and inner radius, radial layouts, and unrooted layouts by
+    Felsenstein's equal-angle and equal-daylight algorithms.
+  \item[Lets you edit the tree.]
+    Reroot on any branch, by outgroup or at the midpoint; ladderize, rotate,
+    collapse, prune and extract subtrees. Everything is undoable.
+  \item[Annotates it.]
+    Thirteen track types stack alongside the tree, described in
+    Chapter~\ref{ch:tracks}.
+  \item[Exports honestly.]
+    SVG and PDF as vectors, PNG at any resolution. The on-screen canvas and the
+    exported file are built from an identical description, so what you export is
+    what you saw.
+\end{description}
+
+\section{Who it is for}
+
+Anyone who has a tree and needs a figure of it: for a paper, a thesis, a talk or
+a teaching handout. It is aimed particularly at people who cannot or would rather
+not upload their data to a hosted service --- unpublished phylogenies, clinical
+isolate data, or work under a data-transfer agreement. Nothing leaves your
+machine, because the software has no way to send it anywhere.
+
+The library half is aimed at a different need: regenerating a figure
+reproducibly, from a script, as part of an analysis pipeline. Anything you can
+build interactively you can also build in Python (Chapter~\ref{ch:python}) or
+from the command line (Chapter~\ref{ch:cli}).
+
+\section{Two packages}
+
+\app{} ships as two Python packages, and the split is architectural rather than
+legal --- both are MIT-licensed.
+
+\begin{center}
+\begin{tabular}{@{}lp{0.62\linewidth}@{}}
+\toprule
+\textbf{Package} & \textbf{Contents} \\
+\midrule
+\cmd{makeyourtree} &
+  Parsers, tree model, layout engine, annotation model, scene graph, SVG
+  renderer and the command-line interface. Imports no GUI toolkit, so it works
+  headlessly in scripts, notebooks and continuous integration. Depends only on
+  NumPy. \\
+\cmd{makeyourtree\_studio} &
+  The desktop application, built on PySide6/Qt~6. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+If you only want to generate figures from a script, you never need the second
+package, and you can install without Qt entirely (Section~\ref{sec:install-library}).
+
+\section{Three ideas behind the design}
+\label{sec:design}
+
+You do not need this section to use \app{}. It is here because it explains why
+certain things behave the way they do.
+
+\subsection{Two independent coordinates}
+
+Every layout is built from two coordinates that are computed separately. The
+\emph{cross} coordinate --- $y$ in a rectangular layout, angle in a circular one
+--- comes only from the order of the tips. The \emph{along} coordinate --- $x$,
+or radius --- comes only from branch length, or from depth in a cladogram.
+
+The practical consequence is that the two things you do to a figure never
+interfere. Ladderizing or rotating a clade changes the ordering and cannot alter
+any distance; switching between a phylogram and a cladogram changes the distances
+and cannot alter the ordering.
+
+\subsection{Band space: why one track works in every layout}
+
+Annotation tracks are not written for a particular layout. Each is written in
+\emph{band space}, a coordinate system of \texttt{(row, offset)} where
+\texttt{row} indexes the tip and \texttt{offset} is the distance outward from the
+tree. A projector then maps band space into the page: a straight-line mapping for
+linear layouts, a polar one for circular layouts.
+
+This is why a heatmap becomes an annulus in a circular layout without you doing
+anything, and why tangential labels stay the right way up on the left-hand side
+of a fan. Figures~\ref{fig:combined-rectangular} and~\ref{fig:combined-circular}
+are the same tracks with the same data; only the layout mode differs.
+
+\subsection{One scene, many outputs}
+
+Laying out and composing a figure produces a plain description of shapes and
+text. The on-screen canvas draws that description, and so do the SVG, PDF and PNG
+exporters. Because there is only one description, the screen and the file cannot
+disagree.
+
+\section{About this manual}
+
+Chapters~\ref{ch:installation}--\ref{ch:quickstart} get you running.
+Chapters~\ref{ch:interface}--\ref{ch:editing} cover the application.
+Chapters~\ref{ch:annotation}--\ref{ch:tracks} cover annotation, and
+Chapter~\ref{ch:tracks} is the reference for all thirteen track types.
+Chapters~\ref{ch:export}--\ref{ch:python} cover output and automation.
+
+Every figure in this manual was produced by \app{} from the synthetic example
+data in the repository. Nothing is a mock-up.

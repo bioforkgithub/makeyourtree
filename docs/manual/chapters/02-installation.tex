@@ -1,0 +1,184 @@
+% SPDX-License-Identifier: MIT
+\chapter{Installation}
+\label{ch:installation}
+
+\app{} runs on Windows, macOS and Linux from a single environment definition. The
+commands are the same on all three; the environment resolves the platform
+differences, including the Qt system libraries that would otherwise have to be
+installed by hand on Linux.
+
+\app{} is not on PyPI, so installation is from the source repository. There is no
+\cmd{pip install makeyourtree} from the index --- ignore any package by that name
+from another author.
+
+\section{Requirements}
+
+\begin{itemize}
+  \item \cmd{git}
+  \item A conda-family package manager, or Python 3.12 or newer for the pip route
+  \item About 1\,GB of disk space. Most of that is Qt: a complete environment
+        measures 751\,MB, of which PySide6 is 641\,MB and NumPy 34\,MB.
+\end{itemize}
+
+No network access is needed at runtime --- only to install.
+
+\section{With conda or mamba}
+
+This is the recommended route. Substitute \cmd{mamba} or \cmd{micromamba} for
+\cmd{conda} throughout if you prefer; the arguments are identical and mamba
+resolves considerably faster.
+
+\begin{lstlisting}[language=bash]
+git clone https://github.com/bioforkgithub/makeyourtree.git
+cd makeyourtree
+conda env create -f environment.yml
+conda activate makeyourtree
+pip install -e . --no-deps
+\end{lstlisting}
+
+\begin{quote}
+\textbf{\opt{--no-deps} is not optional bookkeeping.} Conda has already installed
+everything \app{} needs. A plain \cmd{pip install -e .} would resolve those same
+requirements again from PyPI and install a \emph{second} copy of Qt into an
+environment that already has one --- 641\,MB wasted, and two Qt builds present
+where which one loads depends on import order.
+\end{quote}
+
+\href{https://github.com/conda-forge/miniforge}{Miniforge} is the usual
+recommendation for the package manager itself: it is small and defaults to the
+conda-forge channel, which is where \cmd{pyside6} comes from. On Anaconda or
+Miniconda the \cmd{defaults} channel takes priority and does not carry
+\cmd{pyside6}; if the environment fails to solve, prefer conda-forge:
+
+\begin{lstlisting}[language=bash]
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+\end{lstlisting}
+
+\section{With pip and venv}
+
+Use this if you would rather not install conda. It needs Python 3.12 or newer
+already present, and on Linux it needs the Qt system libraries installed by hand
+(Section~\ref{sec:linux-libs}).
+
+\begin{lstlisting}[language=bash]
+git clone https://github.com/bioforkgithub/makeyourtree.git
+cd makeyourtree
+python -m venv .venv
+\end{lstlisting}
+
+Activate it. This is the only command in this manual that differs by platform:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Platform} & \textbf{Command} \\
+\midrule
+Linux, macOS         & \cmd{source .venv/bin/activate} \\
+Windows, PowerShell  & \cmd{.venv\textbackslash Scripts\textbackslash Activate.ps1} \\
+Windows, \cmd{cmd.exe} & \cmd{.venv\textbackslash Scripts\textbackslash activate.bat} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Then install. Note that here pip \emph{does} resolve dependencies, so there is no
+\opt{--no-deps}:
+
+\begin{lstlisting}[language=bash]
+pip install -e ".[studio]"
+\end{lstlisting}
+
+\section{The library alone, without Qt}
+\label{sec:install-library}
+
+The \cmd{makeyourtree} package and its command-line interface import no GUI
+toolkit, so they install without Qt. This is the right choice for a server, a
+container, a CI job or an analysis pipeline: it avoids the 641\,MB PySide6 brings
+and needs none of the Linux system libraries below.
+
+\begin{lstlisting}[language=bash]
+pip install -e "."
+\end{lstlisting}
+
+You then have the \cmd{makeyourtree} command and the Python API, but not
+\cmd{makeyourtree-studio}. NumPy is the only dependency. With conda, delete the
+\cmd{pyside6} line from \cmd{environment.yml} before creating the environment.
+
+\section{Checking the installation}
+
+\begin{lstlisting}[language=bash]
+makeyourtree --version
+makeyourtree info examples/primates.nwk
+\end{lstlisting}
+
+To run the test suite as well --- the fastest way to confirm a healthy install:
+
+\begin{lstlisting}[language=bash]
+pip install -e ".[studio,dev]"
+python -m pytest
+\end{lstlisting}
+
+Expect \textbf{2074 passed} in roughly 30 seconds. The suite runs headlessly and
+needs no display.
+
+\section{Platform notes}
+
+Two things genuinely differ by operating system. Both affect the pip route only;
+the conda environment handles the first and largely avoids the second.
+
+\subsection{Linux: Qt system libraries}
+\label{sec:linux-libs}
+
+The PySide6 \emph{wheel} bundles Qt itself, but Qt still loads a few system
+libraries --- above all its \cmd{xcb} platform plugin. Without them the
+application exits with
+\cmd{qt.qpa.plugin: Could not load the Qt platform plugin "xcb"}.
+
+\begin{lstlisting}[language=bash]
+# Debian / Ubuntu
+sudo apt install libgl1 libegl1 libglib2.0-0 libfontconfig1 libdbus-1-3 \
+  libxkbcommon-x11-0 libxcb-cursor0 libxcb-icccm4 libxcb-image0 \
+  libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 \
+  libxcb-xinerama0
+
+# Fedora
+sudo dnf install mesa-libGL mesa-libEGL fontconfig dbus-libs \
+  libxkbcommon-x11 xcb-util-cursor xcb-util-image xcb-util-keysyms \
+  xcb-util-renderutil xcb-util-wm
+\end{lstlisting}
+
+\cmd{libxcb-cursor0} is required by Qt~6.5 and later specifically, and is the one
+most often missing on otherwise complete systems. On Debian and Ubuntu,
+\cmd{python3.12-venv} is also a separate package.
+
+\subsection{Windows: clone to a short path}
+
+PySide6 ships files whose names exceed Windows' 260-character \cmd{MAX\_PATH}
+limit. Installing into a \cmd{.venv} inside a deeply nested directory fails with
+\cmd{OSError: [WinError 206] The filename or extension is too long}, and it rolls
+back \emph{partially} --- which is confusing, because the test suite still passes
+while \cmd{makeyourtree} itself is missing.
+
+Clone somewhere short such as \cmd{C:\textbackslash dev\textbackslash makeyourtree},
+or enable long paths with \cmd{git config -{}-system core.longpaths true} together
+with the \cmd{LongPathsEnabled} registry setting. The conda route mostly sidesteps
+this, because the environment lives under the conda installation rather than
+inside the clone.
+
+\section{Building a standalone bundle}
+
+To produce a self-contained directory that runs without Python installed:
+
+\begin{lstlisting}[language=bash]
+pip install pyinstaller
+python -m makeyourtree_studio.packaging.build
+\end{lstlisting}
+
+The result is \cmd{dist/MakeYourTreeStudio/}. The build driver verifies the
+bundle against thirteen checks --- licence texts present, Qt shipped as separate
+replaceable shared libraries, no GPL-3.0-only Qt add-on pulled in --- and refuses
+to certify one that fails.
+
+PyInstaller cannot cross-build: each platform's bundle must be produced on that
+platform. At the time of writing this has been built and launched on Windows
+only; macOS and Linux bundles are unproven rather than broken.

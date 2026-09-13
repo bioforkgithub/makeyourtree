@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "makeyourtree"
+version = "0.1.0"
+description = "MakeYourTree - a standalone desktop studio for phylogenetic tree visualisation and annotation."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Manish Prakash Victor" }]
+license = "MIT"
+license-files = ["LICENSES/MIT.txt"]
+keywords = ["phylogenetics", "tree", "newick", "nexus", "phyloxml", "visualisation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: X11 Applications :: Qt",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+studio = ["PySide6>=6.6"]
+dev = ["pytest>=8", "pytest-timeout", "hypothesis", "python-docx>=1.1"]
+
+[project.scripts]
+makeyourtree = "makeyourtree.cli:main"
+
+[project.gui-scripts]
+makeyourtree-studio = "makeyourtree_studio.app:main"
+
+# Formats the Qt-free CLI can write once the desktop extra is installed. The
+# core discovers these through importlib.metadata rather than importing the
+# studio, so nothing under src/makeyourtree/ ever touches Qt.
+[project.entry-points."makeyourtree.exporters"]
+png = "makeyourtree_studio.export.raster:export_png_dpi"
+pdf = "makeyourtree_studio.export.raster:export_pdf_dpi"
+
+# Reading a published figure needs image and PDF decoders, which is Qt again.
+# Same discovery mechanism, same reason: the core stays toolkit-free.
+[project.entry-points."makeyourtree.figure_inspectors"]
+qt = "makeyourtree_studio.guide.inspect:inspect_figure"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["error::DeprecationWarning:makeyourtree.*"]

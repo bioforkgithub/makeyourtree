@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns="http://www.phyloxml.org">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <branch_length>1.2633</branch_length>
+        <confidence type="bootstrap">77</confidence>
+        <clade>
+          <branch_length>0.2537</branch_length>
+          <confidence type="bootstrap">67</confidence>
+          <clade>
+            <name>isolate_A5</name>
+            <branch_length>0.1389</branch_length>
+          </clade>
+          <clade>
+            <branch_length>0.2821</branch_length>
+            <confidence type="bootstrap">82</confidence>
+            <clade>
+              <name>isolate_A1</name>
+              <branch_length>0.0631</branch_length>
+            </clade>
+            <clade>
+              <name>isolate_B2</name>
+              <branch_length>0.1161</branch_length>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <branch_length>1.531</branch_length>
+          <confidence type="bootstrap">89</confidence>
+          <clade>
+            <name>isolate_A6</name>
+            <branch_length>0.0441</branch_length>
+          </clade>
+          <clade>
+            <branch_length>0.0914</branch_length>
+            <confidence type="bootstrap">78</confidence>
+            <clade>
+              <name>isolate_B4</name>
+              <branch_length>0.2522</branch_length>
+            </clade>
+            <clade>
+              <name>isolate_B5</name>
+              <branch_length>0.076</branch_length>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <branch_length>0.3116</branch_length>
+        <confidence type="bootstrap">66</confidence>
+        <clade>
+          <branch_length>0.221</branch_length>
+          <confidence type="bootstrap">80</confidence>
+          <clade>
+            <branch_length>0.0389</branch_length>
+            <confidence type="bootstrap">100</confidence>
+            <clade>
+              <name>isolate_A3</name>
+              <branch_length>0.0364</branch_length>
+            </clade>
+            <clade>
+              <name>isolate_B3</name>
+              <branch_length>0.0845</branch_length>
+            </clade>
+          </clade>
+          <clade>
+            <name>isolate_A2</name>
+            <branch_length>0.0386</branch_length>
+          </clade>
+        </clade>
+        <clade>
+          <branch_length>1.0252</branch_length>
+          <confidence type="bootstrap">100</confidence>
+          <clade>
+            <branch_length>0.0651</branch_length>
+            <confidence type="bootstrap">97</confidence>
+            <clade>
+              <name>isolate_B1</name>
+              <branch_length>0.0602</branch_length>
+            </clade>
+            <clade>
+              <name>isolate_A4</name>
+              <branch_length>0.0438</branch_length>
+            </clade>
+          </clade>
+          <clade>
+            <name>isolate_B6</name>
+            <branch_length>0.0656</branch_length>
+          </clade>
+        </clade>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>

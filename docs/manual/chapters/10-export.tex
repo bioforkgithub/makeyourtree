@@ -1,0 +1,108 @@
+% SPDX-License-Identifier: MIT
+\chapter{Exporting and projects}
+\label{ch:export}
+
+\section{Exporting a figure}
+
+\textbf{File \textbf{\textrightarrow} Export Figure} (\keys{Ctrl+E}) writes the
+current figure. Three formats are available.
+
+\begin{center}
+\begin{tabular}{@{}llp{0.48\linewidth}@{}}
+\toprule
+\textbf{Format} & \textbf{Kind} & \textbf{Use it for} \\
+\midrule
+SVG & Vector & Journal submission, and any figure you intend to edit afterwards in a vector editor. \\
+PDF & Vector & Journal submission, and inclusion in \LaTeX{} documents. \\
+PNG & Raster & Slides, web pages, quick sharing. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Prefer a vector format wherever it is accepted.} A vector figure has no
+resolution: it stays sharp at any magnification and in print. Use PNG only where
+raster is required.
+
+For PNG, a scale factor multiplies the figure's natural size. The export dialog
+predicts the resulting pixel dimensions before you commit, so you can hit a
+journal's minimum resolution without guessing. A scale of 2--4 is typical for
+print.
+
+\section{Sizes and resolution}
+
+A scene unit is a \textbf{PostScript point}, 1/72 inch, and every output honours
+that. An SVG carries \cmd{pt} on its \cmd{width} and \cmd{height}, a PDF page is
+measured in points, and a PNG multiplies by \opt{dpi}/72. The consequence worth
+knowing is that the same figure exported as SVG and as PDF is the \emph{same
+physical size}, so the two can be swapped in a manuscript without anything
+moving.
+
+For raster output the DPI box and the pixel boxes are two views of one number:
+changing either updates the other. 300\,dpi is the usual journal minimum and
+600\,dpi is sometimes required. The pixel size predicted in the dialog is
+exactly what lands on disk.
+
+The command line offers the same controls, plus physical units and named page
+sizes --- see Section~\ref{ch:cli}.
+
+\section{What you see is what you get}
+
+The canvas and all three exporters consume an identical description of the
+figure. There is no separate rendering path for export, so a figure cannot differ
+between the screen and the file. This includes the theme: a figure composed under
+the dark theme exports dark.
+
+\section{Projects}
+
+A project file (\cmd{.mytree}) holds the tree, the layout settings, the theme and
+every annotation track, so reopening it restores the figure exactly as you left
+it.
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Action} & \textbf{Key} \\
+\midrule
+Save          & \keys{Ctrl+S} \\
+Save As       & \keys{Ctrl+Shift+S} \\
+Open Project  & \keys{Ctrl+Shift+O} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+A project is a container carrying a manifest plus the tree and annotation data.
+Because the tracks travel inside it, a project is self-contained: you can move it
+to another machine and it will open with its annotations intact, without the
+original \cmd{.mytrack} files alongside.
+
+Projects are treated as untrusted input on load, in the same way tree files are:
+a project arriving by email or download is parsed defensively rather than
+trusted.
+
+\section{Preparing a figure for publication}
+
+A short checklist, in the order that tends to work:
+
+\begin{enumerate}
+  \item \textbf{Root deliberately.} Outgroup rooting if you have an outgroup,
+        midpoint otherwise --- and say which in the caption
+        (Chapter~\ref{ch:editing}).
+  \item \textbf{Ladderize} (\keys{L}). It costs nothing and makes branching
+        order far easier to follow.
+  \item \textbf{Align tips} (\keys{A}) once you have annotation tracks, so rows
+        line up with track cells.
+  \item \textbf{Check the colours.} Prefer the built-in colour-vision-safe
+        palettes over a hand-picked rainbow.
+  \item \textbf{Say what the branch lengths mean}, or turn them off with a
+        cladogram if they are meaningless. Readers cannot tell by looking.
+  \item \textbf{State the support values} shown, and what they are --- bootstrap
+        percentages and posterior probabilities look identical and mean quite
+        different things.
+  \item \textbf{Export vector} (SVG or PDF).
+  \item \textbf{Save the project} alongside the figure, so the figure can be
+        regenerated or corrected later.
+\end{enumerate}
+
+For a figure that must be reproducible from a pipeline rather than from a saved
+project, generate it from a script instead --- Chapters~\ref{ch:cli}
+and~\ref{ch:python}.

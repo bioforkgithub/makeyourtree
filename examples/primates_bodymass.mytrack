@@ -1,0 +1,35 @@
+#makeyourtree-annotation 1
+
+[track]
+type = bar-chart
+title = Body mass (kg)
+
+[options]
+thickness = 90
+color = #4C7A9C
+axis = true
+
+[columns]
+names = mass
+
+[legend]
+title = Body mass
+show = true
+
+[data]
+Aotus_trivirgatus	17.3
+Cebus_capucinus	152.9
+Saimiri_sciureus	78.2
+Callithrix_jacchus	5.5
+Ateles_geoffroyi	101.9
+Alouatta_palliata	111.6
+Macaca_mulatta	124.9
+Papio_anubis	98.6
+Cercopithecus_mitis	75.9
+Colobus_guereza	136.5
+Hylobates_lar	69.3
+Pongo_abelii	80.9
+Gorilla_beringei	115.6
+Pan_troglodytes	70.2
+Homo_sapiens	0.9
+Lemur_catta	122.6

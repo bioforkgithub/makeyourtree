@@ -1,0 +1,71 @@
+#makeyourtree-annotation 1
+
+[track]
+type = color-strip
+title = Lineage
+
+[options]
+thickness = 16
+
+[columns]
+names = lineage
+
+[colors]
+B.1 = #117733
+B.1.1 = #DDCC77
+AY.4 = #CC6677
+BA.2 = #332288
+
+[legend]
+title = Lineage
+show = true
+
+[data]
+T000	B.1
+T025	B.1.1
+T020	AY.4
+T040	BA.2
+T004	B.1
+T007	B.1.1
+T038	AY.4
+T024	BA.2
+T016	B.1
+T027	B.1.1
+T030	AY.4
+T033	BA.2
+T018	B.1
+T008	B.1.1
+T021	AY.4
+T003	BA.2
+T002	B.1
+T034	B.1.1
+T039	AY.4
+T037	BA.2
+T005	B.1
+T035	B.1.1
+T031	AY.4
+T026	BA.2
+T041	B.1
+T013	B.1.1
+T010	AY.4
+T017	BA.2
+T019	B.1
+T001	B.1.1
+T036	AY.4
+T022	BA.2
+T028	B.1
+T042	B.1.1
+T029	AY.4
+T011	BA.2
+T023	B.1
+T015	B.1.1
+T006	AY.4
+T046	BA.2
+T014	B.1
+T012	B.1.1
+T044	AY.4
+T009	BA.2
+T045	B.1
+T043	B.1.1
+T032	AY.4
+T047	BA.2

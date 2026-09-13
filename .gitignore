@@ -1,0 +1,48 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.spec.bak
+.DS_Store
+
+# Research working material. Deliberately excluded from version control:
+# it contains third-party annotation-directive vocabulary gathered while
+# specifying our own format. None of it reached src/ (see legal/PROVENANCE.md),
+# and git history is permanent, so it must never be committed.
+docs/_research/
+
+# Scratch artefacts that have leaked into the repo root before.
+/unused
+/unused.png
+
+# LaTeX build debris. The manual PDF itself IS committed, so people can
+# download it without a TeX installation; only the intermediates are ignored.
+docs/manual/*.aux
+docs/manual/*.log
+docs/manual/*.out
+docs/manual/*.toc
+docs/manual/*.fls
+docs/manual/*.fdb_latexmk
+docs/manual/*.synctex.gz
+docs/manual/manual.pdf
+
+# The manuscript, its figure generator and its build tool are kept out of the
+# repository until the paper is published. They live on in the working copy,
+# untracked.
+paper/
+tools/make_paper_figures.py
+tools/make_manuscript_docx.py
+
+# Agent working notes. Useful locally, not part of the published project.
+CLAUDE.md
+
+# Internal work order: manuscript defects, prior author identity, submission notes.
+docs/ERROR-REPORT.md
+
+# Citation metadata returns once the software has a Zenodo DOI.
+CITATION.cff

@@ -1,0 +1,65 @@
+#makeyourtree-annotation 1
+
+[track]
+type = gradient
+title = Sampling date
+
+[options]
+thickness = 16
+
+[columns]
+names = day
+
+[legend]
+title = Days since index case
+show = true
+
+[data]
+T000	79
+T025	612
+T020	275
+T040	410
+T004	266
+T007	97
+T038	195
+T024	233
+T016	48
+T027	399
+T030	277
+T033	2
+T018	277
+T008	311
+T021	38
+T003	26
+T002	571
+T034	301
+T039	237
+T037	412
+T005	9
+T035	669
+T031	81
+T026	224
+T041	305
+T013	659
+T010	658
+T017	641
+T019	23
+T001	88
+T036	599
+T022	361
+T028	331
+T042	689
+T029	454
+T011	34
+T023	188
+T015	85
+T006	23
+T046	709
+T014	632
+T012	360
+T044	567
+T009	147
+T045	162
+T043	713
+T032	3
+T047	698

@@ -1,0 +1,154 @@
+% SPDX-License-Identifier: MIT
+\chapter{Layouts}
+\label{ch:layouts}
+
+There are five layout modes, selected with keys \keys{1}--\keys{5}, from the
+Style panel, or with \opt{--mode} on the command line. Independently of the mode,
+the \emph{branch mode} decides how the along-axis coordinate is derived.
+
+\section{Branch modes}
+
+\begin{center}
+\begin{tabular}{@{}llp{0.5\linewidth}@{}}
+\toprule
+\textbf{Branch mode} & \textbf{Key} & \textbf{Along-axis coordinate} \\
+\midrule
+Phylogram              & \keys{Ctrl+1} & Cumulative branch length. Distances are meaningful. \\
+Cladogram, aligned tips& \keys{Ctrl+2} & Depth, with every tip on the outer edge. Topology only. \\
+Cladogram, by level    & \keys{Ctrl+3} & Node depth in levels. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+A phylogram shows evolutionary distance; a cladogram shows only branching order.
+Use a cladogram when branch lengths are absent or meaningless, and say which you
+used in the figure legend --- readers cannot tell by looking.
+
+\section{Rectangular}
+
+The default, and the right choice for most figures. Branch length runs along $x$,
+tips are stacked down $y$.
+
+\galleryfig{layout-rectangular-phylogram}{Rectangular phylogram. The scale bar at
+the lower left gives the units of the horizontal axis.}{1.0}
+
+\galleryfig{layout-rectangular-cladogram}{Rectangular cladogram with aligned
+tips. Horizontal position now carries no distance information.}{1.0}
+
+\section{Slanted}
+
+Branches are drawn as straight diagonals rather than as right angles. Compact and
+readable for small trees; harder to follow for large ones, because it is less
+obvious which ancestor a branch descends from.
+
+\galleryfig{layout-slanted}{Slanted layout.}{1.0}
+
+\section{Circular}
+
+Tips are placed around an arc. This is the layout that makes a large tree fit on
+a page, and it is the natural home for multiple annotation rings.
+
+Three options shape it:
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Option} & \textbf{Default} & \textbf{Effect} \\
+\midrule
+\opt{arc}          & 350\textdegree & Angular span. 360\textdegree{} closes the circle. \\
+\opt{inner\_radius}& 0.1            & Hole at the centre, as a fraction of the radius. \\
+\opt{start\_angle} & $-90$\textdegree & Where the first tip sits. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Leaving a small gap --- the default 350\textdegree{} --- makes it clear where the
+tip order begins and ends. Closing to a full circle looks tidier but loses that
+cue.
+
+The gap does a second job that is easy to miss: it is the only place a track
+caption can go. A rectangular tree captions its columns in a header row above
+them and grows the page to fit; a fan has no room above its rings, so the
+captions are written into the wedge the arc leaves open. Ask for several rings
+with long names and the wedge fills up, at which point MakeYourTree reports the
+captions it could not place rather than drawing them across the data. Widening
+the gap --- \opt{arc} at 340\textdegree{} or 320\textdegree{} --- is the fix;
+the legend names every track either way.
+
+\galleryfig{layout-circular}{Circular fan with the default 350\textdegree{} arc.
+Labels are rotated tangentially and flipped on the left-hand side so that none of
+them is upside down.}{0.75}
+
+\galleryfig{layout-circular-full}{A full 360\textdegree{} circle with a larger
+inner radius.}{0.75}
+
+\begin{quote}
+\textbf{A gap you should not try to fix.} In a circular \emph{phylogram}, tips sit
+at different radii because they are at different evolutionary distances from the
+root. A ragged inner edge against an annotation ring is therefore correct, not a
+bug. Turn on \textbf{Align tips} (\keys{A}) if you want the ring flush.
+\end{quote}
+
+\section{Radial}
+
+Angle comes from tip order and radius from branch length, but the tree is drawn
+outward from a central root without the concentric-arc branch style of the
+circular mode.
+
+\galleryfig{layout-radial}{Radial layout.}{0.75}
+
+\section{Unrooted}
+
+An unrooted layout makes no claim about which node is ancestral. Two algorithms
+are available.
+
+\begin{description}[style=nextline,leftmargin=0pt,labelindent=0pt,labelwidth=0pt]
+  \item[Equal-angle] Felsenstein's original method. Each subtree receives a wedge
+    proportional to the number of tips it contains. Fast and always planar.
+  \item[Equal-daylight] Iteratively adjusts the wedges so the blank space between
+    subtrees is evened out. Slower, usually easier to read.
+\end{description}
+
+Branch lengths are preserved exactly in both, and both are planar by
+construction.
+
+\galleryfig{layout-unrooted-equal-angle}{Unrooted, equal-angle.}{0.85}
+
+\galleryfig{layout-unrooted-equal-daylight}{Unrooted, equal-daylight. The
+subtrees are spread to even out the gaps between them.}{0.85}
+
+\subsection{Annotation tracks in unrooted layouts}
+\label{sec:unrooted-tracks}
+
+\begin{quote}
+\textbf{Known limitation.} An unrooted layout has no tip ordering along a line or
+a circle, so band space has no faithful meaning in it. Tracks are currently drawn
+as a column beside the figure, in tip order, \emph{aligned to nothing}. The
+composition step emits the diagnostic
+\cmd{compose.approximate-band-space} to record this, but the interface does not
+yet present it prominently.
+
+Do not use annotation tracks with an unrooted layout in a published figure
+without saying so. Use a rooted layout instead.
+\end{quote}
+
+\section{Spacing and labels}
+
+\begin{center}
+\begin{tabular}{@{}lp{0.6\linewidth}@{}}
+\toprule
+\textbf{Setting} & \textbf{Effect} \\
+\midrule
+\opt{row\_spacing}   & Distance between adjacent tip rows. The main control over figure height. \\
+\opt{width}, \opt{height} & Page size in scene units. \\
+\opt{align\_tips}    & Flush all tip labels to a common edge. \\
+\opt{guide\_lines}   & Dotted leaders from each tip to its label. Only meaningful with aligned tips. \\
+\opt{show\_tip\_labels} & Turn tip labels off entirely --- often necessary above a few hundred tips. \\
+\opt{max\_label\_width} & Truncate long labels with an ellipsis. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\galleryfig{feature-align-tips}{Tips aligned with guide lines. This is almost
+always what you want once an annotation track is attached, because it makes the
+rows line up visually with the track cells.}{0.95}

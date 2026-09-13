@@ -1,0 +1,13 @@
+# Default: let Git normalise line endings in the working tree.
+* text=auto
+
+# Licence texts must survive byte for byte. LGPL-3.0 section 4(b) requires the
+# licence to be conveyed verbatim, so these are exempt from EOL normalisation.
+LICENSES/*.txt -text
+THIRD-PARTY-NOTICES.md -text
+
+# Test fixtures encode exact grammar and whitespace edge cases; normalising
+# them would silently change what the parser tests actually assert.
+tests/**/fixtures/** -text
+examples/*.nwk -text
+examples/*.mytrack -text

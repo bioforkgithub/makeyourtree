@@ -1,0 +1,21 @@
+#makeyourtree-annotation 1
+
+[track]
+type = text-labels
+title = Notes
+
+[options]
+size = 10
+color = #5A5A66
+
+[columns]
+names = note
+
+[data]
+Plantae	photosynthetic
+Fungi	osmotrophic
+Metazoa	ingestive
+Firmicutes	low GC
+Proteobacteria	gram-negative
+Euryarchaeota	methanogens
+Crenarchaeota	thermophiles

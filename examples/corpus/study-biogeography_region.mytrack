@@ -1,0 +1,58 @@
+#makeyourtree-annotation 1
+
+[track]
+type = color-strip
+title = Region
+
+[options]
+thickness = 18
+
+[columns]
+names = region
+
+[colors]
+Neotropic = #117733
+Afrotropic = #DDCC77
+Palearctic = #CC6677
+Indomalayan = #332288
+Australasia = #AA4499
+
+[legend]
+title = Region
+show = true
+
+[data]
+T028	Neotropic
+T020	Afrotropic
+T015	Palearctic
+T026	Indomalayan
+T006	Australasia
+T011	Neotropic
+T012	Afrotropic
+T025	Palearctic
+T033	Indomalayan
+T031	Australasia
+T008	Neotropic
+T016	Afrotropic
+T007	Palearctic
+T019	Indomalayan
+T030	Australasia
+T005	Neotropic
+T029	Afrotropic
+T010	Palearctic
+T027	Indomalayan
+T032	Australasia
+T024	Neotropic
+T013	Afrotropic
+T004	Palearctic
+T003	Indomalayan
+T014	Australasia
+T000	Neotropic
+T002	Afrotropic
+T022	Palearctic
+T023	Indomalayan
+T009	Australasia
+T021	Neotropic
+T001	Afrotropic
+T018	Palearctic
+T017	Indomalayan

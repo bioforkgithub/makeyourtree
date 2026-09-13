@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1118.7pt" height="707.69pt" viewBox="0 0 1118.7 707.69">
+<rect class="makeyourtree-background" x="0" y="0" width="1118.7" height="707.69" fill="#ffffff"/>
+<g class="makeyourtree-grid">
+<g transform="translate(0.6 81.4)">
+<path d="M243.684 32L924 32M463.73 48L924 48M560.433 64L924 64M627.602 80L924 80M375.674 96L924 96M757.182 112L924 112M737.177 128L924 128M752.783 144L924 144M860.085 160L924 160M365.187 176L924 176M333.467 192L924 192M541.261 208L924 208M890.538 224L924 224M892.986 240L924 240M870.099 256L924 256M623.378 272L924 272M118.441 288L924 288M221.456 304L924 304M435.86 320L924 320M355.235 336L924 336M312.605 352L924 352M474.403 368L924 368M847.573 384L924 384M752.361 416L924 416M649.346 432L924 432M611.189 448L924 448M662.392 464L924 464M539.112 480L924 480M529.619 496L924 496M486.293 512L924 512M394.436 528L924 528M582.823 544L924 544M570.373 560L924 560" fill="none" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="1,3"/>
+</g>
+</g>
+<g class="makeyourtree-connections">
+<g transform="translate(0.6 81.4)">
+<path d="M327.467 192Q339.064 248 215.456 304" fill="none" stroke="#cc6677" stroke-width="1.424" stroke-opacity="0.55"/>
+<path d="M306.605 352Q416.501 440 388.436 528" fill="none" stroke="#aa4499" stroke-width="2.245" stroke-opacity="0.55"/>
+<path d="M617.378 272Q762.445 344 746.361 416" fill="none" stroke="#332288" stroke-width="4.64" stroke-opacity="0.55"/>
+<path d="M751.182 112Q753.053 152 327.467 192" fill="none" stroke="#ddcc77" stroke-width="5.439" stroke-opacity="0.55"/>
+<path d="M237.684 32Q622.349 56 621.602 80" fill="none" stroke="#117733" stroke-width="6" stroke-opacity="0.55"/>
+<text x="305.262" y="248" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#cc6677">event 3</text>
+<text x="382.011" y="440" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#aa4499">event 5</text>
+<text x="722.157" y="344" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#332288">event 4</text>
+<text x="646.189" y="152" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#ddcc77">event 2</text>
+<text x="525.996" y="56" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#117733">event 1</text>
+</g>
+</g>
+<g class="makeyourtree-branches">
+<g transform="translate(0.6 81.4)">
+<path d="M24 265.438L24 137.5M24 137.5L154.188 137.5M154.188 137.5L154.188 66.5M154.188 66.5L204.745 66.5M204.745 66.5L204.745 32M204.745 32L237.684 32M204.745 66.5L204.745 101M204.745 101L301.088 101M301.088 101L301.088 66M301.088 66L318.26 66M318.26 66L318.26 48M318.26 48L457.73 48M318.26 66L318.26 84M318.26 84L354.528 84M354.528 84L354.528 72M354.528 72L536.777 72M536.777 72L536.777 64M536.777 64L554.433 64M536.777 72L536.777 80M536.777 80L621.602 80M354.528 84L354.528 96M354.528 96L369.674 96M301.088 101L301.088 136M301.088 136L629.827 136M629.827 136L629.827 120M629.827 120L715.249 120M715.249 120L715.249 112M715.249 112L751.182 112M715.249 120L715.249 128M715.249 128L731.177 128M629.827 136L629.827 152M629.827 152L735.327 152M735.327 152L735.327 144M735.327 144L746.783 144M735.327 152L735.327 160M735.327 160L854.085 160M154.188 137.5L154.188 208.5M154.188 208.5L262.546 208.5M262.546 208.5L262.546 184M262.546 184L311.687 184M311.687 184L311.687 176M311.687 176L359.187 176M311.687 184L311.687 192M311.687 192L327.467 192M262.546 208.5L262.546 233M262.546 233L513.617 233M513.617 233L513.617 208M513.617 208L535.261 208M513.617 233L513.617 258M513.617 258L569.467 258M569.467 258L569.467 244M569.467 244L807.802 244M807.802 244L807.802 232M807.802 232L876.499 232M876.499 232L876.499 224M876.499 224L884.538 224M876.499 232L876.499 240M876.499 240L886.986 240M807.802 244L807.802 256M807.802 256L864.099 256M569.467 258L569.467 272M569.467 272L617.378 272M24 265.438L24 393.375M24 393.375L60.082 393.375M60.082 393.375L60.082 308M60.082 308L106.104 308M106.104 308L106.104 288M106.104 288L112.441 288M106.104 308L106.104 328M106.104 328L168.912 328M168.912 328L168.912 312M168.912 312L208.013 312M208.013 312L208.013 304M208.013 304L215.456 304M208.013 312L208.013 320M208.013 320L429.86 320M168.912 328L168.912 344M168.912 344L280.948 344M280.948 344L280.948 336M280.948 336L349.235 336M280.948 344L280.948 352M280.948 352L306.605 352M60.082 393.375L60.082 478.75M60.082 478.75L114.528 478.75M114.528 478.75L114.528 424.5M114.528 424.5L288.266 424.5M288.266 424.5L288.266 393M288.266 393L460.165 393M460.165 393L460.165 368M460.165 368L468.403 368M460.165 393L460.165 418M460.165 418L575.493 418M575.493 418L575.493 404M575.493 404L726.406 404M726.406 404L726.406 392M726.406 392L827.458 392M827.458 392L827.458 384M827.458 384L841.573 384M827.458 392L827.458 400M827.458 400L924 400M726.406 404L726.406 416M726.406 416L746.361 416M575.493 418L575.493 432M575.493 432L643.346 432M288.266 424.5L288.266 456M288.266 456L554.122 456M554.122 456L554.122 448M554.122 448L605.189 448M554.122 456L554.122 464M554.122 464L656.392 464M114.528 478.75L114.528 533M114.528 533L361.697 533M361.697 533L361.697 514M361.697 514L372.606 514M372.606 514L372.606 500M372.606 500L448.398 500M448.398 500L448.398 488M448.398 488L477.92 488M477.92 488L477.92 480M477.92 480L533.112 480M477.92 488L477.92 496M477.92 496L523.619 496M448.398 500L448.398 512M448.398 512L480.293 512M372.606 514L372.606 528M372.606 528L388.436 528M361.697 533L361.697 552M361.697 552L495.737 552M495.737 552L495.737 544M495.737 544L576.823 544M495.737 552L495.737 560M495.737 560L564.373 560" fill="none" stroke="#33333a" stroke-width="1.2" stroke-linejoin="round"/>
+</g>
+</g>
+<g class="makeyourtree-tracks">
+<g transform="translate(0.6 81.4)">
+<g><rect x="969.41" y="24" width="18" height="16" fill="#117733"/><rect x="969.41" y="40" width="18" height="16" fill="#ddcc77"/><rect x="969.41" y="56" width="18" height="16" fill="#cc6677"/><rect x="969.41" y="72" width="18" height="16" fill="#332288"/><rect x="969.41" y="88" width="18" height="16" fill="#aa4499"/><rect x="969.41" y="104" width="18" height="16" fill="#117733"/><rect x="969.41" y="120" width="18" height="16" fill="#ddcc77"/><rect x="969.41" y="136" width="18" height="16" fill="#cc6677"/><rect x="969.41" y="152" width="18" height="16" fill="#332288"/><rect x="969.41" y="168" width="18" height="16" fill="#aa4499"/><rect x="969.41" y="184" width="18" height="16" fill="#117733"/><rect x="969.41" y="200" width="18" height="16" fill="#ddcc77"/><rect x="969.41" y="216" width="18" height="16" fill="#cc6677"/><rect x="969.41" y="232" width="18" height="16" fill="#332288"/><rect x="969.41" y="248" width="18" height="16" fill="#aa4499"/><rect x="969.41" y="264" width="18" height="16" fill="#117733"/><rect x="969.41" y="280" width="18" height="16" fill="#ddcc77"/><rect x="969.41" y="296" width="18" height="16" fill="#cc6677"/><rect x="969.41" y="312" width="18" height="16" fill="#332288"/><rect x="969.41" y="328" width="18" height="16" fill="#aa4499"/><rect x="969.41" y="344" width="18" height="16" fill="#117733"/><rect x="969.41" y="360" width="18" height="16" fill="#ddcc77"/><rect x="969.41" y="376" width="18" height="16" fill="#cc6677"/><rect x="969.41" y="392" width="18" height="16" fill="#332288"/><rect x="969.41" y="408" width="18" height="16" fill="#aa4499"/><rect x="969.41" y="424" width="18" height="16" fill="#117733"/><rect x="969.41" y="440" width="18" height="16" fill="#ddcc77"/><rect x="969.41" y="456" width="18" height="16" fill="#cc6677"/><rect x="969.41" y="472" width="18" height="16" fill="#332288"/><rect x="969.41" y="488" width="18" height="16" fill="#aa4499"/><rect x="969.41" y="504" width="18" height="16" fill="#117733"/><rect x="969.41" y="520" width="18" height="16" fill="#ddcc77"/><rect x="969.41" y="536" width="18" height="16" fill="#cc6677"/><rect x="969.41" y="552" width="18" height="16" fill="#332288"/></g>
+<text x="978.41" y="3.2" transform="rotate(-90 978.41 3.2)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Region</text>
+<text x="995.41" y="-19.5" transform="rotate(-90 995.41 -19.5)" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" text-anchor="middle" dominant-baseline="central" fill="#71717a">Dispersal events</text>
+</g>
+</g>
+<g class="makeyourtree-labels">
+<g transform="translate(0.6 81.4)">
+<text x="930" y="32" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T028</text>
+<text x="930" y="48" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T020</text>
+<text x="930" y="64" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T015</text>
+<text x="930" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T026</text>
+<text x="930" y="96" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T006</text>
+<text x="930" y="112" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T011</text>
+<text x="930" y="128" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T012</text>
+<text x="930" y="144" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T025</text>
+<text x="930" y="160" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T033</text>
+<text x="930" y="176" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T031</text>
+<text x="930" y="192" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T008</text>
+<text x="930" y="208" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T016</text>
+<text x="930" y="224" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T007</text>
+<text x="930" y="240" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T019</text>
+<text x="930" y="256" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T030</text>
+<text x="930" y="272" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T005</text>
+<text x="930" y="288" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T029</text>
+<text x="930" y="304" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T010</text>
+<text x="930" y="320" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T027</text>
+<text x="930" y="336" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T032</text>
+<text x="930" y="352" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T024</text>
+<text x="930" y="368" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T013</text>
+<text x="930" y="384" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T004</text>
+<text x="930" y="400" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T003</text>
+<text x="930" y="416" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T014</text>
+<text x="930" y="432" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T000</text>
+<text x="930" y="448" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T002</text>
+<text x="930" y="464" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T022</text>
+<text x="930" y="480" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T023</text>
+<text x="930" y="496" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T009</text>
+<text x="930" y="512" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T021</text>
+<text x="930" y="528" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T001</text>
+<text x="930" y="544" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T018</text>
+<text x="930" y="560" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="11" dominant-baseline="central" fill="#18181b">T017</text>
+</g>
+</g>
+<g class="makeyourtree-decor">
+<g transform="translate(0.6 81.4)">
+<path d="M24 586L148.249 586M24 582.4L24 589.6M148.249 582.4L148.249 589.6" fill="none" stroke="#52525b" stroke-width="1"/>
+<text x="86.125" y="597.7" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#52525b">1</text>
+</g>
+</g>
+<g class="makeyourtree-legend">
+<g transform="translate(0.6 81.4)">
+<text x="1014.51" y="-50.8" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Region</text>
+<rect x="1014.51" y="-43.6" width="12" height="12" rx="1.8" fill="#117733"/>
+<text x="1032.51" y="-37.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Neotropic</text>
+<rect x="1014.51" y="-30.4" width="12" height="12" rx="1.8" fill="#ddcc77"/>
+<text x="1032.51" y="-24.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Afrotropic</text>
+<rect x="1014.51" y="-17.2" width="12" height="12" rx="1.8" fill="#cc6677"/>
+<text x="1032.51" y="-11.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Palearctic</text>
+<rect x="1014.51" y="-4" width="12" height="12" rx="1.8" fill="#332288"/>
+<text x="1032.51" y="2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Indomalayan</text>
+<rect x="1014.51" y="9.2" width="12" height="12" rx="1.8" fill="#aa4499"/>
+<text x="1032.51" y="15.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">Australasia</text>
+<text x="1014.51" y="40.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" font-weight="600" dominant-baseline="central" fill="#18181b">Dispersal events</text>
+<path d="M1014.51 53.6L1026.51 53.6" fill="none" stroke="#117733" stroke-width="2.4"/>
+<text x="1032.51" y="53.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">event 1</text>
+<path d="M1014.51 66.8L1026.51 66.8" fill="none" stroke="#ddcc77" stroke-width="2.4"/>
+<text x="1032.51" y="66.8" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">event 2</text>
+<path d="M1014.51 80L1026.51 80" fill="none" stroke="#cc6677" stroke-width="2.4"/>
+<text x="1032.51" y="80" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">event 3</text>
+<path d="M1014.51 93.2L1026.51 93.2" fill="none" stroke="#332288" stroke-width="2.4"/>
+<text x="1032.51" y="93.2" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">event 4</text>
+<path d="M1014.51 106.4L1026.51 106.4" fill="none" stroke="#aa4499" stroke-width="2.4"/>
+<text x="1032.51" y="106.4" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">event 5</text>
+<path d="M1014.51 119.6L1026.51 119.6" fill="none" stroke="#71717a" stroke-width="2.4"/>
+<text x="1032.51" y="119.6" font-family="Inter, Segoe UI, DejaVu Sans, sans-serif" font-size="10" dominant-baseline="central" fill="#18181b">link weight</text>
+</g>
+</g>
+</svg>
