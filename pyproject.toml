@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 authors = [{ name = "Manish Prakash Victor" }]
 license = "MIT"
-license-files = ["LICENSES/MIT.txt"]
+license-files = ["LICENSE", "LICENSES/MIT.txt"]
 keywords = ["phylogenetics", "tree", "newick", "nexus", "phyloxml", "visualisation"]
 classifiers = [
   "Development Status :: 3 - Alpha",
