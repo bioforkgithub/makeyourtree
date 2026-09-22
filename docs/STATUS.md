@@ -1,6 +1,6 @@
 # Project status
 
-**Last updated:** 2026-09-22 · **Suite:** 2288 passing, 0 failing (~40 s)
+**Last updated:** 2026-09-22 · **Suite:** 2290 passing, 0 failing (~40 s)
 **Read `docs/SPEC.md` first** — it has the architecture and the frozen contracts. This
 file is the handoff note: what actually works, what is thin, and what to do next.
 

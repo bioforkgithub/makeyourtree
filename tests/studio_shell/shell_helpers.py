@@ -44,6 +44,7 @@ class ScriptedWindow(MainWindow):
         self.save_answer: str = ""
         self.discard_answer: str = "discard"
         self.errors: list[tuple[str, str]] = []
+        self.infos: list[tuple[str, str]] = []
         self.asked: list[str] = []
         super().__init__(*args, **kw)
 
@@ -61,6 +62,9 @@ class ScriptedWindow(MainWindow):
 
     def report_error(self, title: str, message: str) -> None:
         self.errors.append((title, message))
+
+    def report_info(self, title: str, message: str) -> None:
+        self.infos.append((title, message))
 
 
 def make_window(tmp_path: Path, **kw: Any) -> ScriptedWindow:

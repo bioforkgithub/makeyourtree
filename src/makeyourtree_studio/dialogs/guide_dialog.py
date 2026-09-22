@@ -239,26 +239,33 @@ class GuideDialog(QDialog):
     # from the "invoke every command" test, which would otherwise block forever
     # on a native chooser with nobody to dismiss it.
 
-    def _host(self):
+    def _owner(self):
         owner = self.parent()
         return owner if hasattr(owner, "ask_open_path") else None
 
     def _ask_open(self, caption: str, filters: str) -> str:
-        host = self._host()
+        host = self._owner()
         if host is not None:
             return host.ask_open_path(caption, filters)
         path, _ = QFileDialog.getOpenFileName(self, caption, "", filters)
         return path
 
     def _ask_save(self, caption: str, suggested: str, filters: str) -> str:
-        host = self._host()
+        host = self._owner()
         if host is not None:
             return host.ask_save_path(caption, suggested, filters)
         path, _ = QFileDialog.getSaveFileName(self, caption, suggested, filters)
         return path
 
+    def _inform(self, title: str, message: str) -> None:
+        host = self._owner()
+        if host is not None and hasattr(host, "report_info"):
+            host.report_info(title, message)
+        else:
+            QMessageBox.information(self, title, message)
+
     def _tell(self, title: str, message: str) -> None:
-        host = self._host()
+        host = self._owner()
         if host is not None and hasattr(host, "report_error"):
             host.report_error(title, message)
         else:
@@ -325,7 +332,7 @@ class GuideDialog(QDialog):
         else:
             body += ("\n\nThe figure did not show anything for certain, so "
                      "every question is still open.")
-        self._tell("What the figure showed", body)
+        self._inform("What the figure showed", body)
         self._show_current()
 
     # ----------------------------------------------------------------- save

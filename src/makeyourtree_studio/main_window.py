@@ -677,6 +677,14 @@ class MainWindow(QMainWindow):
         """
         QMessageBox.critical(self, title, message)
 
+    def report_info(self, title: str, message: str) -> None:
+        """Show news that is not a failure, such as what a figure showed.
+
+        Kept apart from :meth:`report_error` so a result is not dressed in an
+        error icon, and so a test can capture it instead of blocking on a box.
+        """
+        QMessageBox.information(self, title, message)
+
     def open_dialog(self, dialog: QDialog) -> QDialog:
         """Show *dialog* without blocking, keeping a reference to it.
 
