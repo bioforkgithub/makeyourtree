@@ -72,7 +72,7 @@ class Observation:
         band = ("likely" if self.confidence >= 0.75 else
                 "possible" if self.confidence >= 0.45 else "uncertain")
         text = f"{self.summary} ({band})"
-        return f"{text} -- {self.evidence}" if self.evidence else text
+        return f"{text}. Why: {self.evidence}." if self.evidence else text
 
 
 @dataclass(slots=True)

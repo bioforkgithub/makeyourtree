@@ -249,26 +249,35 @@ class Plan:
         for index, step in enumerate(self.steps, start=1):
             box = "x" if step.done else " "
             suffix = "  *(optional)*" if step.optional else ""
-            lines.append(f"{index}. [{box}] **{step.title}**{suffix}")
+            marker = f"{index}. "
+            pad = " " * len(marker)
+            lines.append(f"{marker}[{box}] **{step.title}**{suffix}")
             if step.detail:
-                lines += ["", *_continued(step.detail)]
+                lines += ["", *_continued(step.detail, indent=pad)]
             if step.command:
-                lines += ["", "   ```bash", f"   {step.command}", "   ```"]
+                lines += ["", f"{pad}*Or, if you prefer a terminal:*", "",
+                          f"{pad}```bash", f"{pad}{step.command}", f"{pad}```"]
             if step.note:
-                lines += ["", *_continued(step.note, first="> Note: ", rest="> ")]
+                lines += ["", *_continued(step.note, first="> Note: ", rest="> ",
+                                          indent=pad)]
             lines.append("")
         if self.notes:
             lines += ["## Notes", "", self.notes, ""]
         return "\n".join(lines).rstrip() + "\n"
 
 
-def _continued(text: str, first: str = "", rest: str = "") -> list[str]:
+def _continued(text: str, first: str = "", rest: str = "",
+               indent: str = "   ") -> list[str]:
     """Indent every line of *text* to sit inside a numbered list item.
 
     A step's detail can carry more than one line -- the interview joins the
     layout reason and the branch-mode reason with a newline.  Indenting only
     the first, as a single f-string does, drops the rest to column zero, which
     closes the list and restarts the numbering in every Markdown renderer.
+
+    *indent* must be as wide as the item's marker: "10. " needs four spaces,
+    not three.  One short and a nested list inside step 10 -- the numbered
+    clicks every step carries -- is read as a new top-level list instead.
 
     *first* and *rest* differ because a blockquote continues with a bare ``>``:
     repeating the whole "> Note:" label on each line would read as several
@@ -279,7 +288,7 @@ def _continued(text: str, first: str = "", rest: str = "") -> list[str]:
         if not line:
             out.append("")
             continue
-        out.append(f"   {first if index == 0 else rest}{line}")
+        out.append(f"{indent}{first if index == 0 else rest}{line}")
     return out
 
 

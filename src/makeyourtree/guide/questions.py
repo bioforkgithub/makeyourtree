@@ -125,26 +125,27 @@ QUESTIONS: tuple[Question, ...] = (
     Question(
         id="goal",
         text="What is this figure for?",
-        help="This sets the size, the resolution and the file format at the "
-             "end, so the figure comes out fit for where it is going.",
+        help="This decides the size and the kind of file you get at the end, "
+             "so the figure fits where it is going.",
         choices=(
             Choice("paper", "A journal article",
-                   "Vector PDF, sized to a journal column."),
+                   "A PDF file, as wide as one column of a journal page."),
             Choice("thesis", "A thesis or report",
-                   "Vector PDF at page width."),
+                   "A PDF file, as wide as the text on the page."),
             Choice("talk", "A talk or slides",
-                   "PNG at screen resolution, larger text."),
+                   "A PNG picture, sized for a screen."),
             Choice("poster", "A poster",
-                   "High-resolution PNG or vector PDF, printed large."),
+                   "A large, sharp picture for printing."),
             Choice("explore", "Just looking at the data",
-                   "Fast on-screen exploration; no export step."),
+                   "Look at the tree on screen; no file is made."),
         ),
     ),
     Question(
         id="tip_count",
         text="Roughly how many tips does your tree have?",
-        help="The single strongest constraint on the layout. Labels that fit "
-             "at 30 tips are unreadable at 3000.",
+        help="Tips are the names at the ends of the branches. Their number "
+             "matters most for the shape of the figure: names that fit with 30 "
+             "tips cannot be read with 3000.",
         choices=(
             Choice("tens", "Up to about 50"),
             Choice("hundreds", "50 to a few hundred"),
@@ -156,14 +157,15 @@ QUESTIONS: tuple[Question, ...] = (
     Question(
         id="branch_meaning",
         text="Do the branch lengths in your file mean something?",
-        help="A phylogram draws them to scale and claims they are meaningful. "
-             "A cladogram shows only the branching order. Readers cannot tell "
-             "which they are looking at unless you say so.",
+        help="Branch lengths are the lengths of the lines. If they mean "
+             "something, the tree is drawn with the lines to scale (a "
+             "phylogram). If not, only the order of branching is shown (a "
+             "cladogram).",
         choices=(
             Choice("substitutions", "Yes -- substitutions or distance"),
             Choice("time", "Yes -- time, a dated tree"),
             Choice("meaningless", "No, or I do not trust them",
-                   "A cladogram is the honest choice."),
+                   "Only the order of branching will be shown."),
             Choice("absent", "My file has no branch lengths"),
             Choice("unsure", "I am not sure",
                    "The plan will include a step to check."),
@@ -172,24 +174,28 @@ QUESTIONS: tuple[Question, ...] = (
     Question(
         id="rooting",
         text="How should the tree be rooted?",
-        help="Where the root sits decides which groups look monophyletic. It "
-             "is the choice most likely to change what a reader concludes.",
+        help="The root is where the tree starts. Where you put it decides "
+             "which tips look like one family group, so it can change what a "
+             "reader concludes.",
         choices=(
             Choice("outgroup", "I have an outgroup",
-                   "The best option: it encodes a real hypothesis."),
+                   "Species you know sit outside your group. The best "
+                   "option."),
             Choice("already", "It is already rooted correctly"),
             Choice("midpoint", "Use the midpoint",
-                   "Reasonable with no outgroup; assumes similar rates."),
+                   "Fine when you have no outgroup; assumes all lineages "
+                   "evolved at about the same speed."),
             Choice("unrooted", "Show it unrooted",
-                   "Makes no claim about ancestry."),
+                   "Does not say which branch is the oldest."),
             Choice("unsure", "I do not know"),
         ),
     ),
     Question(
         id="extra_data",
         text="What else do you want to show beside the tree?",
-        help="Choose everything that applies. Each becomes an annotation "
-             "track, and the plan will tell you what file to prepare.",
+        help="Tick everything that applies. Each one is drawn as a track "
+             "(a column or ring of data beside the tree), and the plan tells "
+             "you how to lay out the table for it.",
         multi=True,
         choices=(
             Choice("category", "A category per tip",
@@ -214,9 +220,9 @@ QUESTIONS: tuple[Question, ...] = (
     Question(
         id="extras",
         text="Do you want any extra features on the figure?",
-        help="These are presentation rather than data, and they combine "
-             "freely -- pick as many as you like. If you are not sure, take "
-             "the last option and see what the tool can do.",
+        help="These change how the figure looks, not what data it shows. "
+             "Pick as many as you like. If you are not sure, take \"As many as "
+             "sensibly fit\" and see what the program can do.",
         multi=True,
         choices=(
             Choice("support", "Branch support values",
@@ -242,8 +248,9 @@ QUESTIONS: tuple[Question, ...] = (
         id="label_tips",
         text="Should every tip be labelled?",
         applies=_large,
-        help="You said the tree is large. Thousands of tip labels cannot be "
-             "read at any printable size, and usually the clades are the point.",
+        help="You said the tree is large. Thousands of names cannot be read "
+             "at any printed size, and usually the groups matter more than "
+             "single names.",
         choices=(
             Choice("all", "Yes, label them all"),
             Choice("none", "No labels",
@@ -269,8 +276,8 @@ QUESTIONS: tuple[Question, ...] = (
         id="colour_safe",
         text="Should the colours be safe for colour-vision deficiency?",
         applies=_wants_tracks,
-        help="Roughly 1 in 12 men cannot reliably distinguish red from green. "
-             "Several journals now require this.",
+        help="About 1 in 12 men cannot tell red from green. Some journals "
+             "now ask for colours everyone can read.",
         choices=(
             Choice("yes", "Yes", "Use a colour-vision-safe palette."),
             Choice("no", "No, I have my own colours"),

@@ -603,11 +603,13 @@ def _print_steps(plan, out: TextIO, only_open: bool = True) -> None:
         tail = "  (optional)" if step.optional else ""
         print(f"  {index:>2}. [{box}] {step.title}{tail}", file=out)
         if step.detail:
-            for line in step.detail.splitlines():
+            # The bold marks the application's own menu and option names in
+            # Markdown; in a terminal the asterisks are only noise.
+            for line in step.detail.replace("**", "").splitlines():
                 if line.strip():
                     print(f"        {line.strip()}", file=out)
         if step.command:
-            print(f"        $ {step.command}", file=out)
+            print(f"        or in a terminal: $ {step.command}", file=out)
         if step.note:
             print(f"        note: {step.note}", file=out)
         print("", file=out)

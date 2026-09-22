@@ -39,7 +39,7 @@ from PySide6.QtWidgets import (QButtonGroup, QCheckBox, QDialog,
 from makeyourtree.guide.figure import (FigureError, InspectorUnavailable,
                                        inspect_figure, inspector_available)
 from makeyourtree.guide.plan import PLAN_EXTENSION, Plan, PlanError, load_plan, save_plan
-from makeyourtree.guide.questions import Question
+from makeyourtree.guide.questions import Question, question
 from makeyourtree.guide.session import GuideSession
 
 __all__ = ["GuideDialog"]
@@ -199,8 +199,8 @@ class GuideDialog(QDialog):
 
         if measured:
             note = QLabel(
-                "Pre-filled from the figure you provided, not chosen by you. "
-                "Change it if it does not match your data.")
+                "This answer was filled in from the figure you gave, not "
+                "chosen by you. Change it if it does not match your data.")
             note.setWordWrap(True)
             note.setStyleSheet("color: palette(highlight);")
             self._choices.insertWidget(0, note)
@@ -318,10 +318,13 @@ class GuideDialog(QDialog):
         taken = self._session.adopt(reading)
         body = "\n".join(f"• {line}" for line in reading.lines())
         if taken:
-            body += ("\n\nPre-filled: " + ", ".join(taken) +
-                     ".\nEvery one of them is a suggestion you can change.")
+            asked = "\n".join(f"• {question(key).text}" for key in taken)
+            body += ("\n\nThese questions now have an answer filled in from "
+                     "the figure:\n" + asked +
+                     "\nThey are only suggestions. You can change any of them.")
         else:
-            body += "\n\nNothing conclusive, so every question is still open."
+            body += ("\n\nThe figure did not show anything for certain, so "
+                     "every question is still open.")
         self._tell("What the figure showed", body)
         self._show_current()
 

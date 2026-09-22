@@ -1,6 +1,6 @@
 # Project status
 
-**Last updated:** 2026-09-13 · **Suite:** 2286 passing, 0 failing (~43 s)
+**Last updated:** 2026-09-22 · **Suite:** 2288 passing, 0 failing (~40 s)
 **Read `docs/SPEC.md` first** — it has the architecture and the frozen contracts. This
 file is the handoff note: what actually works, what is thin, and what to do next.
 
@@ -31,7 +31,11 @@ Be honest when you edit this. A known gap is useful; a false claim is not.
   come from an entry point the studio registers, so the MIT core still imports no Qt.
 
 - **Guided help:** a branching interview (`makeyourtree guide`, or Help ▸ Guide Me)
-  produces a saveable, resumable `.myplan` of concrete steps with runnable commands.
+  produces a saveable, resumable `.myplan` of concrete steps in plain language. Each
+  step says where to click in the studio: the menu item with its shortcut, the panel,
+  the group, the drop-down and the option to pick. It also gives the equivalent
+  terminal command. A studio test checks every name a plan mentions, and every
+  menu path and shortcut, against the real window and dialogs.
   `--from-figure` measures a published PDF or image — radial ink distribution, colour
   saturation, hue count — and pre-fills what it can evidence, stating confidence. It
   measures rather than recognises; there is no model and no network call.

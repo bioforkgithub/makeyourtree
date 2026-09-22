@@ -173,26 +173,28 @@ def analyse(rgb: np.ndarray) -> FigureReading:
 
     if 0.7 <= aspect <= 1.3 and hollowness < 2.5:
         reading.observations.append(Observation(
-            key="shape", summary="The tree is drawn as a circular fan",
-            evidence=(f"the figure is square (aspect {aspect:.2f}) and the "
-                      f"middle is emptier than the rest ({hollowness:.1f}x the "
-                      f"average ink density), which is the hole a fan leaves "
-                      f"around its root"),
+            key="shape", summary="The tree is drawn as a circle",
+            evidence=(f"the picture is roughly square and its middle is almost "
+                      f"empty, which is how a circular tree looks (width / "
+                      f"height {aspect:.2f}; the centre has {hollowness:.1f} "
+                      f"times the average amount of ink)"),
             confidence=0.85))
         reading.suggested["shape"] = "circular"
     elif aspect > 1.8 or hollowness > 4.5:
         reading.observations.append(Observation(
             key="shape", summary="The tree is drawn as a rectangle",
-            evidence=(f"aspect {aspect:.2f} and the middle carries "
-                      f"{hollowness:.1f}x the average ink density, where a fan "
-                      f"would leave a hole"),
+            evidence=(f"the picture is wide, or full of lines in the middle "
+                      f"where a circular tree would be empty (width / height "
+                      f"{aspect:.2f}; the centre has {hollowness:.1f} times "
+                      f"the average amount of ink)"),
             confidence=0.8))
         reading.suggested["shape"] = "rectangular"
     else:
         reading.notes.append(
-            f"The shape was ambiguous (aspect {aspect:.2f}, centre density "
-            f"{hollowness:.1f}x average) -- an unrooted or radial layout looks "
-            f"like this -- so the guide will ask you about it.")
+            f"The shape could not be told for sure -- an unrooted or radial "
+            f"tree often looks like this -- so the guide will ask you (width / "
+            f"height {aspect:.2f}; the centre has {hollowness:.1f} times the "
+            f"average amount of ink).")
 
     # ------------------------------------------------------ annotation colour
     saturation = _saturation(rgb)
@@ -201,8 +203,10 @@ def analyse(rgb: np.ndarray) -> FigureReading:
 
     if colour_fraction < 0.02:
         reading.observations.append(Observation(
-            key="extra_data", summary="No annotation tracks; this is a bare tree",
-            evidence=f"only {colour_fraction:.1%} of the ink is saturated colour",
+            key="extra_data",
+            summary="No coloured data beside the tree; it is a plain tree",
+            evidence=(f"almost everything is black, white or grey (only "
+                      f"{colour_fraction:.1%} is strong colour)"),
             confidence=0.7))
         reading.suggested["extra_data"] = ["none"]
     else:
@@ -214,18 +218,20 @@ def analyse(rgb: np.ndarray) -> FigureReading:
             suggested.append("category")
             reading.observations.append(Observation(
                 key="extra_data",
-                summary=f"Categorical colour, in roughly {distinct} distinct hues",
-                evidence=(f"{colour_fraction:.0%} of the ink is saturated, "
-                          f"spread across {distinct} separated hues"),
+                summary=(f"Coloured groups, in about {distinct} different "
+                         f"colours, such as a colour strip"),
+                evidence=(f"{colour_fraction:.0%} of the drawing is strong "
+                          f"colour, in {distinct} clearly different colours"),
                 confidence=0.7))
         else:
             suggested.append("matrix")
             reading.observations.append(Observation(
                 key="extra_data",
-                summary="A continuous colour scale, such as a heatmap or gradient",
-                evidence=(f"{colour_fraction:.0%} of the ink is saturated but "
-                          f"in only {distinct} hue band(s), which is what a "
-                          f"colour ramp looks like"),
+                summary=("A smooth colour scale, such as a heatmap or a "
+                         "gradient"),
+                evidence=(f"{colour_fraction:.0%} of the drawing is strong "
+                          f"colour, but in only {distinct} family of shades, "
+                          f"which is how a scale from light to dark looks"),
                 confidence=0.6))
         reading.suggested["extra_data"] = suggested
 
@@ -233,13 +239,15 @@ def analyse(rgb: np.ndarray) -> FigureReading:
     if reading.suggested.get("shape") == "rectangular" and aspect < 0.75:
         reading.observations.append(Observation(
             key="tip_count",
-            summary="Many tips: the figure is much taller than it is wide",
-            evidence=f"aspect ratio {aspect:.2f}, typical of a long tip list",
+            summary="Many tips: the picture is much taller than it is wide",
+            evidence=(f"a long list of names makes a tall picture (width / "
+                      f"height {aspect:.2f})"),
             confidence=0.5))
 
     reading.notes.append(
-        "These are measurements of the picture, not a reading of it. Change "
-        "anything that does not match your data.")
+        "These come from measuring the picture; the program does not "
+        "understand what the figure shows. Change anything that does not "
+        "match your data.")
     return reading
 
 
