@@ -1,5 +1,7 @@
 # MakeYourTree
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23637766.svg)](https://doi.org/10.5281/zenodo.23637766)
+
 **A standalone desktop studio for visualising and annotating phylogenetic trees.**
 
 MakeYourTree runs entirely on your machine. There is no server, no account, no upload, and no
